@@ -1,4 +1,5 @@
 from django.conf.urls import patterns, include, url
+from ndc.views import *
 import settings
 
 # Uncomment the next two lines to enable the admin:
@@ -6,7 +7,11 @@ from django.contrib import admin
 admin.autodiscover()
 
 urlpatterns = patterns('',
-    url(r'^$', 'ndc.views.home', name='home'),
+    url(r'^$', home, name='home'),
+    url(r'^speakers/$', speaker_list.as_view(), name='speakers'),
+    url(r'^speaker/(?P<pk>\d+)$', speaker_detail.as_view(), name='speaker'),
+    url(r'^sessions/$', session_list.as_view(), name='sessions'),
+    url(r'^session/(?P<pk>\d+)$', session_detail.as_view(), name='session'),
 
     # Uncomment the admin/doc line below to enable admin documentation:
     # url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
