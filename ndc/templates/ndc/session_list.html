@@ -1,1 +1,10 @@
-sessions
+{% extends "base.html" %}
+
+{% block title %}세션 목록{% endblock %}
+{% block content %}
+<ul>
+    {% for session in session_list %}
+    <li><a href="{% url 'session' session.id %}">{{ session.name }}</a></li>
+    {% endfor %}
+</ul>
+{% endblock %}
