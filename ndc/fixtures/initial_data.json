@@ -65,6 +65,54 @@
     }, 
     {
         "fields": {
+            "image": "tag/trans_e.png", 
+            "name": "\uc601\uc5b4 \ud1b5\uc5ed \uc11c\ube44\uc2a4"
+        }, 
+        "model": "ndc.tag", 
+        "pk": 9
+    }, 
+    {
+        "fields": {
+            "image": "tag/trans_j.png", 
+            "name": "\uc77c\ubcf8\uc5b4 \ud1b5\uc5ed \uc11c\ube44\uc2a4"
+        }, 
+        "model": "ndc.tag", 
+        "pk": 10
+    }, 
+    {
+        "fields": {
+            "image": "tag/trans_c.png", 
+            "name": "\uc911\uad6d\uc5b4 \ud1b5\uc5ed \uc11c\ube44\uc2a4"
+        }, 
+        "model": "ndc.tag", 
+        "pk": 11
+    }, 
+    {
+        "fields": {
+            "image": "tag/press.png", 
+            "name": "\ucde8\uc7ac \uac00\ub2a5"
+        }, 
+        "model": "ndc.tag", 
+        "pk": 12
+    }, 
+    {
+        "fields": {
+            "image": "tag/photo_allow.png", 
+            "name": "\uc0ac\uc9c4 \ucd2c\uc601 \uac00\ub2a5"
+        }, 
+        "model": "ndc.tag", 
+        "pk": 13
+    }, 
+    {
+        "fields": {
+            "image": "tag/photo_deny.png", 
+            "name": "\uc0ac\uc9c4 \ucd2c\uc601 \uae08\uc9c0"
+        }, 
+        "model": "ndc.tag", 
+        "pk": 14
+    }, 
+    {
+        "fields": {
             "name": "301\ud638"
         }, 
         "model": "ndc.room", 
@@ -157,7 +205,7 @@
         }, 
         "model": "ndc.sessiontime", 
         "pk": 4
-    },
+    }, 
     {
         "fields": {
             "begin": "12:00:00", 
@@ -229,5 +277,3686 @@
         }, 
         "model": "ndc.sessiontime", 
         "pk": 13
-    } 
+    }, 
+    {
+        "fields": {
+            "name": "\ub125\uc2a8"
+        }, 
+        "model": "ndc.company", 
+        "pk": 1
+    }, 
+    {
+        "fields": {
+            "name": "Havok Korea"
+        }, 
+        "model": "ndc.company", 
+        "pk": 2
+    }, 
+    {
+        "fields": {
+            "name": "\uc5d4\ub3c4\uc5b4\uc988"
+        }, 
+        "model": "ndc.company", 
+        "pk": 3
+    }, 
+    {
+        "fields": {
+            "name": "\ud55c\uad6d\uc778\ud130\ub137\uc9c4\ud765\uc6d0"
+        }, 
+        "model": "ndc.company", 
+        "pk": 4
+    }, 
+    {
+        "fields": {
+            "name": "\ubc14\ub2d0\ub77c\ube0c\ub9ac\uc988"
+        }, 
+        "model": "ndc.company", 
+        "pk": 5
+    }, 
+    {
+        "fields": {
+            "name": "\uc5d0\uc774\ud329\ud1a0\ub9ac"
+        }, 
+        "model": "ndc.company", 
+        "pk": 6
+    }, 
+    {
+        "fields": {
+            "name": "Tapjoy Korea"
+        }, 
+        "model": "ndc.company", 
+        "pk": 7
+    }, 
+    {
+        "fields": {
+            "name": "\ub124\uc624\ud50c"
+        }, 
+        "model": "ndc.company", 
+        "pk": 8
+    }, 
+    {
+        "fields": {
+            "name": "Blizzard Entertainment"
+        }, 
+        "model": "ndc.company", 
+        "pk": 9
+    }, 
+    {
+        "fields": {
+            "name": "\ud55c\uad6d\uc608\uc220\uc885\ud569\ud559\uad50"
+        }, 
+        "model": "ndc.company", 
+        "pk": 10
+    }, 
+    {
+        "fields": {
+            "name": "\uc704\ud50c\uac8c\uc784\uc988"
+        }, 
+        "model": "ndc.company", 
+        "pk": 11
+    }, 
+    {
+        "fields": {
+            "name": "\uc11c\uc6b8\uc608\uc220\ub300\ud559\uad50"
+        }, 
+        "model": "ndc.company", 
+        "pk": 12
+    }, 
+    {
+        "fields": {
+            "name": "\ubc84\ud2f0\uace0\uc6b0 \uac8c\uc784\uc988"
+        }, 
+        "model": "ndc.company", 
+        "pk": 13
+    }, 
+    {
+        "fields": {
+            "name": "\uc5d4\ub3c4\uc5b4\uc988"
+        }, 
+        "model": "ndc.company", 
+        "pk": 14
+    }, 
+    {
+        "fields": {
+            "name": "\ub125\uc2a8"
+        }, 
+        "model": "ndc.company", 
+        "pk": 15
+    }, 
+    {
+        "fields": {
+            "name": "\ud30c\ud2f0\uac8c\uc784\uc988"
+        }, 
+        "model": "ndc.company", 
+        "pk": 16
+    }, 
+    {
+        "fields": {
+            "name": "\ub125\uc2a8 \uc544\uba54\ub9ac\uce74"
+        }, 
+        "model": "ndc.company", 
+        "pk": 17
+    }, 
+    {
+        "fields": {
+            "name": "\ub125\uc2a4\ud1a0\ub9ad"
+        }, 
+        "model": "ndc.company", 
+        "pk": 18
+    }, 
+    {
+        "fields": {
+            "name": "\uc6b0\uc11d\ub300\ud559\uad50"
+        }, 
+        "model": "ndc.company", 
+        "pk": 19
+    }, 
+    {
+        "fields": {
+            "name": "\ub4dc\ub798\uace4 \ud50c\ub77c\uc774"
+        }, 
+        "model": "ndc.company", 
+        "pk": 20
+    }, 
+    {
+        "fields": {
+            "name": "\uc5d4\uc528\uc18c\ud504\ud2b8"
+        }, 
+        "model": "ndc.company", 
+        "pk": 21
+    }, 
+    {
+        "fields": {
+            "name": "Umbra Software"
+        }, 
+        "model": "ndc.company", 
+        "pk": 22
+    }, 
+    {
+        "fields": {
+            "name": "\uc911\uc559\ub300\ud559\uad50 \ubcd1\uc6d0"
+        }, 
+        "model": "ndc.company", 
+        "pk": 23
+    }, 
+    {
+        "fields": {
+            "name": "Natural Motion"
+        }, 
+        "model": "ndc.company", 
+        "pk": 24
+    }, 
+    {
+        "fields": {
+            "name": "\ud398\uc774\uc988\ucea3"
+        }, 
+        "model": "ndc.company", 
+        "pk": 25
+    }, 
+    {
+        "fields": {
+            "name": "\ud504\ub9ac\ub79c\uc11c"
+        }, 
+        "model": "ndc.company", 
+        "pk": 26
+    }, 
+    {
+        "fields": {
+            "name": "\uc804 KTH"
+        }, 
+        "model": "ndc.company", 
+        "pk": 27
+    }, 
+    {
+        "fields": {
+            "name": "\uce74\uce74\uc624\ub7a9"
+        }, 
+        "model": "ndc.company", 
+        "pk": 28
+    }, 
+    {
+        "fields": {
+            "name": "\ubaa8\ube44\ud074"
+        }, 
+        "model": "ndc.company", 
+        "pk": 29
+    }, 
+    {
+        "fields": {
+            "name": "Geomerics"
+        }, 
+        "model": "ndc.company", 
+        "pk": 30
+    }, 
+    {
+        "fields": {
+            "name": "\uc778\ub514\uac8c\uc784\ud300 \ud0dc\ub098"
+        }, 
+        "model": "ndc.company", 
+        "pk": 31
+    }, 
+    {
+        "fields": {
+            "name": "\ub9c8\uc774\uc5d0\ud2b8 \uc5d4\ud130\ud14c\uc778\uba3c\ud2b8"
+        }, 
+        "model": "ndc.company", 
+        "pk": 32
+    }, 
+    {
+        "fields": {
+            "name": "\ub124\uc628\uc2a4\ud29c\ub514\uc624"
+        }, 
+        "model": "ndc.company", 
+        "pk": 33
+    }, 
+    {
+        "fields": {
+            "name": "gloops"
+        }, 
+        "model": "ndc.company", 
+        "pk": 34
+    }, 
+    {
+        "fields": {
+            "name": "Dev Arc"
+        }, 
+        "model": "ndc.company", 
+        "pk": 35
+    }, 
+    {
+        "fields": {
+            "name": "JCE"
+        }, 
+        "model": "ndc.company", 
+        "pk": 36
+    }, 
+    {
+        "fields": {
+            "name": "\ud130\ud2c0 \ud06c\ub9bc"
+        }, 
+        "model": "ndc.company", 
+        "pk": 37
+    }, 
+    {
+        "fields": {
+            "name": "\uc544\uc774\ub374\ud2f0\ud2f0 \uac8c\uc784\uc988"
+        }, 
+        "model": "ndc.company", 
+        "pk": 38
+    }, 
+    {
+        "fields": {
+            "name": "Gree Korea"
+        }, 
+        "model": "ndc.company", 
+        "pk": 39
+    }, 
+    {
+        "fields": {
+            "name": "Lexian"
+        }, 
+        "model": "ndc.company", 
+        "pk": 40
+    }, 
+    {
+        "fields": {
+            "name": "(\uc8fc)\uc544\uc774\ucf54\ub2c9\uc2a4 \uc5d4\ud130\ud14c\uc778\uba3c\ud2b8"
+        }, 
+        "model": "ndc.company", 
+        "pk": 41
+    }, 
+    {
+        "fields": {
+            "name": "\uc778\ub514 \uac1c\ubc1c\uc790"
+        }, 
+        "model": "ndc.company", 
+        "pk": 42
+    }, 
+    {
+        "fields": {
+            "name": "\uc804 NHN"
+        }, 
+        "model": "ndc.company", 
+        "pk": 43
+    }, 
+    {
+        "fields": {
+            "name": "CHUKONG CO, INC."
+        }, 
+        "model": "ndc.company", 
+        "pk": 44
+    }, 
+    {
+        "fields": {
+            "name": "\ud30c\uc774\ub4dc \ud30c\uc774\ud37c\uc2a4 \uc5d4\ud130\ud14c\uc778\uba3c\ud2b8"
+        }, 
+        "model": "ndc.company", 
+        "pk": 45
+    }, 
+    {
+        "fields": {
+            "name": "\uc640\uc77c\ub4dc \uce74\ub4dc"
+        }, 
+        "model": "ndc.company", 
+        "pk": 46
+    }, 
+    {
+        "fields": {
+            "company": 1, 
+            "email": "", 
+            "name": "\uacc4\uc0c1\ud654", 
+            "twitter": ""
+        }, 
+        "model": "ndc.speaker", 
+        "pk": 1
+    }, 
+    {
+        "fields": {
+            "company": 1, 
+            "email": "", 
+            "name": "\uace0\ud0dc\uc2dd", 
+            "twitter": ""
+        }, 
+        "model": "ndc.speaker", 
+        "pk": 2
+    }, 
+    {
+        "fields": {
+            "company": 2, 
+            "email": "", 
+            "name": "\uac15\uc815\ud6c8", 
+            "twitter": ""
+        }, 
+        "model": "ndc.speaker", 
+        "pk": 3
+    }, 
+    {
+        "fields": {
+            "company": 3, 
+            "email": "", 
+            "name": "\ucd5c\ubd80\ud638", 
+            "twitter": ""
+        }, 
+        "model": "ndc.speaker", 
+        "pk": 4
+    }, 
+    {
+        "fields": {
+            "company": 4, 
+            "email": "", 
+            "name": "\uc774\uc7ac\ucd98", 
+            "twitter": ""
+        }, 
+        "model": "ndc.speaker", 
+        "pk": 5
+    }, 
+    {
+        "fields": {
+            "company": 1, 
+            "email": "", 
+            "name": "\ucd5c\ud638\uc601", 
+            "twitter": ""
+        }, 
+        "model": "ndc.speaker", 
+        "pk": 6
+    }, 
+    {
+        "fields": {
+            "company": 5, 
+            "email": "", 
+            "name": "\uc624\uc601\uc6b1", 
+            "twitter": ""
+        }, 
+        "model": "ndc.speaker", 
+        "pk": 7
+    }, 
+    {
+        "fields": {
+            "company": 6, 
+            "email": "", 
+            "name": "\ucd5c\uc900\ud638", 
+            "twitter": ""
+        }, 
+        "model": "ndc.speaker", 
+        "pk": 8
+    }, 
+    {
+        "fields": {
+            "company": 7, 
+            "email": "", 
+            "name": "\uc870\ubb38\uba85", 
+            "twitter": ""
+        }, 
+        "model": "ndc.speaker", 
+        "pk": 9
+    }, 
+    {
+        "fields": {
+            "company": 1, 
+            "email": "", 
+            "name": "\uc784\uc11d\uc758", 
+            "twitter": ""
+        }, 
+        "model": "ndc.speaker", 
+        "pk": 10
+    }, 
+    {
+        "fields": {
+            "company": 8, 
+            "email": "", 
+            "name": "\uc1a1\ucc3d\uaddc", 
+            "twitter": ""
+        }, 
+        "model": "ndc.speaker", 
+        "pk": 11
+    }, 
+    {
+        "fields": {
+            "company": 9, 
+            "email": "", 
+            "name": "\ubc15\uc885\ucc9c", 
+            "twitter": ""
+        }, 
+        "model": "ndc.speaker", 
+        "pk": 12
+    }, 
+    {
+        "fields": {
+            "company": 10, 
+            "email": "", 
+            "name": "\uc804\uc218\ud658", 
+            "twitter": ""
+        }, 
+        "model": "ndc.speaker", 
+        "pk": 13
+    }, 
+    {
+        "fields": {
+            "company": 11, 
+            "email": "", 
+            "name": "\uc774\uc6a9\ud0dc", 
+            "twitter": ""
+        }, 
+        "model": "ndc.speaker", 
+        "pk": 14
+    }, 
+    {
+        "fields": {
+            "company": 12, 
+            "email": "", 
+            "name": "\uae40\ub300\ud64d", 
+            "twitter": ""
+        }, 
+        "model": "ndc.speaker", 
+        "pk": 15
+    }, 
+    {
+        "fields": {
+            "company": 1, 
+            "email": "", 
+            "name": "\uc784\uc218\uc9c4", 
+            "twitter": ""
+        }, 
+        "model": "ndc.speaker", 
+        "pk": 16
+    }, 
+    {
+        "fields": {
+            "company": 13, 
+            "email": "", 
+            "name": "\uace0\uacbd\uc11d", 
+            "twitter": ""
+        }, 
+        "model": "ndc.speaker", 
+        "pk": 17
+    }, 
+    {
+        "fields": {
+            "company": 1, 
+            "email": "", 
+            "name": "\ucd5c\uc7ac\ud601", 
+            "twitter": ""
+        }, 
+        "model": "ndc.speaker", 
+        "pk": 18
+    }, 
+    {
+        "fields": {
+            "company": 1, 
+            "email": "", 
+            "name": "\uc815\ud76c\uc11d", 
+            "twitter": ""
+        }, 
+        "model": "ndc.speaker", 
+        "pk": 19
+    }, 
+    {
+        "fields": {
+            "company": 1, 
+            "email": "", 
+            "name": "\ud669\uc9c4\uc11d", 
+            "twitter": ""
+        }, 
+        "model": "ndc.speaker", 
+        "pk": 20
+    }, 
+    {
+        "fields": {
+            "company": 1, 
+            "email": "", 
+            "name": "\uc11c\ubbfc", 
+            "twitter": ""
+        }, 
+        "model": "ndc.speaker", 
+        "pk": 21
+    }, 
+    {
+        "fields": {
+            "company": 1, 
+            "email": "", 
+            "name": "\uc774\ud76c\uc601", 
+            "twitter": ""
+        }, 
+        "model": "ndc.speaker", 
+        "pk": 22
+    }, 
+    {
+        "fields": {
+            "company": 14, 
+            "email": "", 
+            "name": "\uc190\uc11d\ubbfc", 
+            "twitter": ""
+        }, 
+        "model": "ndc.speaker", 
+        "pk": 23
+    }, 
+    {
+        "fields": {
+            "company": 15, 
+            "email": "", 
+            "name": "\uae30\ud604\uc6b0", 
+            "twitter": ""
+        }, 
+        "model": "ndc.speaker", 
+        "pk": 24
+    }, 
+    {
+        "fields": {
+            "company": 1, 
+            "email": "", 
+            "name": "\uc774\uc2b9\uc7ac", 
+            "twitter": ""
+        }, 
+        "model": "ndc.speaker", 
+        "pk": 25
+    }, 
+    {
+        "fields": {
+            "company": 16, 
+            "email": "", 
+            "name": "\uc784\ud0dc\ud615", 
+            "twitter": ""
+        }, 
+        "model": "ndc.speaker", 
+        "pk": 26
+    }, 
+    {
+        "fields": {
+            "company": 17, 
+            "email": "", 
+            "name": "\uac15\ubcd1\ud0c1", 
+            "twitter": ""
+        }, 
+        "model": "ndc.speaker", 
+        "pk": 27
+    }, 
+    {
+        "fields": {
+            "company": 18, 
+            "email": "", 
+            "name": "\ubc15\uc9c0\ud6c8", 
+            "twitter": ""
+        }, 
+        "model": "ndc.speaker", 
+        "pk": 28
+    }, 
+    {
+        "fields": {
+            "company": 18, 
+            "email": "", 
+            "name": "\uc774\ud0dc\ubbfc", 
+            "twitter": ""
+        }, 
+        "model": "ndc.speaker", 
+        "pk": 29
+    }, 
+    {
+        "fields": {
+            "company": 1, 
+            "email": "", 
+            "name": "\uc774\uc740\uc11d", 
+            "twitter": ""
+        }, 
+        "model": "ndc.speaker", 
+        "pk": 30
+    }, 
+    {
+        "fields": {
+            "company": 19, 
+            "email": "", 
+            "name": "\uc774\uc11d\uc900", 
+            "twitter": ""
+        }, 
+        "model": "ndc.speaker", 
+        "pk": 31
+    }, 
+    {
+        "fields": {
+            "company": 1, 
+            "email": "", 
+            "name": "\uad6c\ud0dc\ud6c8", 
+            "twitter": ""
+        }, 
+        "model": "ndc.speaker", 
+        "pk": 32
+    }, 
+    {
+        "fields": {
+            "company": 1, 
+            "email": "", 
+            "name": "\uc804\ud615\uaddc", 
+            "twitter": ""
+        }, 
+        "model": "ndc.speaker", 
+        "pk": 33
+    }, 
+    {
+        "fields": {
+            "company": 20, 
+            "email": "", 
+            "name": "\ud5c8\ucc3d\ubbfc", 
+            "twitter": ""
+        }, 
+        "model": "ndc.speaker", 
+        "pk": 34
+    }, 
+    {
+        "fields": {
+            "company": 1, 
+            "email": "", 
+            "name": "\uae40\uc8fc\uc601", 
+            "twitter": ""
+        }, 
+        "model": "ndc.speaker", 
+        "pk": 35
+    }, 
+    {
+        "fields": {
+            "company": 21, 
+            "email": "", 
+            "name": "\uae40\ud638\uc2dd", 
+            "twitter": ""
+        }, 
+        "model": "ndc.speaker", 
+        "pk": 36
+    }, 
+    {
+        "fields": {
+            "company": 22, 
+            "email": "", 
+            "name": "\uc0bc\ubf40 \ub77c\ud314\ub77c\uc774\ub128", 
+            "twitter": ""
+        }, 
+        "model": "ndc.speaker", 
+        "pk": 37
+    }, 
+    {
+        "fields": {
+            "company": 23, 
+            "email": "", 
+            "name": "\ud55c\ub355\ud604", 
+            "twitter": ""
+        }, 
+        "model": "ndc.speaker", 
+        "pk": 38
+    }, 
+    {
+        "fields": {
+            "company": 1, 
+            "email": "", 
+            "name": "\ubc15\uaddc\ud0dc", 
+            "twitter": ""
+        }, 
+        "model": "ndc.speaker", 
+        "pk": 39
+    }, 
+    {
+        "fields": {
+            "company": 21, 
+            "email": "", 
+            "name": "\uc774\uad8c\uc77c", 
+            "twitter": ""
+        }, 
+        "model": "ndc.speaker", 
+        "pk": 40
+    }, 
+    {
+        "fields": {
+            "company": 1, 
+            "email": "", 
+            "name": "\uc774\uc6d0", 
+            "twitter": ""
+        }, 
+        "model": "ndc.speaker", 
+        "pk": 41
+    }, 
+    {
+        "fields": {
+            "company": 1, 
+            "email": "", 
+            "name": "\uae40\ud55c\uacbd", 
+            "twitter": ""
+        }, 
+        "model": "ndc.speaker", 
+        "pk": 42
+    }, 
+    {
+        "fields": {
+            "company": 1, 
+            "email": "", 
+            "name": "\uae40\ud601", 
+            "twitter": ""
+        }, 
+        "model": "ndc.speaker", 
+        "pk": 43
+    }, 
+    {
+        "fields": {
+            "company": 1, 
+            "email": "", 
+            "name": "\uc774\uaddc\ub3d9", 
+            "twitter": ""
+        }, 
+        "model": "ndc.speaker", 
+        "pk": 44
+    }, 
+    {
+        "fields": {
+            "company": 24, 
+            "email": "", 
+            "name": "\uc0ac\uc774\uc5b8 \ub9e5", 
+            "twitter": ""
+        }, 
+        "model": "ndc.speaker", 
+        "pk": 45
+    }, 
+    {
+        "fields": {
+            "company": 20, 
+            "email": "", 
+            "name": "\uae40\uc775\uc911", 
+            "twitter": ""
+        }, 
+        "model": "ndc.speaker", 
+        "pk": 46
+    }, 
+    {
+        "fields": {
+            "company": 25, 
+            "email": "", 
+            "name": "\ubb38\uae30\uc601", 
+            "twitter": ""
+        }, 
+        "model": "ndc.speaker", 
+        "pk": 47
+    }, 
+    {
+        "fields": {
+            "company": 26, 
+            "email": "", 
+            "name": "\uc720\uc601\ucc9c", 
+            "twitter": ""
+        }, 
+        "model": "ndc.speaker", 
+        "pk": 48
+    }, 
+    {
+        "fields": {
+            "company": 27, 
+            "email": "", 
+            "name": "\uae40\uc218\uc601", 
+            "twitter": ""
+        }, 
+        "model": "ndc.speaker", 
+        "pk": 49
+    }, 
+    {
+        "fields": {
+            "company": 1, 
+            "email": "", 
+            "name": "\ubc15\ubcd1\ub9bc", 
+            "twitter": ""
+        }, 
+        "model": "ndc.speaker", 
+        "pk": 50
+    }, 
+    {
+        "fields": {
+            "company": 28, 
+            "email": "", 
+            "name": "\uc624\uc6d0\ud0c1", 
+            "twitter": ""
+        }, 
+        "model": "ndc.speaker", 
+        "pk": 51
+    }, 
+    {
+        "fields": {
+            "company": 29, 
+            "email": "", 
+            "name": "\uc774\uc885\uc8fc", 
+            "twitter": ""
+        }, 
+        "model": "ndc.speaker", 
+        "pk": 52
+    }, 
+    {
+        "fields": {
+            "company": 30, 
+            "email": "", 
+            "name": "\ub9c8\uc774\ud074 \ubc1c\uc800", 
+            "twitter": ""
+        }, 
+        "model": "ndc.speaker", 
+        "pk": 53
+    }, 
+    {
+        "fields": {
+            "company": 1, 
+            "email": "", 
+            "name": "\ud64d\uc885\ucc2c", 
+            "twitter": ""
+        }, 
+        "model": "ndc.speaker", 
+        "pk": 54
+    }, 
+    {
+        "fields": {
+            "company": 1, 
+            "email": "", 
+            "name": "\uae40\ud0dc\ud6a8", 
+            "twitter": ""
+        }, 
+        "model": "ndc.speaker", 
+        "pk": 55
+    }, 
+    {
+        "fields": {
+            "company": 1, 
+            "email": "", 
+            "name": "\uc774\ubcd1\uc900", 
+            "twitter": ""
+        }, 
+        "model": "ndc.speaker", 
+        "pk": 56
+    }, 
+    {
+        "fields": {
+            "company": 27, 
+            "email": "", 
+            "name": "\uac15\uc18c\ub9ac", 
+            "twitter": ""
+        }, 
+        "model": "ndc.speaker", 
+        "pk": 57
+    }, 
+    {
+        "fields": {
+            "company": 1, 
+            "email": "", 
+            "name": "\ubc15\uacbd\ud638", 
+            "twitter": ""
+        }, 
+        "model": "ndc.speaker", 
+        "pk": 58
+    }, 
+    {
+        "fields": {
+            "company": 1, 
+            "email": "", 
+            "name": "\uac15\uc131\uc6b1", 
+            "twitter": ""
+        }, 
+        "model": "ndc.speaker", 
+        "pk": 59
+    }, 
+    {
+        "fields": {
+            "company": 31, 
+            "email": "", 
+            "name": "\uc774\ub300\ud76c", 
+            "twitter": ""
+        }, 
+        "model": "ndc.speaker", 
+        "pk": 60
+    }, 
+    {
+        "fields": {
+            "company": 1, 
+            "email": "", 
+            "name": "\uae40\uc815\ub9cc", 
+            "twitter": ""
+        }, 
+        "model": "ndc.speaker", 
+        "pk": 61
+    }, 
+    {
+        "fields": {
+            "company": 1, 
+            "email": "", 
+            "name": "\ud55c\uc0c1\ucca0", 
+            "twitter": ""
+        }, 
+        "model": "ndc.speaker", 
+        "pk": 62
+    }, 
+    {
+        "fields": {
+            "company": 21, 
+            "email": "", 
+            "name": "\uc774\ud61c\ub9bc", 
+            "twitter": ""
+        }, 
+        "model": "ndc.speaker", 
+        "pk": 63
+    }, 
+    {
+        "fields": {
+            "company": 32, 
+            "email": "", 
+            "name": "\uc548\uc911\uc6d0", 
+            "twitter": ""
+        }, 
+        "model": "ndc.speaker", 
+        "pk": 64
+    }, 
+    {
+        "fields": {
+            "company": 18, 
+            "email": "", 
+            "name": "\uba85\ub098\ub9ac", 
+            "twitter": ""
+        }, 
+        "model": "ndc.speaker", 
+        "pk": 65
+    }, 
+    {
+        "fields": {
+            "company": 1, 
+            "email": "", 
+            "name": "\ubc15\uc601\uc77c", 
+            "twitter": ""
+        }, 
+        "model": "ndc.speaker", 
+        "pk": 66
+    }, 
+    {
+        "fields": {
+            "company": 1, 
+            "email": "", 
+            "name": "\uc774\ucc3d\ud6c8", 
+            "twitter": ""
+        }, 
+        "model": "ndc.speaker", 
+        "pk": 67
+    }, 
+    {
+        "fields": {
+            "company": 1, 
+            "email": "", 
+            "name": "\uc774\uccad\ud658", 
+            "twitter": ""
+        }, 
+        "model": "ndc.speaker", 
+        "pk": 68
+    }, 
+    {
+        "fields": {
+            "company": 33, 
+            "email": "", 
+            "name": "\ubc15\ubc94\uc9c4", 
+            "twitter": ""
+        }, 
+        "model": "ndc.speaker", 
+        "pk": 69
+    }, 
+    {
+        "fields": {
+            "company": 5, 
+            "email": "", 
+            "name": "\ud55c\ub2e4\uc717", 
+            "twitter": ""
+        }, 
+        "model": "ndc.speaker", 
+        "pk": 70
+    }, 
+    {
+        "fields": {
+            "company": 34, 
+            "email": "", 
+            "name": "\uce74\ud1a0 \ud788\ub85c\uc720\ud0a4", 
+            "twitter": ""
+        }, 
+        "model": "ndc.speaker", 
+        "pk": 71
+    }, 
+    {
+        "fields": {
+            "company": 35, 
+            "email": "", 
+            "name": "\ud5c8\ubbfc\uad6c", 
+            "twitter": ""
+        }, 
+        "model": "ndc.speaker", 
+        "pk": 72
+    }, 
+    {
+        "fields": {
+            "company": 1, 
+            "email": "", 
+            "name": "\ubc15\ub3d9\uc77c", 
+            "twitter": ""
+        }, 
+        "model": "ndc.speaker", 
+        "pk": 73
+    }, 
+    {
+        "fields": {
+            "company": 36, 
+            "email": "", 
+            "name": "\ubc15\uad00\ud64d", 
+            "twitter": ""
+        }, 
+        "model": "ndc.speaker", 
+        "pk": 74
+    }, 
+    {
+        "fields": {
+            "company": 21, 
+            "email": "", 
+            "name": "\ubc30\uc7ac\ud604", 
+            "twitter": ""
+        }, 
+        "model": "ndc.speaker", 
+        "pk": 75
+    }, 
+    {
+        "fields": {
+            "company": 37, 
+            "email": "", 
+            "name": "\ubc15\uc120\uc6a9", 
+            "twitter": ""
+        }, 
+        "model": "ndc.speaker", 
+        "pk": 76
+    }, 
+    {
+        "fields": {
+            "company": 38, 
+            "email": "", 
+            "name": "\uc774\uc900\uc601", 
+            "twitter": ""
+        }, 
+        "model": "ndc.speaker", 
+        "pk": 77
+    }, 
+    {
+        "fields": {
+            "company": 1, 
+            "email": "", 
+            "name": "\uc784\ud0dc\ud604", 
+            "twitter": ""
+        }, 
+        "model": "ndc.speaker", 
+        "pk": 78
+    }, 
+    {
+        "fields": {
+            "company": 1, 
+            "email": "", 
+            "name": "\uae40\uac74\uc601", 
+            "twitter": ""
+        }, 
+        "model": "ndc.speaker", 
+        "pk": 79
+    }, 
+    {
+        "fields": {
+            "company": 1, 
+            "email": "", 
+            "name": "\uc774\uc9c0\uc0c1", 
+            "twitter": ""
+        }, 
+        "model": "ndc.speaker", 
+        "pk": 80
+    }, 
+    {
+        "fields": {
+            "company": 1, 
+            "email": "", 
+            "name": "\ubc15\uc885\uc11d", 
+            "twitter": ""
+        }, 
+        "model": "ndc.speaker", 
+        "pk": 81
+    }, 
+    {
+        "fields": {
+            "company": 39, 
+            "email": "", 
+            "name": "\ubb38\uc804\ub9ac\ud61c", 
+            "twitter": ""
+        }, 
+        "model": "ndc.speaker", 
+        "pk": 82
+    }, 
+    {
+        "fields": {
+            "company": 40, 
+            "email": "", 
+            "name": "\uc774\uc778\ubb38", 
+            "twitter": ""
+        }, 
+        "model": "ndc.speaker", 
+        "pk": 83
+    }, 
+    {
+        "fields": {
+            "company": 41, 
+            "email": "", 
+            "name": "\uc774\uc6b0\uc9c4", 
+            "twitter": ""
+        }, 
+        "model": "ndc.speaker", 
+        "pk": 84
+    }, 
+    {
+        "fields": {
+            "company": 42, 
+            "email": "", 
+            "name": "\uc6d0\ucc3d\ud604", 
+            "twitter": ""
+        }, 
+        "model": "ndc.speaker", 
+        "pk": 85
+    }, 
+    {
+        "fields": {
+            "company": 38, 
+            "email": "", 
+            "name": "\uae40\ub3d9\uc11d", 
+            "twitter": ""
+        }, 
+        "model": "ndc.speaker", 
+        "pk": 86
+    }, 
+    {
+        "fields": {
+            "company": 1, 
+            "email": "", 
+            "name": "\uae40\uc9c4\uc6b1", 
+            "twitter": ""
+        }, 
+        "model": "ndc.speaker", 
+        "pk": 87
+    }, 
+    {
+        "fields": {
+            "company": 43, 
+            "email": "", 
+            "name": "\uac15\ub300\uba85", 
+            "twitter": ""
+        }, 
+        "model": "ndc.speaker", 
+        "pk": 88
+    }, 
+    {
+        "fields": {
+            "company": 1, 
+            "email": "", 
+            "name": "\ud558\uc9c0\ud6c8", 
+            "twitter": ""
+        }, 
+        "model": "ndc.speaker", 
+        "pk": 89
+    }, 
+    {
+        "fields": {
+            "company": 44, 
+            "email": "", 
+            "name": "\ud558\uc624\uc988\ucc9c", 
+            "twitter": ""
+        }, 
+        "model": "ndc.speaker", 
+        "pk": 90
+    }, 
+    {
+        "fields": {
+            "company": 45, 
+            "email": "", 
+            "name": "\uc784\ud604\ud638", 
+            "twitter": ""
+        }, 
+        "model": "ndc.speaker", 
+        "pk": 91
+    }, 
+    {
+        "fields": {
+            "company": 1, 
+            "email": "", 
+            "name": "\ubc15\uc77c\ud638", 
+            "twitter": ""
+        }, 
+        "model": "ndc.speaker", 
+        "pk": 92
+    }, 
+    {
+        "fields": {
+            "company": 1, 
+            "email": "", 
+            "name": "\uc591\uc2b9\uba85", 
+            "twitter": ""
+        }, 
+        "model": "ndc.speaker", 
+        "pk": 93
+    }, 
+    {
+        "fields": {
+            "company": 1, 
+            "email": "", 
+            "name": "\uae40\uc774\uc120", 
+            "twitter": ""
+        }, 
+        "model": "ndc.speaker", 
+        "pk": 94
+    }, 
+    {
+        "fields": {
+            "company": 1, 
+            "email": "", 
+            "name": "\uc774\ud64d\uc6b0", 
+            "twitter": ""
+        }, 
+        "model": "ndc.speaker", 
+        "pk": 95
+    }, 
+    {
+        "fields": {
+            "company": 1, 
+            "email": "", 
+            "name": "\uc774\uc6d0\ud6a8", 
+            "twitter": ""
+        }, 
+        "model": "ndc.speaker", 
+        "pk": 96
+    }, 
+    {
+        "fields": {
+            "company": 1, 
+            "email": "", 
+            "name": "\uae40\uc8fc\ubcf5", 
+            "twitter": ""
+        }, 
+        "model": "ndc.speaker", 
+        "pk": 97
+    }, 
+    {
+        "fields": {
+            "company": 40, 
+            "email": "", 
+            "name": "\ucad1 \uc758", 
+            "twitter": ""
+        }, 
+        "model": "ndc.speaker", 
+        "pk": 98
+    }, 
+    {
+        "fields": {
+            "company": 46, 
+            "email": "", 
+            "name": "\uae40\uc724\uc0c1", 
+            "twitter": ""
+        }, 
+        "model": "ndc.speaker", 
+        "pk": 99
+    }, 
+    {
+        "fields": {
+            "company": 1, 
+            "email": "", 
+            "name": "\uc724\uc11d\uc8fc", 
+            "twitter": ""
+        }, 
+        "model": "ndc.speaker", 
+        "pk": 100
+    }, 
+    {
+        "fields": {
+            "company": 8, 
+            "email": "", 
+            "name": "\uc8fc\uacbd\ud638", 
+            "twitter": ""
+        }, 
+        "model": "ndc.speaker", 
+        "pk": 101
+    }, 
+    {
+        "fields": {
+            "company": 1, 
+            "email": "", 
+            "name": "\uc1a1\ud558\uadfc", 
+            "twitter": ""
+        }, 
+        "model": "ndc.speaker", 
+        "pk": 102
+    }, 
+    {
+        "fields": {
+            "company": 1, 
+            "email": "", 
+            "name": "\uae40\uc7ac\uc11d", 
+            "twitter": ""
+        }, 
+        "model": "ndc.speaker", 
+        "pk": 103
+    }, 
+    {
+        "fields": {
+            "company": 40, 
+            "email": "", 
+            "name": "\uc140\ub9ac\ub098", 
+            "twitter": ""
+        }, 
+        "model": "ndc.speaker", 
+        "pk": 104
+    }, 
+    {
+        "fields": {
+            "date": 1, 
+            "desc": "\ube44\uc988\ub2c8\uc2a4 \ud504\ub85c\uc138\uc2a4, \uc815\ub9d0 \ud544\uc694\ud560\uae4c?", 
+            "name": "Great Harmony\ub97c \uc6b8\ub9ac\ub294 \uc601\ud63c\uc758 \ud504\ub85c\uc138\uc2a4", 
+            "room": 1, 
+            "slide_url": "", 
+            "speakers": [
+                1, 
+                2
+            ], 
+            "tags": [
+                3, 
+                7, 
+                12, 
+                13
+            ], 
+            "times": [
+                2
+            ]
+        }, 
+        "model": "ndc.session", 
+        "pk": 1
+    }, 
+    {
+        "fields": {
+            "date": 1, 
+            "desc": "", 
+            "name": "\uac8c\uc784 \uac1c\ubc1c\uc790\ub97c \uc704\ud55c \uc18c\ud504\ud2b8\uc6e8\uc5b4 \ud14c\uc2a4\ud305", 
+            "room": 2, 
+            "slide_url": "", 
+            "speakers": [
+                3
+            ], 
+            "tags": [
+                3, 
+                6, 
+                7, 
+                12, 
+                13
+            ], 
+            "times": [
+                1, 
+                2
+            ]
+        }, 
+        "model": "ndc.session", 
+        "pk": 2
+    }, 
+    {
+        "fields": {
+            "date": 1, 
+            "desc": "\"\uc0bc\uad6d\uc9c0\ub97c\ud488\ub2e4\" \ubaa8\ubc14\uc77c \ud50c\ub7ab\ud3fc \uac1c\ubc1c\uacfc \uc11c\ube44\uc2a4 \uc77c\uc9c0", 
+            "name": "\ucf54\ub07c\ub9ac\ub97c \ub0c9\uc7a5\uace0\uc5d0 \ub123\ub294\ubc95", 
+            "room": 3, 
+            "slide_url": "", 
+            "speakers": [
+                4
+            ], 
+            "tags": [
+                5, 
+                6, 
+                12, 
+                13
+            ], 
+            "times": [
+                1, 
+                2
+            ]
+        }, 
+        "model": "ndc.session", 
+        "pk": 3
+    }, 
+    {
+        "fields": {
+            "date": 1, 
+            "desc": "", 
+            "name": "HTML5\ub97c \uc774\uc6a9\ud55c \uc6f9\uac8c\uc784 \uac1c\ubc1c\uacfc \uc6f9\uac8c\uc784 \ubcf4\uc548\uc704\ud611", 
+            "room": 4, 
+            "slide_url": "", 
+            "speakers": [
+                5
+            ], 
+            "tags": [
+                5, 
+                6, 
+                12, 
+                13
+            ], 
+            "times": [
+                1, 
+                2
+            ]
+        }, 
+        "model": "ndc.session", 
+        "pk": 4
+    }, 
+    {
+        "fields": {
+            "date": 1, 
+            "desc": "", 
+            "name": "Typescript, javascript\uc758 \uc548\uc815\uc131\uc744 \ub192\uc774\uae30 \uc704\ud55c \uc2dc\ub3c4", 
+            "room": 5, 
+            "slide_url": "", 
+            "speakers": [
+                6
+            ], 
+            "tags": [
+                6, 
+                12, 
+                13
+            ], 
+            "times": [
+                1, 
+                2
+            ]
+        }, 
+        "model": "ndc.session", 
+        "pk": 5
+    }, 
+    {
+        "fields": {
+            "date": 1, 
+            "desc": "\ud55c\uad6d \uac8c\uc784\uc0ac 42\ub144 \ud55c\uad6d \uc628\ub77c\uc778 \uac8c\uc784\uc0ac 20\ub144", 
+            "name": "\ud55c\uad6d \uac8c\uc784\uc758 \uc5ed\uc0ac", 
+            "room": 7, 
+            "slide_url": "", 
+            "speakers": [
+                7
+            ], 
+            "tags": [
+                7, 
+                12, 
+                13
+            ], 
+            "times": [
+                1, 
+                2
+            ]
+        }, 
+        "model": "ndc.session", 
+        "pk": 6
+    }, 
+    {
+        "fields": {
+            "date": 1, 
+            "desc": "\ube45\ub370\uc774\ud130\uc758 \uc815\uae00\uc744 \ud5e4\uccd0\ub098\uac00\uae30", 
+            "name": "\ubaa8\ubc14\uc77c \uac8c\uc784\uacfc HTTP\uc758 \ud6a8\uc728\uc801 \ub791\ub370\ubdf0 \uc804\ub7b5", 
+            "room": 1, 
+            "slide_url": "", 
+            "speakers": [
+                8
+            ], 
+            "tags": [
+                5, 
+                6, 
+                7, 
+                12, 
+                13
+            ], 
+            "times": [
+                3, 
+                4
+            ]
+        }, 
+        "model": "ndc.session", 
+        "pk": 7
+    }, 
+    {
+        "fields": {
+            "date": 1, 
+            "desc": "", 
+            "name": "\ubb34\ub8cc \ucda9\uc804\uc18c\uc758 \ud798: Tapjoy\ub97c \ud1b5\ud55c \uc7a5\uae30\uc801\uc778 \uc218\uc775\ud654 \uc804\ub7b5", 
+            "room": 2, 
+            "slide_url": "", 
+            "speakers": [
+                9
+            ], 
+            "tags": [
+                3, 
+                5, 
+                12, 
+                13
+            ], 
+            "times": [
+                3, 
+                4
+            ]
+        }, 
+        "model": "ndc.session", 
+        "pk": 8
+    }, 
+    {
+        "fields": {
+            "date": 1, 
+            "desc": "\uac24\ub7ed\uc2dcS1\uc5d0\uc11c \ud480\ud504\ub808\uc784 \ud37c\uc990\uc8fc\uc8fc \ub9cc\ub4e4\uae30", 
+            "name": "Unity3D\ub85c 2D \uac8c\uc784 \ucd5c\uc801\ud654 \uc774\uc57c\uae30", 
+            "room": 3, 
+            "slide_url": "", 
+            "speakers": [
+                10
+            ], 
+            "tags": [
+                5, 
+                6, 
+                12, 
+                13
+            ], 
+            "times": [
+                3, 
+                4
+            ]
+        }, 
+        "model": "ndc.session", 
+        "pk": 9
+    }, 
+    {
+        "fields": {
+            "date": 1, 
+            "desc": "\ud574\uc678 \uc9c4\ucd9c \ub77c\uc774\ube0c \ud504\ub85c\uc81d\ud2b8\uc758 \uac1c\ubc1c \uad00\ub9ac", 
+            "name": "70\uba85\uc774 \ucee4\ubc0b\ud558\ub294 \ub77c\uc774\ube0c \uac1c\ubc1c\ud558\uae30", 
+            "room": 4, 
+            "slide_url": "", 
+            "speakers": [
+                11
+            ], 
+            "tags": [
+                6, 
+                12, 
+                13
+            ], 
+            "times": [
+                3, 
+                4
+            ]
+        }, 
+        "model": "ndc.session", 
+        "pk": 10
+    }, 
+    {
+        "fields": {
+            "date": 1, 
+            "desc": "", 
+            "name": "Bugs? Bugs!", 
+            "room": 5, 
+            "slide_url": "", 
+            "speakers": [
+                12
+            ], 
+            "tags": [
+                6, 
+                14
+            ], 
+            "times": [
+                3, 
+                4
+            ]
+        }, 
+        "model": "ndc.session", 
+        "pk": 11
+    }, 
+    {
+        "fields": {
+            "date": 1, 
+            "desc": "", 
+            "name": "\uac8c\uc784\ud68c\uc0ac\uc5d0\uc11c \uc608\uc220\ud558\uae30", 
+            "room": 6, 
+            "slide_url": "", 
+            "speakers": [
+                13
+            ], 
+            "tags": [
+                3, 
+                12, 
+                13
+            ], 
+            "times": [
+                3, 
+                4
+            ]
+        }, 
+        "model": "ndc.session", 
+        "pk": 12
+    }, 
+    {
+        "fields": {
+            "date": 1, 
+            "desc": "", 
+            "name": "\ucd08\uc2ec\uc790\ub97c \ubc30\ub824\ud558\ub294 FPS \ub808\ubca8 \ub514\uc790\uc778\ud558\uae30", 
+            "room": 7, 
+            "slide_url": "", 
+            "speakers": [
+                14
+            ], 
+            "tags": [
+                1, 
+                12, 
+                13
+            ], 
+            "times": [
+                3, 
+                4
+            ]
+        }, 
+        "model": "ndc.session", 
+        "pk": 13
+    }, 
+    {
+        "fields": {
+            "date": 1, 
+            "desc": "", 
+            "name": "\ubbf8\uc6b4\uc624\ub9ac \uc0c8\ub07c\uc640 \uc774\ubb34\uae30\uc758 \uc2dc\uac01\uc5d0\uc11c \ubcf8 Art Game & Game Art", 
+            "room": 1, 
+            "slide_url": "", 
+            "speakers": [
+                15
+            ], 
+            "tags": [
+                1, 
+                12, 
+                13
+            ], 
+            "times": [
+                7
+            ]
+        }, 
+        "model": "ndc.session", 
+        "pk": 14
+    }, 
+    {
+        "fields": {
+            "date": 1, 
+            "desc": "", 
+            "name": "\uac8c\uc784\ud68c\uc0ac\uc5d0\uc11c \ubaa8\ubc14\uc77c\uc571 \ub9cc\ub4e4\uae30", 
+            "room": 2, 
+            "slide_url": "", 
+            "speakers": [
+                16
+            ], 
+            "tags": [
+                1, 
+                3, 
+                5, 
+                7, 
+                12, 
+                13
+            ], 
+            "times": [
+                7
+            ]
+        }, 
+        "model": "ndc.session", 
+        "pk": 15
+    }, 
+    {
+        "fields": {
+            "date": 1, 
+            "desc": "", 
+            "name": "\uad6c\uc138\ub300 \uc5d4\uc9c4, \uc2e0\ub370\ub810\ub77c \ub9cc\ub4e4\uae30", 
+            "room": 3, 
+            "slide_url": "", 
+            "speakers": [
+                17, 
+                18
+            ], 
+            "tags": [
+                6, 
+                12, 
+                13
+            ], 
+            "times": [
+                7
+            ]
+        }, 
+        "model": "ndc.session", 
+        "pk": 16
+    }, 
+    {
+        "fields": {
+            "date": 1, 
+            "desc": "\uc2dc\ud2b8\ud15c \uad6c\ud604 \ubc0f \ucd5c\uc801\ud654 \uc0ac\ub840 \uc18c\uac1c", 
+            "name": "\uc170\uc774\ub354 \ub9ac\uc18c\uc2a4 \ube4c\ub4dc \uc790\ub3d9\ud654 \ud560 \uc218 \uc5c6\ub098\uc694?", 
+            "room": 4, 
+            "slide_url": "", 
+            "speakers": [
+                19
+            ], 
+            "tags": [
+                6, 
+                12, 
+                13
+            ], 
+            "times": [
+                7
+            ]
+        }, 
+        "model": "ndc.session", 
+        "pk": 17
+    }, 
+    {
+        "fields": {
+            "date": 1, 
+            "desc": "\uc9c0\uae08\ub3c4 \ucda9\ubd84\ud788 \ubc14\uc058\ub2e4!", 
+            "name": "Mobile QA \uc77c\uac70\ub9ac \ub298\ub9ac\uae30", 
+            "room": 5, 
+            "slide_url": "", 
+            "speakers": [
+                20
+            ], 
+            "tags": [
+                3, 
+                5, 
+                6, 
+                7, 
+                12, 
+                13
+            ], 
+            "times": [
+                7
+            ]
+        }, 
+        "model": "ndc.session", 
+        "pk": 18
+    }, 
+    {
+        "fields": {
+            "date": 1, 
+            "desc": "", 
+            "name": "NCD13 KEYNOTE", 
+            "room": 6, 
+            "slide_url": "", 
+            "speakers": [
+                21
+            ], 
+            "tags": [
+                8, 
+                12, 
+                13
+            ], 
+            "times": [
+                6
+            ]
+        }, 
+        "model": "ndc.session", 
+        "pk": 19
+    }, 
+    {
+        "fields": {
+            "date": 1, 
+            "desc": "\uc131\uacf5\ud558\ub294 \ub77c\uc774\ube0c \uc870\uc9c1\uc758 \uacf5\ud1b5\uc810", 
+            "name": "NDC13 KEYNOTE", 
+            "room": 6, 
+            "slide_url": "", 
+            "speakers": [
+                22
+            ], 
+            "tags": [
+                8, 
+                12, 
+                13
+            ], 
+            "times": [
+                6
+            ]
+        }, 
+        "model": "ndc.session", 
+        "pk": 20
+    }, 
+    {
+        "fields": {
+            "date": 1, 
+            "desc": "", 
+            "name": "\ud0a4\ub178\ud2b8 \ub3d9\uc601\uc0c1 \uc911\uacc4", 
+            "room": 7, 
+            "slide_url": "", 
+            "speakers": [], 
+            "tags": [
+                8, 
+                12, 
+                13
+            ], 
+            "times": [
+                6, 
+                7
+            ]
+        }, 
+        "model": "ndc.session", 
+        "pk": 21
+    }, 
+    {
+        "fields": {
+            "date": 1, 
+            "desc": "", 
+            "name": "<Mobile App> \uc801\uc740 \ube44\uc6a9\uc73c\ub85c \uba40\ud2f0\ud50c\ub7ab\ud3fc App \ub9cc\ub4e4\uae30 with Xamarin", 
+            "room": 1, 
+            "slide_url": "", 
+            "speakers": [
+                23
+            ], 
+            "tags": [
+                5, 
+                6, 
+                12, 
+                13
+            ], 
+            "times": [
+                8, 
+                9
+            ]
+        }, 
+        "model": "ndc.session", 
+        "pk": 22
+    }, 
+    {
+        "fields": {
+            "date": 1, 
+            "desc": "", 
+            "name": "\ub9c8\ube44\ub178\uae30 \uc601\uc6c5\uc804\uc758 \uad6c\uc138\ub300 \uc5d4\uc9c4\uc73c\ub85c \ucc28\uc138\ub300 \ube44\uc8fc\uc5bc \uac8c\uc784 \ub9cc\ub4e4\uae30", 
+            "room": 2, 
+            "slide_url": "", 
+            "speakers": [
+                24
+            ], 
+            "tags": [
+                2, 
+                6, 
+                7, 
+                12, 
+                13
+            ], 
+            "times": [
+                8, 
+                9
+            ]
+        }, 
+        "model": "ndc.session", 
+        "pk": 23
+    }, 
+    {
+        "fields": {
+            "date": 1, 
+            "desc": "M2\ud504\ub85c\uc81d\ud2b8\uc758 AI\ucf54\ub4dc \ub9ac\ub274\uc5bc \uc0ac\ub840", 
+            "name": "C++\uc5d0\uc11c \uadf9\ud55c\uc758 \uc0dd\uc0b0\uc131 \ubf51\uc544\ub0b4\uae30", 
+            "room": 3, 
+            "slide_url": "", 
+            "speakers": [
+                25
+            ], 
+            "tags": [
+                6, 
+                12, 
+                13
+            ], 
+            "times": [
+                8, 
+                9
+            ]
+        }, 
+        "model": "ndc.session", 
+        "pk": 24
+    }, 
+    {
+        "fields": {
+            "date": 1, 
+            "desc": "\uc628\ub77c\uc778\uac8c\uc784 \ud504\ub85c\uadf8\ub798\uba38\uc758 \uc785\uc7a5\uc5d0\uc11c", 
+            "name": "<\uc544\uc774\ub7ec\ube0c\ucee4\ud53c> \uac1c\ubc1c \ud3ec\uc2a4\ud2b8\ubaa8\ud15c", 
+            "room": 4, 
+            "slide_url": "", 
+            "speakers": [
+                26
+            ], 
+            "tags": [
+                5, 
+                6, 
+                12, 
+                13
+            ], 
+            "times": [
+                8, 
+                9
+            ]
+        }, 
+        "model": "ndc.session", 
+        "pk": 25
+    }, 
+    {
+        "fields": {
+            "date": 1, 
+            "desc": "", 
+            "name": "\ub125\uc2a8 \uc544\uba54\ub9ac\uce74 DDoS \ub300\uc751 \ud788\uc2a4\ud1a0\ub9ac", 
+            "room": 5, 
+            "slide_url": "", 
+            "speakers": [
+                27
+            ], 
+            "tags": [
+                3, 
+                6, 
+                12, 
+                13
+            ], 
+            "times": [
+                8, 
+                9
+            ]
+        }, 
+        "model": "ndc.session", 
+        "pk": 26
+    }, 
+    {
+        "fields": {
+            "date": 1, 
+            "desc": "'\ud14c\uc77c\uc988\uc704\ubc84 ep3' \ud14c\ub9c8\uace1 \uc791\uc5c5 \uc0ac\ub840\ub97c \ud1b5\ud558\uc5ec", 
+            "name": "\uac8c\uc784 \uc74c\uc545 \uc5b4\ub808\uc778\uc9c0\uc758 \ubbf8\ud559", 
+            "room": 6, 
+            "slide_url": "", 
+            "speakers": [
+                28, 
+                29
+            ], 
+            "tags": [
+                2, 
+                7, 
+                12, 
+                13
+            ], 
+            "times": [
+                8, 
+                9
+            ]
+        }, 
+        "model": "ndc.session", 
+        "pk": 27
+    }, 
+    {
+        "fields": {
+            "date": 1, 
+            "desc": "\uac8c\uc784\uac1c\ubc1c \uc0c1\uc704\uc9c1\ucc45\uc758 \uc774\ud574", 
+            "name": "\uac8c\uc784 \ub514\ub809\ud130\uac00 \ubb50\ud558\ub294\uac74\uac00\uc694?", 
+            "room": 7, 
+            "slide_url": "", 
+            "speakers": [
+                30
+            ], 
+            "tags": [
+                1, 
+                3, 
+                7, 
+                12, 
+                13
+            ], 
+            "times": [
+                8, 
+                9
+            ]
+        }, 
+        "model": "ndc.session", 
+        "pk": 28
+    }, 
+    {
+        "fields": {
+            "date": 1, 
+            "desc": "", 
+            "name": "HTML5\ub85c \ub9cc\ub4dc\ub294 \uc9c4\uc9dc \uac00\ub2a5\uc131\uc788\ub294 \uac8c\uc784\uc5d4\uc9c4 \uc81c\uc791 \ube44\ubc95", 
+            "room": 1, 
+            "slide_url": "", 
+            "speakers": [
+                31
+            ], 
+            "tags": [
+                2, 
+                5, 
+                6, 
+                7, 
+                12, 
+                13
+            ], 
+            "times": [
+                10
+            ]
+        }, 
+        "model": "ndc.session", 
+        "pk": 29
+    }, 
+    {
+        "fields": {
+            "date": 1, 
+            "desc": "", 
+            "name": "\uce74\uc6b4\ud130\uc2a4\ud2b8\ub77c\uc774\ud06c \uc628\ub77c\uc7782 \uae30\uc220\uc801 \ub3c4\uc804 \ud3ec\uc2a4\ud2b8\ubaa8\ud15c", 
+            "room": 2, 
+            "slide_url": "", 
+            "speakers": [
+                32
+            ], 
+            "tags": [
+                6, 
+                7, 
+                12, 
+                13
+            ], 
+            "times": [
+                10
+            ]
+        }, 
+        "model": "ndc.session", 
+        "pk": 30
+    }, 
+    {
+        "fields": {
+            "date": 1, 
+            "desc": "", 
+            "name": "M2 \ud074\ub77c\uc774\uc5b8\ud2b8 \uc2a4\ub808\ub529 \uc544\ud0a4\ud14d\uccd0", 
+            "room": 3, 
+            "slide_url": "", 
+            "speakers": [
+                33
+            ], 
+            "tags": [
+                6, 
+                12, 
+                13
+            ], 
+            "times": [
+                10
+            ]
+        }, 
+        "model": "ndc.session", 
+        "pk": 31
+    }, 
+    {
+        "fields": {
+            "date": 1, 
+            "desc": "\ubcf5\uc140 \ub808\uc774 \ud2b8\ub808\uc774\uc2f1", 
+            "name": "\uad11\ud0dd \uc7ac\uc9c8 \ud45c\ud604", 
+            "room": 4, 
+            "slide_url": "", 
+            "speakers": [
+                34
+            ], 
+            "tags": [
+                2, 
+                6, 
+                12, 
+                13
+            ], 
+            "times": [
+                10
+            ]
+        }, 
+        "model": "ndc.session", 
+        "pk": 32
+    }, 
+    {
+        "fields": {
+            "date": 1, 
+            "desc": "", 
+            "name": "\ub7ec\uc2dc\uc544 MMO \uac8c\uc784\uc2dc\uc7a5, \uc81c\uac00 \ud55c\ubc88 \uc54c\uc544\ubcf4\uaca0\uc2b5\ub2c8\ub2e4.", 
+            "room": 5, 
+            "slide_url": "", 
+            "speakers": [
+                35
+            ], 
+            "tags": [
+                3, 
+                12, 
+                13
+            ], 
+            "times": [
+                10
+            ]
+        }, 
+        "model": "ndc.session", 
+        "pk": 33
+    }, 
+    {
+        "fields": {
+            "date": 1, 
+            "desc": "", 
+            "name": "\uc601\ud654\uc801 \uacbd\ud5d8\uc744 \uc8fc\ub294 \uac8c\uc784 \uc2a4\ud1a0\ub9ac\ud154\ub9c1 \uc804\ub7b5", 
+            "room": 6, 
+            "slide_url": "", 
+            "speakers": [
+                36
+            ], 
+            "tags": [
+                1, 
+                12, 
+                13
+            ], 
+            "times": [
+                10
+            ]
+        }, 
+        "model": "ndc.session", 
+        "pk": 34
+    }, 
+    {
+        "fields": {
+            "date": 1, 
+            "desc": "", 
+            "name": "Automatic software occlusion culling for massive streaming worlds", 
+            "room": 7, 
+            "slide_url": "", 
+            "speakers": [
+                37
+            ], 
+            "tags": [
+                2, 
+                6, 
+                9, 
+                12, 
+                13
+            ], 
+            "times": [
+                10
+            ]
+        }, 
+        "model": "ndc.session", 
+        "pk": 35
+    }, 
+    {
+        "fields": {
+            "date": 1, 
+            "desc": "\uac8c\uc784\uc5d0 \ub530\ub978 \ub1cc\ubc18\uc751 \uc0ac\ub840", 
+            "name": "\uac8c\uc784\uacfc \ub1cc\uacfc\ud559", 
+            "room": 1, 
+            "slide_url": "", 
+            "speakers": [
+                38
+            ], 
+            "tags": [
+                1, 
+                2, 
+                3, 
+                12, 
+                13
+            ], 
+            "times": [
+                11
+            ]
+        }, 
+        "model": "ndc.session", 
+        "pk": 36
+    }, 
+    {
+        "fields": {
+            "date": 1, 
+            "desc": "\"Shadowmap+PSSM\" \uac1c\ubc1c \uc911 \uacaa\uc740 \ubb38\uc81c\uc810\uacfc \ud574\uacb0 \uacfc\uc815", 
+            "name": "\uce74\uc6b4\ud130\uc2a4\ud2b8\ub77c\uc774\ud06c \uc628\ub77c\uc7782 \uc138\uacc4\uc758 \ub3d9\uc801 \uadf8\ub9bc\uc790", 
+            "room": 2, 
+            "slide_url": "", 
+            "speakers": [
+                39
+            ], 
+            "tags": [
+                6, 
+                12, 
+                13
+            ], 
+            "times": [
+                11
+            ]
+        }, 
+        "model": "ndc.session", 
+        "pk": 37
+    }, 
+    {
+        "fields": {
+            "date": 1, 
+            "desc": "", 
+            "name": "\ud558\ub4dc\ucf54\uc5b4\ud55c CPU \uc774\uc57c\uae30: \ucd5c\uc2e0 CPU \uad6c\uc870\uc640 \ucd5c\uc801\ud654\ub41c \ucf54\ub4dc \uc791\uc131", 
+            "room": 3, 
+            "slide_url": "", 
+            "speakers": [
+                40
+            ], 
+            "tags": [
+                6, 
+                12, 
+                13
+            ], 
+            "times": [
+                11
+            ]
+        }, 
+        "model": "ndc.session", 
+        "pk": 38
+    }, 
+    {
+        "fields": {
+            "date": 1, 
+            "desc": "", 
+            "name": "\uac70\uc758 \ubaa8\ub4e0 \ubb34\uae30\uc758 \uc5ed\uc0ac <\uc11c\uc591 \ud310\ud0c0\uc9c0\ud3b8>", 
+            "room": 4, 
+            "slide_url": "", 
+            "speakers": [
+                41, 
+                42
+            ], 
+            "tags": [
+                1, 
+                12, 
+                13
+            ], 
+            "times": [
+                11
+            ]
+        }, 
+        "model": "ndc.session", 
+        "pk": 39
+    }, 
+    {
+        "fields": {
+            "date": 1, 
+            "desc": "", 
+            "name": "WebGL + node.js + CUDA\ub97c \uc774\uc6a9\ud55c \uc11c\ubc84\uc0ac\uc774\ub4dc \ub80c\ub354\ub9c1 (\ud504\ub85c\ud1a0\ud0c0\uc785)", 
+            "room": 5, 
+            "slide_url": "", 
+            "speakers": [
+                43
+            ], 
+            "tags": [
+                6, 
+                12, 
+                13
+            ], 
+            "times": [
+                11
+            ]
+        }, 
+        "model": "ndc.session", 
+        "pk": 40
+    }, 
+    {
+        "fields": {
+            "date": 1, 
+            "desc": "\uac8c\uc784 \uae30\ud68d \uc2e4\ubb34\uc5d0 \ub3c4\uc6c0\uc774 \ub418\ub294 \uacbd\ud5d8 \uc313\uae30", 
+            "name": "\uac8c\uc784 \uae30\ud68d\uc790 \ud14c\ud06c\ud2b8\ub9ac", 
+            "room": 6, 
+            "slide_url": "", 
+            "speakers": [
+                44
+            ], 
+            "tags": [
+                1, 
+                12, 
+                13
+            ], 
+            "times": [
+                11
+            ]
+        }, 
+        "model": "ndc.session", 
+        "pk": 41
+    }, 
+    {
+        "fields": {
+            "date": 1, 
+            "desc": "", 
+            "name": "Prediction Model\uc744 \ud1b5\ud55c AI\uc640 \uc560\ub2c8\uba54\uc774\uc158\uc758 \ud1b5\ud569", 
+            "room": 7, 
+            "slide_url": "", 
+            "speakers": [
+                45
+            ], 
+            "tags": [
+                1, 
+                2, 
+                6, 
+                9, 
+                12, 
+                13
+            ], 
+            "times": [
+                11
+            ]
+        }, 
+        "model": "ndc.session", 
+        "pk": 42
+    }, 
+    {
+        "fields": {
+            "date": 1, 
+            "desc": "\ud504\ub85c\uc81d\ud2b8 \uc0ac\ubb34\ub77c\uc774\ub85c \uc0b4\ud3b4\ubcf4\ub294 \uc11c\ubc84\uc804\ub7b5", 
+            "name": "MMO\uc640 SNG\uc758 \ucee8\ubc84\uc804\uc2a4", 
+            "room": 1, 
+            "slide_url": "", 
+            "speakers": [
+                46
+            ], 
+            "tags": [
+                1, 
+                6, 
+                12, 
+                13
+            ], 
+            "times": [
+                12, 
+                13
+            ]
+        }, 
+        "model": "ndc.session", 
+        "pk": 43
+    }, 
+    {
+        "fields": {
+            "date": 1, 
+            "desc": "", 
+            "name": "\uc544\uc774\ud3f0 \uac8c\uc784 <\ud314\ub77c\ub3c5> \uac1c\ubc1c\uc5d0 \uc801\uc6a9\ud55c \ubc84\uadf8 \ud2b8\ub798\ud0b9 \uc2dc\uc2a4\ud15c \ub9e8\ud2f0\uc2a4(Mantis)\ub97c \uc801\uc6a9\ud574\ubcf4\uc790!!", 
+            "room": 2, 
+            "slide_url": "", 
+            "speakers": [
+                47
+            ], 
+            "tags": [
+                3, 
+                5, 
+                6, 
+                7, 
+                12, 
+                13
+            ], 
+            "times": [
+                12, 
+                13
+            ]
+        }, 
+        "model": "ndc.session", 
+        "pk": 44
+    }, 
+    {
+        "fields": {
+            "date": 1, 
+            "desc": "", 
+            "name": "\uac8c\uc784 \ud504\ub85c\uc81d\ud2b8\uc5d0\uc11c GPGPU\uc758 \ud65c\uc6a9", 
+            "room": 3, 
+            "slide_url": "", 
+            "speakers": [
+                48
+            ], 
+            "tags": [
+                6, 
+                12, 
+                13
+            ], 
+            "times": [
+                12, 
+                13
+            ]
+        }, 
+        "model": "ndc.session", 
+        "pk": 45
+    }, 
+    {
+        "fields": {
+            "date": 1, 
+            "desc": "", 
+            "name": "UX, \uc560\uc790\uc77c\ud558\uace0 \uc2f6\uc5b4\uc694", 
+            "room": 4, 
+            "slide_url": "", 
+            "speakers": [
+                49
+            ], 
+            "tags": [
+                7
+            ], 
+            "times": [
+                12, 
+                13
+            ]
+        }, 
+        "model": "ndc.session", 
+        "pk": 46
+    }, 
+    {
+        "fields": {
+            "date": 1, 
+            "desc": "", 
+            "name": "\ud3ec\uc2a4\ud2b8\ubaa8\ud15c: \ud37c\uc990\uc8fc\uc8fc \uac1c\ubc1c\uc744 \ud1b5\ud574 \uc5bb\uc740 5\uac00\uc9c0 \uad50\ud6c8", 
+            "room": 5, 
+            "slide_url": "", 
+            "speakers": [
+                50
+            ], 
+            "tags": [
+                1, 
+                5, 
+                7, 
+                12, 
+                13
+            ], 
+            "times": [
+                12
+            ]
+        }, 
+        "model": "ndc.session", 
+        "pk": 47
+    }, 
+    {
+        "fields": {
+            "date": 1, 
+            "desc": "\uc11c\ub85c \ub2e4\ub978 \ub450\uba85\uc758 \uc804\ud600 \ub2e4\ub978 \uac8c\uc784 \uae30\ud68d\uc790 \ucee4\ub9ac\uc5b4 \uc774\uc57c\uae30 (1\ubd80)", 
+            "name": "\uac8c\uc784\uac8c\ud68d\uc790\uac00 \uc774\ub7f4 \ub9ac \uc5c6\uc5b4", 
+            "room": 6, 
+            "slide_url": "", 
+            "speakers": [
+                51
+            ], 
+            "tags": [
+                1, 
+                3, 
+                14
+            ], 
+            "times": [
+                12
+            ]
+        }, 
+        "model": "ndc.session", 
+        "pk": 48
+    }, 
+    {
+        "fields": {
+            "date": 1, 
+            "desc": "\uc11c\ub85c \ub2e4\ub978 \ub450\uba85\uc758 \uc804\ud600 \ub2e4\ub978 \uac8c\uc784 \uae30\ud68d\uc790 \ucee4\ub9ac\uc5b4 \uc774\uc57c\uae30 (2\ubd80)", 
+            "name": "\uac8c\uc784\uae30\ud68d\uc790\uac00 \uc774\ub7f4 \ub9ac \uc5c6\uc5b4", 
+            "room": 6, 
+            "slide_url": "", 
+            "speakers": [
+                52
+            ], 
+            "tags": [
+                1, 
+                3
+            ], 
+            "times": [
+                13
+            ]
+        }, 
+        "model": "ndc.session", 
+        "pk": 49
+    }, 
+    {
+        "fields": {
+            "date": 1, 
+            "desc": "", 
+            "name": "Building a modern game lighting pipeline", 
+            "room": 7, 
+            "slide_url": "", 
+            "speakers": [
+                53
+            ], 
+            "tags": [
+                2, 
+                6, 
+                9, 
+                12, 
+                13
+            ], 
+            "times": [
+                12, 
+                13
+            ]
+        }, 
+        "model": "ndc.session", 
+        "pk": 50
+    }, 
+    {
+        "fields": {
+            "date": 2, 
+            "desc": "", 
+            "name": "\ub77c\uc774\ube0c \ud504\ub85c\uc81d\ud2b8\uc5d0\uc11c C++\ub85c \ud14c\uc2a4\ud2b8\uc8fc\ub3c4 \uac1c\ubc1c\ud558\uae30, \uad6c\uccb4\uc801\uc778 \ud589\ub3d9 \uc694\ub839\uacfc \uc2dc\ud589 \ucc29\uc624 \uacf5\uc720", 
+            "room": 1, 
+            "slide_url": "", 
+            "speakers": [
+                54
+            ], 
+            "tags": [
+                6, 
+                12, 
+                13
+            ], 
+            "times": [
+                1, 
+                2
+            ]
+        }, 
+        "model": "ndc.session", 
+        "pk": 51
+    }, 
+    {
+        "fields": {
+            "date": 2, 
+            "desc": "\ubaa8\ubc14\uc77c\uc2dc\ub300\uac00 \uc6d0\ud558\ub294 QA\uc758 \ubcc0\ud654", 
+            "name": "\uac8c\uc784QA\ub3c4 \ubcc0\ud574\uc57c \uc0b4\uc544\ub0a8\ub294\ub2e4", 
+            "room": 2, 
+            "slide_url": "", 
+            "speakers": [
+                55, 
+                56
+            ], 
+            "tags": [
+                3
+            ], 
+            "times": [
+                1
+            ]
+        }, 
+        "model": "ndc.session", 
+        "pk": 52
+    }, 
+    {
+        "fields": {
+            "date": 2, 
+            "desc": "Vagrant\ub85c \uc11c\ubc84\uc640 \ub3d9\uc77c\ud55c \uac1c\ubc1c\ud658\uacbd \uafb8\ubbf8\uae30", 
+            "name": "\ub0b4 \ucef4\uc5d0\uc120 \uc798\ub418\ub358\ub370?", 
+            "room": 2, 
+            "slide_url": "", 
+            "speakers": [
+                57
+            ], 
+            "tags": [
+                6, 
+                12, 
+                13
+            ], 
+            "times": [
+                2
+            ]
+        }, 
+        "model": "ndc.session", 
+        "pk": 53
+    }, 
+    {
+        "fields": {
+            "date": 2, 
+            "desc": "", 
+            "name": "\uac8c\uc784 \uc11c\ubc84 \ud504\ub808\uc784\uc6cc\ud06c\uc758 \uc790\uaca9", 
+            "room": 3, 
+            "slide_url": "", 
+            "speakers": [
+                58
+            ], 
+            "tags": [
+                6, 
+                12, 
+                13
+            ], 
+            "times": [
+                1, 
+                2
+            ]
+        }, 
+        "model": "ndc.session", 
+        "pk": 54
+    }, 
+    {
+        "fields": {
+            "date": 2, 
+            "desc": "", 
+            "name": "SQL Server \uac1c\ubc1c \uc18d\ub3c4 \ud5a5\uc0c1 \ud301", 
+            "room": 4, 
+            "slide_url": "", 
+            "speakers": [
+                59
+            ], 
+            "tags": [
+                6, 
+                12, 
+                13
+            ], 
+            "times": [
+                1, 
+                2
+            ]
+        }, 
+        "model": "ndc.session", 
+        "pk": 55
+    }, 
+    {
+        "fields": {
+            "date": 2, 
+            "desc": "", 
+            "name": "HTML5 \uc774\uc81c\ub294 \ud63c\uc790\uc11c\ub3c4 \uac8c\uc784\uc744 \ub9cc\ub4e4\uace0 \ucd9c\uc2dc\ud558\ub294 \uc2dc\ub300", 
+            "room": 5, 
+            "slide_url": "", 
+            "speakers": [
+                60
+            ], 
+            "tags": [
+                1, 
+                2, 
+                3, 
+                5, 
+                6, 
+                12, 
+                13
+            ], 
+            "times": [
+                1, 
+                2
+            ]
+        }, 
+        "model": "ndc.session", 
+        "pk": 56
+    }, 
+    {
+        "fields": {
+            "date": 2, 
+            "desc": "\uc800\uc791\uad8c \uc2ec\uce35\ud0d0\uad6c \uc0ac\ub840\ub97c \uc911\uc2ec\uc73c\ub85c", 
+            "name": "\ud45c\uc808\uacfc \ucc3d\uc791\uc758 \uacbd\uacc4\uc5d0 \uc11c\ub2e4.", 
+            "room": 6, 
+            "slide_url": "", 
+            "speakers": [
+                61
+            ], 
+            "tags": [
+                1, 
+                3
+            ], 
+            "times": [
+                1, 
+                2
+            ]
+        }, 
+        "model": "ndc.session", 
+        "pk": 57
+    }, 
+    {
+        "fields": {
+            "date": 2, 
+            "desc": "", 
+            "name": "\ud0a4\uc6cc\ub4dc\ub85c \ud480\uc5b4\uac00\ub294 \ub9c8\uc601\uc804 UI\ub514\uc790\uc778\uacfc \uc2a4\ucf00\uc77c\ud3fc \uc801\uc6a9 \uc0ac\ub840", 
+            "room": 7, 
+            "slide_url": "", 
+            "speakers": [
+                62
+            ], 
+            "tags": [
+                2, 
+                12, 
+                13
+            ], 
+            "times": [
+                1, 
+                2
+            ]
+        }, 
+        "model": "ndc.session", 
+        "pk": 58
+    }, 
+    {
+        "fields": {
+            "date": 2, 
+            "desc": "", 
+            "name": "\uc5d4\uc528\uc18c\ud504\ud2b8\uc758 \uc2dc\uc2a4\ud15c \uc544\ud0a4\ud14d\ucc98 \uc18c\uac1c\ud654 NC Cloud\ub97c \ud1b5\ud55c \uac00\uc0c1\ud654 \uc804\ub7b5", 
+            "room": 1, 
+            "slide_url": "", 
+            "speakers": [
+                63
+            ], 
+            "tags": [
+                6, 
+                12, 
+                13
+            ], 
+            "times": [
+                3
+            ]
+        }, 
+        "model": "ndc.session", 
+        "pk": 59
+    }, 
+    {
+        "fields": {
+            "date": 2, 
+            "desc": "\ud574\uc678 \ubc84\uc804 \uad00\ub9ac \uc804\ub7b5\uacfc \ud6a8\uc728\uc801\uc778 \ucee4\ubba4\ub2c8\ucf00\uc774\uc158", 
+            "name": "\uc720\uc5f0\ud55c \ud574\uc678 \uc11c\ube44\uc2a4\ud558\uae30", 
+            "room": 1, 
+            "slide_url": "", 
+            "speakers": [
+                64
+            ], 
+            "tags": [
+                6, 
+                7, 
+                12, 
+                13
+            ], 
+            "times": [
+                4
+            ]
+        }, 
+        "model": "ndc.session", 
+        "pk": 60
+    }, 
+    {
+        "fields": {
+            "date": 2, 
+            "desc": "\uc5d0\ubc84\ud50c\ub798\ub2db \ub9cc\ub4e4\ub358 \uc774\uc57c\uae30", 
+            "name": "<\uc5d0\ubc84\ud50c\ub798\ub2db> \ub77c\uc774\ube0c \ud3ec\uc2a4\ud2b8\ubaa8\ud15c", 
+            "room": 2, 
+            "slide_url": "", 
+            "speakers": [
+                65
+            ], 
+            "tags": [
+                1
+            ], 
+            "times": [
+                3, 
+                4
+            ]
+        }, 
+        "model": "ndc.session", 
+        "pk": 61
+    }, 
+    {
+        "fields": {
+            "date": 2, 
+            "desc": "", 
+            "name": "\uc628\ub77c\uc778 FPS\ub294 MMORPG\ub791 \ub2e4\ub974\uc9c0 \ub9d0\uc785\ub2c8\ub2e4!!", 
+            "room": 3, 
+            "slide_url": "", 
+            "speakers": [
+                66, 
+                67
+            ], 
+            "tags": [
+                1
+            ], 
+            "times": [
+                3, 
+                4
+            ]
+        }, 
+        "model": "ndc.session", 
+        "pk": 62
+    }, 
+    {
+        "fields": {
+            "date": 2, 
+            "desc": "", 
+            "name": "\uac8c\uc784\uc18d\uc5d0\uc11c\uc758 NoSQL \ud65c\uc6a9\ud558\uae30", 
+            "room": 4, 
+            "slide_url": "", 
+            "speakers": [
+                68
+            ], 
+            "tags": [
+                3, 
+                6, 
+                7, 
+                12, 
+                13
+            ], 
+            "times": [
+                3, 
+                4
+            ]
+        }, 
+        "model": "ndc.session", 
+        "pk": 63
+    }, 
+    {
+        "fields": {
+            "date": 2, 
+            "desc": "", 
+            "name": "Effective Time Management", 
+            "room": 5, 
+            "slide_url": "", 
+            "speakers": [
+                12
+            ], 
+            "tags": [
+                7, 
+                14
+            ], 
+            "times": [
+                3, 
+                4
+            ]
+        }, 
+        "model": "ndc.session", 
+        "pk": 64
+    }, 
+    {
+        "fields": {
+            "date": 2, 
+            "desc": "\uac8c\uc784\uc758 \uc2a4\ud1a0\ub9ac\ub780 \uacfc\uc5f0 \ud3ec\ub974\ub178\uc758 \uc904\uac70\ub9ac\uc5d0 \ubd88\uacfc\ud55c\uac00?", 
+            "name": "\uac8c\uc784 \ub0b4 \uc2a4\ud1a0\ub9ac\ud154\ub9ac\uc758 \uc911\uc694\uc131", 
+            "room": 6, 
+            "slide_url": "", 
+            "speakers": [
+                69
+            ], 
+            "tags": [
+                1, 
+                12, 
+                13
+            ], 
+            "times": [
+                3
+            ]
+        }, 
+        "model": "ndc.session", 
+        "pk": 65
+    }, 
+    {
+        "fields": {
+            "date": 2, 
+            "desc": "", 
+            "name": "3\uac1c\uc6d4\ub9cc\uc5d0 \uad11\uace0 \ub9e4\ucd9c 422% \uc62c\ub9ac\uae30", 
+            "room": 6, 
+            "slide_url": "", 
+            "speakers": [
+                70
+            ], 
+            "tags": [
+                3, 
+                5, 
+                12, 
+                13
+            ], 
+            "times": [
+                4
+            ]
+        }, 
+        "model": "ndc.session", 
+        "pk": 66
+    }, 
+    {
+        "fields": {
+            "date": 2, 
+            "desc": "", 
+            "name": "\uc77c\ubcf8\uc2dc\uc7a5\uc5d0\uc11c\uc758 \ubaa8\ubc14\uc77c TCG \uc804\ub7b5", 
+            "room": 7, 
+            "slide_url": "", 
+            "speakers": [
+                71
+            ], 
+            "tags": [
+                1, 
+                3, 
+                5, 
+                10, 
+                12, 
+                13
+            ], 
+            "times": [
+                3, 
+                4
+            ]
+        }, 
+        "model": "ndc.session", 
+        "pk": 67
+    }, 
+    {
+        "fields": {
+            "date": 2, 
+            "desc": "\uc2a4\ud300\uadf8\ub9b0\ub77c\uc774\ud2b8", 
+            "name": "\uc778\ub514\uac8c\uc784\uc744 \ud314\uc544\ubcf4\uc790", 
+            "room": 2, 
+            "slide_url": "", 
+            "speakers": [
+                72
+            ], 
+            "tags": [
+                1, 
+                3, 
+                4, 
+                7, 
+                12, 
+                13
+            ], 
+            "times": [
+                6, 
+                7
+            ]
+        }, 
+        "model": "ndc.session", 
+        "pk": 68
+    }, 
+    {
+        "fields": {
+            "date": 2, 
+            "desc": "\uc2e0\uc785 \ud504\ub85c\uadf8\ub798\uba38\uac00 \ubca0\ud0c0\ud14c\uc2a4\ud2b8\uc5d0\uc11c \uc0b4\uc544\ub0a8\uae30", 
+            "name": "\uce74\uc6b4\ud130\uc2a4\ud2b8\ub77c\uc774\ud06c \uc628\ub77c\uc7782", 
+            "room": 3, 
+            "slide_url": "", 
+            "speakers": [
+                73
+            ], 
+            "tags": [
+                6, 
+                12, 
+                13
+            ], 
+            "times": [
+                6, 
+                7
+            ]
+        }, 
+        "model": "ndc.session", 
+        "pk": 69
+    }, 
+    {
+        "fields": {
+            "date": 2, 
+            "desc": "\uc791\uc5c5 \uc2dc\uac04 30% \uc904\uc5ec\ub4dc\ub9bd\ub2c8\ub2e4.", 
+            "name": "\uc2a4\ucf00\uc77c\ud3fc", 
+            "room": 4, 
+            "slide_url": "", 
+            "speakers": [
+                74
+            ], 
+            "tags": [
+                6, 
+                12, 
+                13
+            ], 
+            "times": [
+                6, 
+                7
+            ]
+        }, 
+        "model": "ndc.session", 
+        "pk": 70
+    }, 
+    {
+        "fields": {
+            "date": 2, 
+            "desc": "\ucc28\uc138\ub300 \uac8c\uc784\uacfc \ud55c\uad6d \uc628\ub77c\uc778 \uac8c\uc784\uc758 \ubbf8\ub798", 
+            "name": "NDC13 KEYNOTE", 
+            "room": 6, 
+            "slide_url": "", 
+            "speakers": [
+                75
+            ], 
+            "tags": [
+                7, 
+                8, 
+                12, 
+                13
+            ], 
+            "times": [
+                6, 
+                7
+            ]
+        }, 
+        "model": "ndc.session", 
+        "pk": 71
+    }, 
+    {
+        "fields": {
+            "date": 2, 
+            "desc": "", 
+            "name": "\ud0a4\ub178\ud2b8 \ub3d9\uc601\uc0c1 \uc911\uacc4", 
+            "room": 7, 
+            "slide_url": "", 
+            "speakers": [], 
+            "tags": [
+                8, 
+                12, 
+                13
+            ], 
+            "times": [
+                6, 
+                7
+            ]
+        }, 
+        "model": "ndc.session", 
+        "pk": 72
+    }, 
+    {
+        "fields": {
+            "date": 2, 
+            "desc": "", 
+            "name": "\ud50c\ub7ab\ud3ec\uba38 \uac8c\uc784 \ub808\ubca8\ub514\uc790\uc778", 
+            "room": 1, 
+            "slide_url": "", 
+            "speakers": [
+                76
+            ], 
+            "tags": [
+                1, 
+                4, 
+                7, 
+                12, 
+                13
+            ], 
+            "times": [
+                8, 
+                9
+            ]
+        }, 
+        "model": "ndc.session", 
+        "pk": 73
+    }, 
+    {
+        "fields": {
+            "date": 2, 
+            "desc": "", 
+            "name": "\ubd80\ubd84 \uc720\ub85c\ud654 2.0 \uc2dc\ub300\uac00 \uc624\ub2e4", 
+            "room": 2, 
+            "slide_url": "", 
+            "speakers": [
+                77
+            ], 
+            "tags": [
+                1, 
+                3, 
+                12, 
+                13
+            ], 
+            "times": [
+                8, 
+                9
+            ]
+        }, 
+        "model": "ndc.session", 
+        "pk": 74
+    }, 
+    {
+        "fields": {
+            "date": 2, 
+            "desc": "", 
+            "name": "\uc11c\ubc84\ub97c \uc704\ud55c \ub514\uc790\uc778 \ud328\ud134", 
+            "room": 3, 
+            "slide_url": "", 
+            "speakers": [
+                78
+            ], 
+            "tags": [
+                6, 
+                12, 
+                13
+            ], 
+            "times": [
+                8, 
+                9
+            ]
+        }, 
+        "model": "ndc.session", 
+        "pk": 75
+    }, 
+    {
+        "fields": {
+            "date": 2, 
+            "desc": "UI Designer\ub97c \uc704\ud55c Scaleform \uc548\ub0b4", 
+            "name": "\uc2a4\ucf00\uc77c\ud3fc", 
+            "room": 4, 
+            "slide_url": "", 
+            "speakers": [
+                79
+            ], 
+            "tags": [
+                2, 
+                12, 
+                13
+            ], 
+            "times": [
+                8
+            ]
+        }, 
+        "model": "ndc.session", 
+        "pk": 76
+    }, 
+    {
+        "fields": {
+            "date": 2, 
+            "desc": "", 
+            "name": "\uae00\ub85c\ubc8c \uc11c\ube44\uc2a4 \uc778\ud504\ub77c \uad6c\ucd95", 
+            "room": 4, 
+            "slide_url": "", 
+            "speakers": [
+                80
+            ], 
+            "tags": [
+                3, 
+                6, 
+                12, 
+                13
+            ], 
+            "times": [
+                9
+            ]
+        }, 
+        "model": "ndc.session", 
+        "pk": 77
+    }, 
+    {
+        "fields": {
+            "date": 2, 
+            "desc": "\ub9e4\uc77c \uc815\uc2dc\uc5d0 \ud1f4\uadfc\ud558\ub294 \uadf8 \uc0ac\ub78c\ub78c\uc758 \ube44\ubc00", 
+            "name": "\ud14c\uc2a4\ud2b8 \uafb8\uc900\ud788 \uc798\ud558\ub294 \ubc95", 
+            "room": 5, 
+            "slide_url": "", 
+            "speakers": [
+                81
+            ], 
+            "tags": [
+                6, 
+                12, 
+                13
+            ], 
+            "times": [
+                8, 
+                9
+            ]
+        }, 
+        "model": "ndc.session", 
+        "pk": 78
+    }, 
+    {
+        "fields": {
+            "date": 2, 
+            "desc": "", 
+            "name": "\uc544\ud2f0\uc2a4\ud2b8... \uadf8\ub4e4\uacfc \ub300\ud654\ud558\uae30", 
+            "room": 6, 
+            "slide_url": "", 
+            "speakers": [
+                82
+            ], 
+            "tags": [
+                1, 
+                2, 
+                6, 
+                12, 
+                13
+            ], 
+            "times": [
+                8, 
+                9
+            ]
+        }, 
+        "model": "ndc.session", 
+        "pk": 79
+    }, 
+    {
+        "fields": {
+            "date": 2, 
+            "desc": "", 
+            "name": "\uc911\uad6d\uc5d0 \ub9de\ub294 \ub9de\ucda4\ud615 \uc628\ub77c\uc778 \uac8c\uc784", 
+            "room": 7, 
+            "slide_url": "", 
+            "speakers": [
+                83
+            ], 
+            "tags": [
+                3, 
+                14
+            ], 
+            "times": [
+                8, 
+                9
+            ]
+        }, 
+        "model": "ndc.session", 
+        "pk": 80
+    }, 
+    {
+        "fields": {
+            "date": 2, 
+            "desc": "", 
+            "name": "<\uaf2c\ub9c8\ubc84\uc2a4 \ud0c0\uc694>\uc758 \uc0ac\ub840\ub85c \ubcf4\ub294 \uc720\uc544\uc6a9 \uae30\ub2a5\uc131 \uac8c\uc784 \uc81c\ub300\ub85c \ub9cc\ub4e4\uae30", 
+            "room": 1, 
+            "slide_url": "", 
+            "speakers": [
+                84
+            ], 
+            "tags": [
+                1, 
+                5, 
+                7, 
+                12, 
+                13
+            ], 
+            "times": [
+                10
+            ]
+        }, 
+        "model": "ndc.session", 
+        "pk": 81
+    }, 
+    {
+        "fields": {
+            "date": 2, 
+            "desc": "", 
+            "name": "\uc778\ub514\uac8c\uc784 \ud504\ub85c\uc81d\ud2b8 \uc911\ub3c4\uc5d0 \ud3ec\uae30\ud558\uc9c0 \uc54a\ub294 \ubc29\ubc95", 
+            "room": 2, 
+            "slide_url": "", 
+            "speakers": [
+                85
+            ], 
+            "tags": [
+                4, 
+                7, 
+                12, 
+                13
+            ], 
+            "times": [
+                10
+            ]
+        }, 
+        "model": "ndc.session", 
+        "pk": 82
+    }, 
+    {
+        "fields": {
+            "date": 2, 
+            "desc": "", 
+            "name": "UDK\ub85c \ubb3c\ub9ac\uae30\ubc18 \uc170\uc774\ub354 \ub9cc\ub4e4\uae30", 
+            "room": 3, 
+            "slide_url": "", 
+            "speakers": [
+                86
+            ], 
+            "tags": [
+                2, 
+                12, 
+                13
+            ], 
+            "times": [
+                10
+            ]
+        }, 
+        "model": "ndc.session", 
+        "pk": 83
+    }, 
+    {
+        "fields": {
+            "date": 2, 
+            "desc": "\uc9c0\ub09c 1\ub144\uac04\uc758 \ud3ec\uc2a4\ud2b8\ubaa8\ud15c", 
+            "name": "DVCS\uc640 \ucf54\ub4dc \ub9ac\ubdf0 \uadf8\ub9ac\uace0 \uc790\ub3d9\ud654\ub97c \ud1b5\ud55c \ucf8c\uc18d \uac1c\ubc1c", 
+            "room": 4, 
+            "slide_url": "", 
+            "speakers": [
+                87
+            ], 
+            "tags": [
+                6, 
+                12, 
+                13
+            ], 
+            "times": [
+                10
+            ]
+        }, 
+        "model": "ndc.session", 
+        "pk": 84
+    }, 
+    {
+        "fields": {
+            "date": 2, 
+            "desc": "", 
+            "name": "Redis \uc18c\uc2a4\ub85c\ubd80\ud130 \uc0b4\ud3b4\ubcf4\ub294 Redis \uc4f8 \ub54c \uc8fc\uc758\ud560 \uc810", 
+            "room": 5, 
+            "slide_url": "", 
+            "speakers": [
+                88
+            ], 
+            "tags": [
+                6, 
+                12, 
+                13
+            ], 
+            "times": [
+                10
+            ]
+        }, 
+        "model": "ndc.session", 
+        "pk": 85
+    }, 
+    {
+        "fields": {
+            "date": 2, 
+            "desc": "", 
+            "name": "\uac8c\uc784\uc758 \uc7ac\ubbf8\ub97c \uad6c\uc131\ud558\ub294 \uc138\uac00\uc9c0 \ucd95", 
+            "room": 6, 
+            "slide_url": "", 
+            "speakers": [
+                89
+            ], 
+            "tags": [
+                1, 
+                12, 
+                13
+            ], 
+            "times": [
+                10
+            ]
+        }, 
+        "model": "ndc.session", 
+        "pk": 86
+    }, 
+    {
+        "fields": {
+            "date": 2, 
+            "desc": "\ub9e4\ucd9c\uc774 \ub192\uc740 \ubaa8\ubc14\uc77c \uac8c\uc784 \ub9cc\ub4e4\uae30", 
+            "name": "\ud53c\uc2f1\uc870\uc774", 
+            "room": 7, 
+            "slide_url": "", 
+            "speakers": [
+                90
+            ], 
+            "tags": [
+                3, 
+                5, 
+                11, 
+                12, 
+                13
+            ], 
+            "times": [
+                10
+            ]
+        }, 
+        "model": "ndc.session", 
+        "pk": 87
+    }, 
+    {
+        "fields": {
+            "date": 2, 
+            "desc": "<AnS>\uc758 \ud06c\ub77c\uc6b0\ub4dc \ud380\ub529 \uc0ac\ub840 \ubd84\uc11d", 
+            "name": "\ud06c\ub77c\uc6b0\ub4dc \ud380\ub529 \uc0ac\uc6a9\uc124\uba85\uc11c", 
+            "room": 1, 
+            "slide_url": "", 
+            "speakers": [
+                91
+            ], 
+            "tags": [
+                1, 
+                3, 
+                4, 
+                7, 
+                12, 
+                13
+            ], 
+            "times": [
+                11
+            ]
+        }, 
+        "model": "ndc.session", 
+        "pk": 88
+    }, 
+    {
+        "fields": {
+            "date": 2, 
+            "desc": "", 
+            "name": "\uc2e0\uc785 \uae30\ud68d\uc790\ub4e4\uc744 \uc704\ud55c \uc2e4\uc804! \uac8c\uc784 \uae30\ud68d\uc11c", 
+            "room": 2, 
+            "slide_url": "", 
+            "speakers": [
+                92
+            ], 
+            "tags": [
+                1, 
+                12, 
+                13
+            ], 
+            "times": [
+                11
+            ]
+        }, 
+        "model": "ndc.session", 
+        "pk": 89
+    }, 
+    {
+        "fields": {
+            "date": 2, 
+            "desc": "", 
+            "name": "node.js\uc640 \uc6f9 \uae30\uc220\uc744 \ud65c\uc6a9\ud55c \ud074\ub77c\uc6b0\ub4dc \uce5c\ud654\uc801\uc778 MMORPG \uc11c\ubc84 \ub9cc\ub4e4\uae30", 
+            "room": 3, 
+            "slide_url": "", 
+            "speakers": [
+                93
+            ], 
+            "tags": [
+                6, 
+                14
+            ], 
+            "times": [
+                11
+            ]
+        }, 
+        "model": "ndc.session", 
+        "pk": 90
+    }, 
+    {
+        "fields": {
+            "date": 2, 
+            "desc": "", 
+            "name": "\uc0ac\ub840\ub97c \ud1b5\ud574 \uc0b4\ud3b4\ubcf4\ub294 \ud504\ub85c\ud30c\uc77c\ub9c1\uacfc \ucd5c\uc801\ud654", 
+            "room": 4, 
+            "slide_url": "", 
+            "speakers": [
+                94
+            ], 
+            "tags": [
+                6, 
+                12, 
+                13
+            ], 
+            "times": [
+                11
+            ]
+        }, 
+        "model": "ndc.session", 
+        "pk": 91
+    }, 
+    {
+        "fields": {
+            "date": 2, 
+            "desc": "", 
+            "name": "\ub2f9\uc2e0\uc758 \uacc4\uc815\uc774 \uc7a0\uacbc\uc2b5\ub2c8\ub2e4", 
+            "room": 5, 
+            "slide_url": "", 
+            "speakers": [
+                95, 
+                96
+            ], 
+            "tags": [
+                3, 
+                14
+            ], 
+            "times": [
+                11
+            ]
+        }, 
+        "model": "ndc.session", 
+        "pk": 92
+    }, 
+    {
+        "fields": {
+            "date": 2, 
+            "desc": "", 
+            "name": "\uc2ec\ub9ac\ud559\uc801 \uad00\uc810\uc73c\ub85c \ub2e4\uc2dc \ubcf4\ub294 \uac8c\uc784 \ub514\uc790\uc778", 
+            "room": 6, 
+            "slide_url": "", 
+            "speakers": [
+                97
+            ], 
+            "tags": [
+                1, 
+                12, 
+                13
+            ], 
+            "times": [
+                11
+            ]
+        }, 
+        "model": "ndc.session", 
+        "pk": 93
+    }, 
+    {
+        "fields": {
+            "date": 2, 
+            "desc": "", 
+            "name": "\uc911\uad6d FPS \uc2dc\uc7a5 \ub9ac\ubdf0 \ubc0f \uc131\uacf5\uc6a9\uc778\uc5d0 \ub300\ud55c \ubd84\uc11d", 
+            "room": 7, 
+            "slide_url": "", 
+            "speakers": [
+                98
+            ], 
+            "tags": [
+                1, 
+                3, 
+                11, 
+                12, 
+                13
+            ], 
+            "times": [
+                11
+            ]
+        }, 
+        "model": "ndc.session", 
+        "pk": 94
+    }, 
+    {
+        "fields": {
+            "date": 2, 
+            "desc": "", 
+            "name": "\ubaa8\ubc14\uc77c/\uc18c\uc15c/\ud50c\ub7ab\ud3fc \ubcc0\ud654\uc758 \uc2dc\ub300, \ubc14\ub77c\ubcf4\uae30\uc640 \ub6f0\uc5b4\ub4e4\uae30", 
+            "room": 2, 
+            "slide_url": "", 
+            "speakers": [
+                99
+            ], 
+            "tags": [
+                1, 
+                3, 
+                5, 
+                7, 
+                12, 
+                13
+            ], 
+            "times": [
+                12, 
+                13
+            ]
+        }, 
+        "model": "ndc.session", 
+        "pk": 95
+    }, 
+    {
+        "fields": {
+            "date": 2, 
+            "desc": "\ud37c\uc990 \uc8fc\uc8fc\uc758 \uc0ac\ub840\ub97c \uc911\uc2ec\uc73c\ub85c", 
+            "name": "Amazon Web Service\ub97c \ud65c\uc6a9\ud55c \ubaa8\ubc14\uc77c \uac8c\uc784 \uc11c\ubc84 \uac1c\ubc1c", 
+            "room": 3, 
+            "slide_url": "", 
+            "speakers": [
+                100
+            ], 
+            "tags": [
+                5, 
+                6, 
+                14
+            ], 
+            "times": [
+                12, 
+                13
+            ]
+        }, 
+        "model": "ndc.session", 
+        "pk": 96
+    }, 
+    {
+        "fields": {
+            "date": 2, 
+            "desc": "", 
+            "name": "\ub108\ubb34\ub108\ubb34 \ud6cc\ub96d\ud55c MySQL", 
+            "room": 4, 
+            "slide_url": "", 
+            "speakers": [
+                101
+            ], 
+            "tags": [
+                6, 
+                12, 
+                13
+            ], 
+            "times": [
+                12, 
+                13
+            ]
+        }, 
+        "model": "ndc.session", 
+        "pk": 97
+    }, 
+    {
+        "fields": {
+            "date": 2, 
+            "desc": "", 
+            "name": "\uc0ac\ub840\ub85c \uc54c\uc544\ubcf4\ub294 IP\uac8c\uc784\uac1c\ubc1c\uc758 \ub4dd\uacfc \uc2e4", 
+            "room": 5, 
+            "slide_url": "", 
+            "speakers": [
+                102
+            ], 
+            "tags": [
+                3, 
+                12, 
+                13
+            ], 
+            "times": [
+                12, 
+                13
+            ]
+        }, 
+        "model": "ndc.session", 
+        "pk": 98
+    }, 
+    {
+        "fields": {
+            "date": 2, 
+            "desc": "", 
+            "name": "\ub9c8\ube44\ub178\uae30 \uc601\uc6c5\uc804 \uac1c\ubc1c \ud14c\ud06c\ub2c8\uceec \ud3ec\uc2a4\ud2b8\ubaa8\ud15c", 
+            "room": 6, 
+            "slide_url": "", 
+            "speakers": [
+                103
+            ], 
+            "tags": [
+                6, 
+                7, 
+                12, 
+                13
+            ], 
+            "times": [
+                12
+            ]
+        }, 
+        "model": "ndc.session", 
+        "pk": 99
+    }, 
+    {
+        "fields": {
+            "date": 2, 
+            "desc": "", 
+            "name": "China mobile game market: Is it as beautiful as it looks like?", 
+            "room": 7, 
+            "slide_url": "", 
+            "speakers": [
+                104
+            ], 
+            "tags": [
+                3, 
+                5, 
+                11, 
+                12, 
+                13
+            ], 
+            "times": [
+                12
+            ]
+        }, 
+        "model": "ndc.session", 
+        "pk": 100
+    }
 ]
