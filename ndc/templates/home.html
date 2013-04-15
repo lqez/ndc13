@@ -5,19 +5,37 @@
         <img class="logo" src="{{ STATIC_URL }}/img/ndc2013_logo.png" style="width:100%"/>
     </div>
 </div>
+<!--
+<div class="well">
+NEXON<br>
+DEVELOPERS<br>
+CONFERENCE<br>
+2013
+</div>
+-->
+{% for d, d_ in table.items %}
 <div class="row">
-    <div class="span6">
-        <div class="well">
-            <h1>Title test</h1>
-        </div>
-    </div>
-    <div class="span6">
-        <div class="well">
-            NEXON<br>
-            DEVELOPERS<br>
-            CONFERENCE<br>
-            2013
-        </div>
+    <div class="span12">
+        <h2>{{ d }}</h2>
+        <table class="table">
+            <thead>
+                <th></th>
+                {% for r in rooms %}
+                <th>{{ r.name }}</th>
+                {% endfor %}
+            </thead>
+            <tbody>
+                {% for t, t_ in d_.items %}
+                <tr>
+                    <th>{{ t.begin|date:"H:i" }}</th>
+                    {% for r, s in t_.items %}
+                    <td rowspan="{{ s.times.all|length }}">{{ s.name }}</td>
+                    {% endfor %}
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
     </div>
 </div>
+{% endfor %}
 {% endblock %}
