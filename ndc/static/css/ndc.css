@@ -1,1 +1,72 @@
+.clickable {
+    cursor: pointer;
+}
+.timetable td {
+    position: relative;
+    -webkit-transition: 0.25s;
+    -moz-transition: 0.25s;
+    -o-transition: 0.25s;
+    transition: 0.25s;
+    -webkit-backface-visibility: hidden; 
+}
+.timetable td:hover {
+    background: #34495e;
+}
+.timetable td:hover a {
+    color: #ffffff;
+}
+.timetable td:hover a:hover {
+    color: #1abc9c;
+}
+.timetable td:hover .tagbar span {
+    border-left: 1px solid #34495e;
+    border-right: 1px solid #34495e;
+}
+.timetable .session {
+    margin-bottom: 40px;
+}
+.timetable .title {
+    font-size: 13px;
+}
+.timetable .desc {
+    font-size: 10px;
+}
+.timetable .tag {
+    width: 16px;
+    height: auto;
+}
+.timetable .speaker_and_company {
+    position: absolute;
+    right: 8px;
+    bottom: 5px;
+    text-align: right;
+}
+.timetable .speaker, .company {
+    font-size: 10px;
+}
+.timetable a {
+    color: #34495e;
+    text-decoration: none;
+}
+
+.taginfo img {
+    width: 16px;
+    height: auto;
+}
+.taginfo li {
+    list-style: none;
+}
+
+.tagbar {
+    display: table;
+    height: 4px;
+    width: 100%;
+    margin-bottom: 4px;
+}
+.tagbar span {
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+    display: table-cell;
+    width: 4px;
+}
 

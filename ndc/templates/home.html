@@ -1,23 +1,30 @@
 {% extends "base.html" %}
 {% block content %}
 <div class="row">
-    <div class="span12">
+    <div class="span6">
         <img class="logo" src="{{ STATIC_URL }}/img/ndc2013_logo.png" style="width:100%"/>
     </div>
+    <div class="span6">
+        <ul class="taginfo">
+            {% for tag in tags %}
+            {% if tag.color %}
+            <li><img src="{{ tag.image.url }}"/>{{ tag.name }}</li>
+            {% endif %}
+            {% endfor %}
+        </ul>
+    </div>
 </div>
-<!--
-<div class="well">
-NEXON<br>
-DEVELOPERS<br>
-CONFERENCE<br>
-2013
-</div>
--->
 {% for d, d_ in table.items %}
-<div class="row">
+<div class="row timetable">
     <div class="span12">
         <h2>{{ d }}</h2>
-        <table class="table">
+        <table class="table table-bordered">
+            <colgroup>
+                <col width="5.5%">
+                {% for r in rooms %}
+                <col width="13.5%">
+                {% endfor %}
+            </colgroup>
             <thead>
                 <th></th>
                 {% for r in rooms %}
@@ -29,7 +36,38 @@ CONFERENCE<br>
                 <tr>
                     <th>{{ t.begin|date:"H:i" }}</th>
                     {% for r, s in t_.items %}
-                    <td rowspan="{{ s.times.all|length }}">{{ s.name }}</td>
+                    {% if s %}
+                    <td class="clickable" rowspan="{{ s.times.all|length }}" onclick="document.location='{% url "session" s.id %}'">
+                        <div class="session">
+                            <div class="tagbar">
+                                {% for tag in s.tags.all %}
+                                {% if tag.color %}
+                                <span style="background-color:{{ tag.color }}"> </span>
+                                {% endif %}
+                                {% endfor %}
+                            </div>
+                            <a href="{% url "session" s.id %}">
+                                <p class="title">{{ s.name }}</p>
+                            </a>
+                            {% if s.speakers %}
+                            <div class="speaker_and_company">
+                                <div class="speaker">
+                                    {% for speaker in s.speakers.all %}
+                                    <a href="{% url "speaker" speaker.id %}">{{ speaker.name }}</a>
+                                    {% endfor %}
+                                </div>
+                                <div class="company">
+                                    {% for company in s.get_companies %}
+                                    <a href="{% url "company" company.id %}">{{ company.name }}</a>
+                                    {% endfor %}
+                                </div>
+                            </div>
+                            {% endif %}
+                        </div>
+                    </td>
+                    {% else %}
+                    <td></td>
+                    {% endif %}
                     {% endfor %}
                 </tr>
                 {% endfor %}

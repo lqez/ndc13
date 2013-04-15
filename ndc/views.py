@@ -8,6 +8,7 @@ from ndc.models import *
 
 
 def home(request):
+    tags = Tag.objects.all()
     dates = SessionDate.objects.all()
     times = SessionTime.objects.all()
     rooms = Room.objects.all()
@@ -26,11 +27,18 @@ def home(request):
                     table[d][t][r] = None
 
     return render(request, 'home.html', {
-        'dates': dates,
-        'times': times,
+        'table': table,
         'rooms': rooms,
-        'table' : table,
+        'tags': tags,
     })
+
+
+class company_list(ListView):
+    model = Company
+
+
+class company_detail(DetailView):
+    model = Company
 
 
 class speaker_list(ListView):

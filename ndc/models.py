@@ -1,10 +1,15 @@
 from django.db import models
+from django.utils.safestring import mark_safe
 from datetime import datetime
 
 
 class Tag(models.Model):
     name = models.CharField(max_length=100)
+    color = models.CharField(max_length=24, blank=True, null=True)
     image = models.ImageField(upload_to='tag', blank=True, null=True)
+
+    def html_get_color_div(self):
+        return mark_safe('<div style="background-color:%s; border:1px solid black; text-align:center;">sample</div>' % self.color)
 
     def __unicode__(self):
         return self.name
@@ -71,11 +76,14 @@ class Session(models.Model):
     def duration_in_min(self):
         return sum([_.duration_in_min() for _ in self.times.all()])
 
-    def get_speakers(self):
+    def get_companies(self):
+        return set([_.company for _ in self.speakers.all()])
+
+    def html_get_speakers(self):
         return ', '.join([_.name for _ in self.speakers.all()])
 
-    def get_companies(self):
-        return ', '.join(set([_.company.name for _ in self.speakers.all()]))
+    def html_get_companies(self):
+        return ', '.join([_.name for _ in self.get_companies()])
 
     def __unicode__(self):
         return self.name
