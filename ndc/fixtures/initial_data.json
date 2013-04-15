@@ -3,7 +3,8 @@
         "fields": {
             "color": "#ff0000", 
             "image": "tag/design.png", 
-            "name": "\uac8c\uc784\uae30\ud68d"
+            "name": "\uac8c\uc784\uae30\ud68d", 
+            "uid": null
         }, 
         "model": "ndc.tag", 
         "pk": 1
@@ -12,7 +13,8 @@
         "fields": {
             "color": "#fca834", 
             "image": "tag/art.png", 
-            "name": "\ube44\uc8fc\uc5bc \uc544\ud2b8 & \uc0ac\uc6b4\ub4dc"
+            "name": "\ube44\uc8fc\uc5bc \uc544\ud2b8 & \uc0ac\uc6b4\ub4dc", 
+            "uid": null
         }, 
         "model": "ndc.tag", 
         "pk": 2
@@ -21,7 +23,8 @@
         "fields": {
             "color": "#00a0d1", 
             "image": "tag/managing.png", 
-            "name": "\uc0ac\uc5c5 \ub9c8\ucf00\ud305 & \uacbd\uc601\uad00\ub9ac"
+            "name": "\uc0ac\uc5c5 \ub9c8\ucf00\ud305 & \uacbd\uc601\uad00\ub9ac", 
+            "uid": null
         }, 
         "model": "ndc.tag", 
         "pk": 3
@@ -30,7 +33,8 @@
         "fields": {
             "color": "#2f2779", 
             "image": "tag/indi.png", 
-            "name": "\uc778\ub514"
+            "name": "\uc778\ub514", 
+            "uid": null
         }, 
         "model": "ndc.tag", 
         "pk": 4
@@ -39,7 +43,8 @@
         "fields": {
             "color": "#f2006c", 
             "image": "tag/mobile.png", 
-            "name": "\ubaa8\ubc14\uc77c"
+            "name": "\ubaa8\ubc14\uc77c", 
+            "uid": null
         }, 
         "model": "ndc.tag", 
         "pk": 5
@@ -48,7 +53,8 @@
         "fields": {
             "color": "#e55a00", 
             "image": "tag/code.png", 
-            "name": "\ud504\ub85c\uadf8\ub798\ubc0d"
+            "name": "\ud504\ub85c\uadf8\ub798\ubc0d", 
+            "uid": null
         }, 
         "model": "ndc.tag", 
         "pk": 6
@@ -57,7 +63,8 @@
         "fields": {
             "color": "#00b44a", 
             "image": "tag/product.png", 
-            "name": "\ud504\ub85c\ub355\uc158"
+            "name": "\ud504\ub85c\ub355\uc158", 
+            "uid": null
         }, 
         "model": "ndc.tag", 
         "pk": 7
@@ -66,7 +73,8 @@
         "fields": {
             "color": "#62107a", 
             "image": "tag/keynote.png", 
-            "name": "\ud0a4\ub178\ud2b8"
+            "name": "\ud0a4\ub178\ud2b8", 
+            "uid": "keynote"
         }, 
         "model": "ndc.tag", 
         "pk": 8
@@ -75,7 +83,8 @@
         "fields": {
             "color": null, 
             "image": "tag/trans_e.png", 
-            "name": "\uc601\uc5b4 \ud1b5\uc5ed \uc11c\ube44\uc2a4"
+            "name": "\uc601\uc5b4 \ud1b5\uc5ed \uc11c\ube44\uc2a4", 
+            "uid": null
         }, 
         "model": "ndc.tag", 
         "pk": 9
@@ -84,7 +93,8 @@
         "fields": {
             "color": null, 
             "image": "tag/trans_j.png", 
-            "name": "\uc77c\ubcf8\uc5b4 \ud1b5\uc5ed \uc11c\ube44\uc2a4"
+            "name": "\uc77c\ubcf8\uc5b4 \ud1b5\uc5ed \uc11c\ube44\uc2a4", 
+            "uid": null
         }, 
         "model": "ndc.tag", 
         "pk": 10
@@ -93,7 +103,8 @@
         "fields": {
             "color": null, 
             "image": "tag/trans_c.png", 
-            "name": "\uc911\uad6d\uc5b4 \ud1b5\uc5ed \uc11c\ube44\uc2a4"
+            "name": "\uc911\uad6d\uc5b4 \ud1b5\uc5ed \uc11c\ube44\uc2a4", 
+            "uid": null
         }, 
         "model": "ndc.tag", 
         "pk": 11
@@ -102,16 +113,18 @@
         "fields": {
             "color": null, 
             "image": "tag/press.png", 
-            "name": "\ucde8\uc7ac \uac00\ub2a5"
+            "name": "\ucde8\uc7ac \uac00\ub2a5", 
+            "uid": null
         }, 
         "model": "ndc.tag", 
         "pk": 12
     }, 
     {
         "fields": {
-            "color": null, 
+            "color": "", 
             "image": "tag/photo_allow.png", 
-            "name": "\uc0ac\uc9c4 \ucd2c\uc601 \uac00\ub2a5"
+            "name": "\uc0ac\uc9c4 \ucd2c\uc601 \uac00\ub2a5", 
+            "uid": "photo_allow"
         }, 
         "model": "ndc.tag", 
         "pk": 13
@@ -120,7 +133,8 @@
         "fields": {
             "color": "", 
             "image": "tag/photo_deny.png", 
-            "name": "\uc0ac\uc9c4 \ucd2c\uc601 \uae08\uc9c0"
+            "name": "\uc0ac\uc9c4 \ucd2c\uc601 \uae08\uc9c0", 
+            "uid": "photo_deny"
         }, 
         "model": "ndc.tag", 
         "pk": 14
