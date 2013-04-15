@@ -1,0 +1,21 @@
+<div class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+        <div class="container">
+            <a class="btn btn-large btn-primary btn-collapse" data-toggle="collapse" data-target=".nav-collapse">
+                <span class="fui-menu-24"></span>
+            </a>
+            <a class="brand" href="/">NDC 13</a>
+            <div class="btn-group pull-right">
+                <a class="btn btn-large btn-info" href="/accounts/login/">Sign in</a>
+                <a class="btn btn-large btn-warning" href="/register/">Register</a>
+            </div>
+            <div class="nav-collapse collapse">
+                <ul class="nav">
+                    {% for k, v in menus.items %}
+                    <li class="{% if v.active %}active{% endif %}"><a href="{% url k %}">{{ v.title }}</a></li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>

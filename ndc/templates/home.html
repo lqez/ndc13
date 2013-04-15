@@ -1,10 +1,9 @@
 {% extends "base.html" %}
 {% block content %}
 <div class="row">
-    <div class="span6">
-        <img class="logo" src="{{ STATIC_URL }}/img/ndc2013_logo.png" style="width:100%"/>
-    </div>
-    <div class="span6">
+    <div class="span12">
+        <h1>NDC 13 timetable</h1>
+<!--
         <ul class="taginfo">
             {% for tag in tags %}
             {% if tag.color %}
@@ -12,6 +11,7 @@
             {% endif %}
             {% endfor %}
         </ul>
+-->
     </div>
 </div>
 {% for d, d_ in table.items %}
@@ -20,9 +20,9 @@
         <h2>{{ d }}</h2>
         <table class="table table-bordered">
             <colgroup>
-                <col width="5.5%">
+                <col width="*">
                 {% for r in rooms %}
-                <col width="13.5%">
+                <col width="14%">
                 {% endfor %}
             </colgroup>
             <thead>
@@ -37,7 +37,7 @@
                     <th>{{ t.begin|date:"H:i" }}</th>
                     {% for r, s in t_.items %}
                     {% if s %}
-                    <td class="booked" rowspan="{{ s.times.all|length }}" onclick="document.location='{% url "session" s.id %}'">
+                    <td class="booked {% if s.is_keynote %}keynote{% endif %}" rowspan="{{ s.times.all|length }}" onclick="document.location='{% url "session" s.id %}'">
                         <div class="session">
                             <div class="tagbar">
                                 {% for tag in s.tags.all %}

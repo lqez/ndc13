@@ -3,6 +3,16 @@ a {
     text-decoration: none;
 }
 
+.timetable thead th {
+    background: #34495e;
+    border-color: #34495e; 
+    color: white;
+    text-align: center;
+}
+.timetable tbody th {
+    background: #e9e9f0;
+    text-align: center;
+}
 .timetable td {
     position: relative;
     -webkit-transition: 0.25s;
@@ -10,6 +20,9 @@ a {
     -o-transition: 0.25s;
     transition: 0.25s;
     -webkit-backface-visibility: hidden; 
+}
+.timetable .keynote {
+    background: #e9e9f0;
 }
 .timetable .booked {
     cursor: pointer;
@@ -48,6 +61,7 @@ a {
 }
 .timetable .speaker, .company {
     font-size: 10px;
+    line-height: 140%;
 }
 
 .taginfo img {

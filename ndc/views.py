@@ -33,6 +33,14 @@ def home(request):
     })
 
 
+def links(request):
+    pass
+
+
+def about(request):
+    pass
+
+
 class company_list(ListView):
     model = Company
 

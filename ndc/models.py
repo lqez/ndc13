@@ -5,6 +5,7 @@ from datetime import datetime
 
 class Tag(models.Model):
     name = models.CharField(max_length=100)
+    uid = models.CharField(max_length=100, blank=True, null=True)
     color = models.CharField(max_length=24, blank=True, null=True)
     image = models.ImageField(upload_to='tag', blank=True, null=True)
 
@@ -75,6 +76,11 @@ class Session(models.Model):
 
     def duration_in_min(self):
         return sum([_.duration_in_min() for _ in self.times.all()])
+
+    def is_keynote(self):
+        if self.tags.filter(uid="keynote"):
+            return True
+        return False
 
     def get_companies(self):
         return set([_.company for _ in self.speakers.all()])

@@ -1,0 +1,22 @@
+body {
+    position: relative;
+    padding-top: 64px;
+}
+
+.btn-collapse {
+    display: none;
+}
+
+.well-white {
+    background: white;
+}
+
+@media (max-width: 979px) {
+    body {
+        padding-top: 0;
+    }
+    .btn-collapse {
+        display: inline;
+        float: left;
+    }
+}
