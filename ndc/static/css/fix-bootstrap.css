@@ -7,6 +7,18 @@ body {
     display: none;
 }
 
+.username {
+    margin:0 5px;
+}
+
+.navbar-search {
+    margin-top: 12px;
+}
+
+.navbar-search .search-query {
+    padding: 12px 15px;
+}
+
 .well-white {
     background: white;
 }
@@ -18,5 +30,16 @@ body {
     .btn-collapse {
         display: inline;
         float: left;
+    }
+    .navbar-search .search-query {
+        width: 100%;
+    }
+    .nav-collapse, .nav-collapse.collapse {
+        background: #2c3e50;
+    }
+    .nav-collapse .nav > li,
+    .nav-collapse .navbar-form,
+    .nav-collapse .navbar-search {
+        border: none;
     }
 }

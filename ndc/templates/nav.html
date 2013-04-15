@@ -5,16 +5,33 @@
                 <span class="fui-menu-24"></span>
             </a>
             <a class="brand" href="/">NDC 13</a>
+            {% if user.is_authenticated %}
+            <div class="btn-group pull-right">
+                <a class="btn btn-large btn-info dropdown-toggle" data-toggle="dropdown" href="#">
+                    <span class="fui-man-24"></span>
+                    <span class="username">{{ user.username }}</span>
+                    <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Profile</a></li>
+                    <li><a href="/accounts/logout/">Sign Out</a></li>
+                </ul>
+            </div>
+            {% else %}
             <div class="btn-group pull-right">
                 <a class="btn btn-large btn-info" href="/accounts/login/">Sign in</a>
                 <a class="btn btn-large btn-warning" href="/register/">Register</a>
             </div>
+            {% endif %}
             <div class="nav-collapse collapse">
                 <ul class="nav">
                     {% for k, v in menus.items %}
                     <li class="{% if v.active %}active{% endif %}"><a href="{% url k %}">{{ v.title }}</a></li>
                     {% endfor %}
                 </ul>
+                <form class="navbar-search" action="{% url "search" %}">
+                    <input type="text" name="q" class="search-query" placeholder="Search">
+                </form>
             </div>
         </div>
     </div>

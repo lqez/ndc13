@@ -8,6 +8,10 @@ from ndc.models import *
 
 
 def home(request):
+    return render(request, 'home.html', {})
+
+
+def timetable(request):
     tags = Tag.objects.all()
     dates = SessionDate.objects.all()
     times = SessionTime.objects.all()
@@ -26,19 +30,19 @@ def home(request):
                 else:
                     table[d][t][r] = None
 
-    return render(request, 'home.html', {
+    return render(request, 'timetable.html', {
         'table': table,
         'rooms': rooms,
         'tags': tags,
     })
 
 
-def links(request):
-    pass
+def search(request):
+    return render(request, 'search.html', {})
 
 
 def about(request):
-    pass
+    return render(request, 'about.html', {})
 
 
 class company_list(ListView):
