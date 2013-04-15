@@ -1,6 +1,7 @@
 [
     {
         "fields": {
+            "color": "#ff0000", 
             "image": "tag/design.png", 
             "name": "\uac8c\uc784\uae30\ud68d"
         }, 
@@ -9,6 +10,7 @@
     }, 
     {
         "fields": {
+            "color": "#fca834", 
             "image": "tag/art.png", 
             "name": "\ube44\uc8fc\uc5bc \uc544\ud2b8 & \uc0ac\uc6b4\ub4dc"
         }, 
@@ -17,6 +19,7 @@
     }, 
     {
         "fields": {
+            "color": "#00a0d1", 
             "image": "tag/managing.png", 
             "name": "\uc0ac\uc5c5 \ub9c8\ucf00\ud305 & \uacbd\uc601\uad00\ub9ac"
         }, 
@@ -25,6 +28,7 @@
     }, 
     {
         "fields": {
+            "color": "#2f2779", 
             "image": "tag/indi.png", 
             "name": "\uc778\ub514"
         }, 
@@ -33,6 +37,7 @@
     }, 
     {
         "fields": {
+            "color": "#f2006c", 
             "image": "tag/mobile.png", 
             "name": "\ubaa8\ubc14\uc77c"
         }, 
@@ -41,6 +46,7 @@
     }, 
     {
         "fields": {
+            "color": "#e55a00", 
             "image": "tag/code.png", 
             "name": "\ud504\ub85c\uadf8\ub798\ubc0d"
         }, 
@@ -49,6 +55,7 @@
     }, 
     {
         "fields": {
+            "color": "#00b44a", 
             "image": "tag/product.png", 
             "name": "\ud504\ub85c\ub355\uc158"
         }, 
@@ -57,6 +64,7 @@
     }, 
     {
         "fields": {
+            "color": "#62107a", 
             "image": "tag/keynote.png", 
             "name": "\ud0a4\ub178\ud2b8"
         }, 
@@ -65,6 +73,7 @@
     }, 
     {
         "fields": {
+            "color": null, 
             "image": "tag/trans_e.png", 
             "name": "\uc601\uc5b4 \ud1b5\uc5ed \uc11c\ube44\uc2a4"
         }, 
@@ -73,6 +82,7 @@
     }, 
     {
         "fields": {
+            "color": null, 
             "image": "tag/trans_j.png", 
             "name": "\uc77c\ubcf8\uc5b4 \ud1b5\uc5ed \uc11c\ube44\uc2a4"
         }, 
@@ -81,6 +91,7 @@
     }, 
     {
         "fields": {
+            "color": null, 
             "image": "tag/trans_c.png", 
             "name": "\uc911\uad6d\uc5b4 \ud1b5\uc5ed \uc11c\ube44\uc2a4"
         }, 
@@ -89,6 +100,7 @@
     }, 
     {
         "fields": {
+            "color": null, 
             "image": "tag/press.png", 
             "name": "\ucde8\uc7ac \uac00\ub2a5"
         }, 
@@ -97,6 +109,7 @@
     }, 
     {
         "fields": {
+            "color": null, 
             "image": "tag/photo_allow.png", 
             "name": "\uc0ac\uc9c4 \ucd2c\uc601 \uac00\ub2a5"
         }, 
@@ -105,6 +118,7 @@
     }, 
     {
         "fields": {
+            "color": "", 
             "image": "tag/photo_deny.png", 
             "name": "\uc0ac\uc9c4 \ucd2c\uc601 \uae08\uc9c0"
         }, 
@@ -113,49 +127,49 @@
     }, 
     {
         "fields": {
-            "name": "301\ud638"
+            "name": "301"
         }, 
         "model": "ndc.room", 
         "pk": 1
     }, 
     {
         "fields": {
-            "name": "307\ud638"
+            "name": "307"
         }, 
         "model": "ndc.room", 
         "pk": 2
     }, 
     {
         "fields": {
-            "name": "308\ud638"
+            "name": "308"
         }, 
         "model": "ndc.room", 
         "pk": 3
     }, 
     {
         "fields": {
-            "name": "317\ud638"
+            "name": "317"
         }, 
         "model": "ndc.room", 
         "pk": 4
     }, 
     {
         "fields": {
-            "name": "318\ud638"
+            "name": "318"
         }, 
         "model": "ndc.room", 
         "pk": 5
     }, 
     {
         "fields": {
-            "name": "401\ud638"
+            "name": "401"
         }, 
         "model": "ndc.room", 
         "pk": 6
     }, 
     {
         "fields": {
-            "name": "402\ud638"
+            "name": "402"
         }, 
         "model": "ndc.room", 
         "pk": 7
@@ -2742,7 +2756,7 @@
         "fields": {
             "date": 1, 
             "desc": "\uc11c\ub85c \ub2e4\ub978 \ub450\uba85\uc758 \uc804\ud600 \ub2e4\ub978 \uac8c\uc784 \uae30\ud68d\uc790 \ucee4\ub9ac\uc5b4 \uc774\uc57c\uae30 (1\ubd80)", 
-            "name": "\uac8c\uc784\uac8c\ud68d\uc790\uac00 \uc774\ub7f4 \ub9ac \uc5c6\uc5b4", 
+            "name": "\uac8c\uc784\uae30\ud68d\uc790\uac00 \uc774\ub7f4 \ub9ac \uc5c6\uc5b4", 
             "room": 6, 
             "slide_url": "", 
             "speakers": [
@@ -3342,7 +3356,7 @@
         "fields": {
             "date": 2, 
             "desc": "", 
-            "name": "\ubd80\ubd84 \uc720\ub85c\ud654 2.0 \uc2dc\ub300\uac00 \uc624\ub2e4", 
+            "name": "\ubd80\ubd84 \uc720\ub8cc\ud654 2.0 \uc2dc\ub300\uac00 \uc624\ub2e4", 
             "room": 2, 
             "slide_url": "", 
             "speakers": [
@@ -3797,7 +3811,7 @@
         "fields": {
             "date": 2, 
             "desc": "", 
-            "name": "\uc911\uad6d FPS \uc2dc\uc7a5 \ub9ac\ubdf0 \ubc0f \uc131\uacf5\uc6a9\uc778\uc5d0 \ub300\ud55c \ubd84\uc11d", 
+            "name": "\uc911\uad6d FPS \uc2dc\uc7a5 \ub9ac\ubdf0 \ubc0f \uc131\uacf5\uc694\uc778\uc5d0 \ub300\ud55c \ubd84\uc11d", 
             "room": 7, 
             "slide_url": "", 
             "speakers": [
