@@ -1,1 +1,11 @@
-speaker's detail
+{% extends "base.html" %}
+{% block title %}발표자 상세 정보{% endblock %}
+{% block content %}
+<div class="row">
+    <div class="span9">
+        <h1>{{ speaker.name }}</h1>
+    </div>
+    <div class="span3">
+    </div>
+</div>
+{% endblock %}

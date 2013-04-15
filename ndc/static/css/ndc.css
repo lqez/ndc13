@@ -1,3 +1,8 @@
+a {
+    color: #34495e;
+    text-decoration: none;
+}
+
 .timetable td {
     position: relative;
     -webkit-transition: 0.25s;
@@ -43,10 +48,6 @@
 }
 .timetable .speaker, .company {
     font-size: 10px;
-}
-.timetable a {
-    color: #34495e;
-    text-decoration: none;
 }
 
 .taginfo img {
