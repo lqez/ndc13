@@ -1,1 +1,15 @@
-session's detail
+{% extends "base.html" %}
+{% block content %}
+<div class="row">
+    <div class="span9">
+        <h1>{{ session.name }}</h1>
+        <h4>{{ session.desc }}</h4>
+    </div>
+    <div class="span3">
+        <p>{{ session.date }}</p>
+        <p>{{ session.times.all }}</p>
+        <p>{{ session.room }}</p>
+        <p>{{ session.speakers.all }}</p>
+    </div>
+</div>
+{% endblock %}

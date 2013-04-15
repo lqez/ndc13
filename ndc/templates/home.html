@@ -37,7 +37,7 @@
                     <th>{{ t.begin|date:"H:i" }}</th>
                     {% for r, s in t_.items %}
                     {% if s %}
-                    <td class="clickable" rowspan="{{ s.times.all|length }}" onclick="document.location='{% url "session" s.id %}'">
+                    <td class="booked" rowspan="{{ s.times.all|length }}" onclick="document.location='{% url "session" s.id %}'">
                         <div class="session">
                             <div class="tagbar">
                                 {% for tag in s.tags.all %}
