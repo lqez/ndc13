@@ -29,7 +29,7 @@
                     <li class="{% if v.active %}active{% endif %}"><a href="{% url k %}">{{ v.title }}</a></li>
                     {% endfor %}
                 </ul>
-                <form class="navbar-search" action="{% url "search" %}">
+                <form class="navbar-search pull-right" action="{% url "search" %}">
                     <input type="text" name="q" class="search-query" placeholder="Search">
                 </form>
             </div>
