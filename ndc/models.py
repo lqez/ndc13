@@ -71,5 +71,11 @@ class Session(models.Model):
     def duration_in_min(self):
         return sum([_.duration_in_min() for _ in self.times.all()])
 
+    def get_speakers(self):
+        return ', '.join([_.name for _ in self.speakers.all()])
+
+    def get_companies(self):
+        return ', '.join(set([_.company.name for _ in self.speakers.all()]))
+
     def __unicode__(self):
         return self.name
