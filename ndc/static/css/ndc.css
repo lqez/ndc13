@@ -53,6 +53,31 @@ a {
     line-height: 140%;
 }
 
+.speaker-box {
+    margin: 10px 0px;
+}
+
+.speaker {
+    border: 2px solid #95a5a6;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+}
+
+.speaker .name {
+    display: block;
+    color: white;
+    background: #34495e;
+    padding: 10px 14px;
+
+    -webkit-border-top-left-radius: 8px;
+    -webkit-border-top-right-radius: 8px;
+    -moz-border-top-left-radius: 8px;
+    -moz-border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
 .taglist {
     margin: 10px 0;
 }
