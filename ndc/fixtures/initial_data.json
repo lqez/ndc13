@@ -1,78 +1,78 @@
 [
     {
         "fields": {
-            "color": "#ff0000", 
             "image": "tag/design.png", 
+            "is_category": true, 
             "name": "\uac8c\uc784\uae30\ud68d", 
-            "uid": null
+            "uid": "design"
         }, 
         "model": "ndc.tag", 
         "pk": 1
     }, 
     {
         "fields": {
-            "color": "#fca834", 
             "image": "tag/art.png", 
+            "is_category": true, 
             "name": "\ube44\uc8fc\uc5bc \uc544\ud2b8 & \uc0ac\uc6b4\ub4dc", 
-            "uid": null
+            "uid": "art"
         }, 
         "model": "ndc.tag", 
         "pk": 2
     }, 
     {
         "fields": {
-            "color": "#00a0d1", 
             "image": "tag/managing.png", 
+            "is_category": true, 
             "name": "\uc0ac\uc5c5 \ub9c8\ucf00\ud305 & \uacbd\uc601\uad00\ub9ac", 
-            "uid": null
+            "uid": "managing"
         }, 
         "model": "ndc.tag", 
         "pk": 3
     }, 
     {
         "fields": {
-            "color": "#2f2779", 
             "image": "tag/indi.png", 
+            "is_category": true, 
             "name": "\uc778\ub514", 
-            "uid": null
+            "uid": "indi"
         }, 
         "model": "ndc.tag", 
         "pk": 4
     }, 
     {
         "fields": {
-            "color": "#f2006c", 
             "image": "tag/mobile.png", 
+            "is_category": true, 
             "name": "\ubaa8\ubc14\uc77c", 
-            "uid": null
+            "uid": "mobile"
         }, 
         "model": "ndc.tag", 
         "pk": 5
     }, 
     {
         "fields": {
-            "color": "#e55a00", 
             "image": "tag/code.png", 
+            "is_category": true, 
             "name": "\ud504\ub85c\uadf8\ub798\ubc0d", 
-            "uid": null
+            "uid": "code"
         }, 
         "model": "ndc.tag", 
         "pk": 6
     }, 
     {
         "fields": {
-            "color": "#00b44a", 
             "image": "tag/product.png", 
+            "is_category": true, 
             "name": "\ud504\ub85c\ub355\uc158", 
-            "uid": null
+            "uid": "product"
         }, 
         "model": "ndc.tag", 
         "pk": 7
     }, 
     {
         "fields": {
-            "color": "#62107a", 
             "image": "tag/keynote.png", 
+            "is_category": true, 
             "name": "\ud0a4\ub178\ud2b8", 
             "uid": "keynote"
         }, 
@@ -81,8 +81,8 @@
     }, 
     {
         "fields": {
-            "color": null, 
             "image": "tag/trans_e.png", 
+            "is_category": false, 
             "name": "\uc601\uc5b4 \ud1b5\uc5ed \uc11c\ube44\uc2a4", 
             "uid": null
         }, 
@@ -91,8 +91,8 @@
     }, 
     {
         "fields": {
-            "color": null, 
             "image": "tag/trans_j.png", 
+            "is_category": false, 
             "name": "\uc77c\ubcf8\uc5b4 \ud1b5\uc5ed \uc11c\ube44\uc2a4", 
             "uid": null
         }, 
@@ -101,8 +101,8 @@
     }, 
     {
         "fields": {
-            "color": null, 
             "image": "tag/trans_c.png", 
+            "is_category": false, 
             "name": "\uc911\uad6d\uc5b4 \ud1b5\uc5ed \uc11c\ube44\uc2a4", 
             "uid": null
         }, 
@@ -111,8 +111,8 @@
     }, 
     {
         "fields": {
-            "color": null, 
             "image": "tag/press.png", 
+            "is_category": false, 
             "name": "\ucde8\uc7ac \uac00\ub2a5", 
             "uid": null
         }, 
@@ -121,8 +121,8 @@
     }, 
     {
         "fields": {
-            "color": "", 
             "image": "tag/photo_allow.png", 
+            "is_category": false, 
             "name": "\uc0ac\uc9c4 \ucd2c\uc601 \uac00\ub2a5", 
             "uid": "photo_allow"
         }, 
@@ -131,8 +131,8 @@
     }, 
     {
         "fields": {
-            "color": "", 
             "image": "tag/photo_deny.png", 
+            "is_category": false, 
             "name": "\uc0ac\uc9c4 \ucd2c\uc601 \uae08\uc9c0", 
             "uid": "photo_deny"
         }, 

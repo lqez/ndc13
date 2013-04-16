@@ -3,7 +3,7 @@ from ndc.models import Tag, Room, SessionDate, SessionTime, Company, Speaker, Se
 
 
 class TagAdmin(admin.ModelAdmin):
-    list_display = ('id', 'name', 'image', 'html_get_color_div',)
+    list_display = ('id', 'name', 'uid', 'image', 'is_category',)
     search_fields = ('name',)
 admin.site.register(Tag, TagAdmin)
 

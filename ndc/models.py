@@ -6,11 +6,11 @@ from datetime import datetime
 class Tag(models.Model):
     name = models.CharField(max_length=100)
     uid = models.CharField(max_length=100, blank=True, null=True)
-    color = models.CharField(max_length=24, blank=True, null=True)
     image = models.ImageField(upload_to='tag', blank=True, null=True)
+    is_category = models.BooleanField(default=False)
 
-    def html_get_color_div(self):
-        return mark_safe('<div style="background-color:%s; border:1px solid black; text-align:center;">sample</div>' % self.color)
+    def html(self):
+        return mark_safe('<div class=\'tag tag-%s\'>%s</div>' % (self.uid, self.name))
 
     def __unicode__(self):
         return self.name
@@ -84,6 +84,9 @@ class Session(models.Model):
 
     def get_companies(self):
         return set([_.company for _ in self.speakers.all()])
+
+    def html_get_category_tags(self):
+        return mark_safe(''.join(filter(None, [_.html() if _.is_category else None for _ in self.tags.all()])))
 
     def html_get_speakers(self):
         return ', '.join([_.name for _ in self.speakers.all()])

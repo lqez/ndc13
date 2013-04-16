@@ -6,7 +6,7 @@
 <!--
         <ul class="taginfo">
             {% for tag in tags %}
-            {% if tag.color %}
+            {% if tag.is_category %}
             <li><img src="{{ tag.image.url }}"/>{{ tag.name }}</li>
             {% endif %}
             {% endfor %}
@@ -37,15 +37,17 @@
                     <th>{{ t.begin|date:"H:i" }}</th>
                     {% for r, s in t_.items %}
                     {% if s %}
-                    <td class="booked {% if s.is_keynote %}keynote{% endif %}" rowspan="{{ s.times.all|length }}" onclick="document.location='{% url "session" s.id %}'">
-                        <div class="session">
-                            <div class="tagbar">
+                    <td class="booked {% if s.is_keynote %}keynote{% endif %}"
+                        rowspan="{{ s.times.all|length }}"
+                        onclick="document.location='{% url "session" s.id %}'">
+                        <div class="session" rel="tooltip" data-html="true" data-original-title="{{ s.html_get_category_tags }}">
+                            <table class="tagbar" cellspacing="1" cellpadding="0"><tr>
                                 {% for tag in s.tags.all %}
-                                {% if tag.color %}
-                                <span style="background-color:{{ tag.color }}"> </span>
+                                {% if tag.is_category %}
+                                <td class="tag-{{ tag.uid }}"></td>
                                 {% endif %}
                                 {% endfor %}
-                            </div>
+                            </tr></table>
                             <a href="{% url "session" s.id %}">
                                 <p class="title">{{ s.name }}</p>
                             </a>
@@ -76,4 +78,11 @@
     </div>
 </div>
 {% endfor %}
+{% endblock %}
+{% block script %}
+<script type="text/javascript">
+$(function () {
+    $("[rel='tooltip']").tooltip();
+});
+</script>
 {% endblock %}

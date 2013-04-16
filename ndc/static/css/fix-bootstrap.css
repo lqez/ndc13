@@ -23,6 +23,16 @@ body {
     background: white;
 }
 
+.tooltip-inner {
+    background-color: black;
+    opacity: 0.9;
+}
+
+.tooltip.top .tooltip-arrow {
+    border-top-color: black;
+    opacity: 0.9;
+}
+
 @media (max-width: 979px) {
     body {
         padding-top: 0;

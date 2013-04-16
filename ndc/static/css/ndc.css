@@ -36,10 +36,6 @@ a {
 .timetable .booked:hover a:hover {
     color: #1abc9c;
 }
-.timetable .booked:hover .tagbar span {
-    border-left: 1px solid #34495e;
-    border-right: 1px solid #34495e;
-}
 .timetable .session {
     margin-bottom: 40px;
 }
@@ -48,10 +44,6 @@ a {
 }
 .timetable .desc {
     font-size: 10px;
-}
-.timetable .tag {
-    width: 16px;
-    height: auto;
 }
 .timetable .speaker_and_company {
     position: absolute;
@@ -73,15 +65,50 @@ a {
 }
 
 .tagbar {
-    display: table;
-    height: 4px;
+    height: 5px;
     width: 100%;
-    margin-bottom: 4px;
+    margin-bottom: 5px;
+    padding: 0;
 }
-.tagbar span {
-    border-left: 1px solid white;
-    border-right: 1px solid white;
-    display: table-cell;
-    width: 4px;
+.tagbar td {
+    padding: 0;
+    border: 0;
+    width: 20%;
 }
 
+.tag {
+    font-size: 12px;
+    border-radius: 4px;
+    background: #1abc9c;
+    color: white;
+    margin: 3px;
+    overflow: hidden;
+    padding: 5px 13px;
+    position: relative;
+    vertical-align: middle;
+    display: inline-block;
+}
+.tag-design {
+    background: #ff0000;
+}
+.tag-art {
+    background: #fca834;
+}
+.tag-managing {
+    background: #00a0d1;
+}
+.tag-indi {
+    background: #2f2779;
+}
+.tag-mobile {
+    background: #f2006c;
+}
+.tag-code {
+    background: #e55a00;
+}
+.tag-product {
+    background: #00b44a;
+}
+.tag-keynote {
+    background: #62107a;
+}
