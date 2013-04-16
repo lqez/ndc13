@@ -89,7 +89,12 @@ class Session(models.Model):
                             times[len(times) - 1].end.strftime("%H:%M"))
 
     def get_companies(self):
-        return set([_.company for _ in self.speakers.all()])
+        # set() does not preserve the original order. So I made a poop :(
+        uniq = []
+        for s in self.speakers.all():
+            if s.company not in uniq:
+                uniq.append(s.company)
+        return uniq
 
     def get_category_tags(self):
         return self.tags.filter(is_category=True)

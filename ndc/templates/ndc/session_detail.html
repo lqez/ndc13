@@ -24,7 +24,11 @@
                 </li>
                 <li>
                     <dt class="fui-man-24"></dt>
-                    <dd>{{ session.speakers.all|join:', ' }}</dd>
+                    <dd>
+                    {% for speaker in session.speakers.all %}
+                    <a href="{% url "speaker" speaker.id %}">{{ speaker }}</a>{% if not forloop.last %}, {% endif %}
+                    {% endfor %}
+                    </dd>
                 </li>
             </ul>
             </dl>

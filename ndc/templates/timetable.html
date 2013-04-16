@@ -55,11 +55,13 @@
                                 <div class="speaker">
                                     {% for speaker in s.speakers.all %}
                                     <a href="{% url "speaker" speaker.id %}">{{ speaker.name }}</a>
+                                    {% if not forloop.last %}, {% endif %}
                                     {% endfor %}
                                 </div>
                                 <div class="company">
                                     {% for company in s.get_companies %}
                                     <a href="{% url "company" company.id %}">{{ company.name }}</a>
+                                    {% if not forloop.last %}, {% endif %}
                                     {% endfor %}
                                 </div>
                             </div>
