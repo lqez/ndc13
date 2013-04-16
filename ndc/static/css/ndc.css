@@ -42,9 +42,6 @@ a {
 .timetable .title {
     font-size: 13px;
 }
-.timetable .desc {
-    font-size: 10px;
-}
 .timetable .speaker_and_company {
     position: absolute;
     right: 8px;
@@ -52,7 +49,7 @@ a {
     text-align: right;
 }
 .timetable .speaker, .company {
-    font-size: 10px;
+    font-size: 11px;
     line-height: 140%;
 }
 
@@ -236,4 +233,8 @@ a {
     display: inline;
     margin: 0;
     padding: 8px 14px;
+}
+
+.tiny {
+    font-size: 11px;
 }

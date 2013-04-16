@@ -18,7 +18,10 @@
             <tbody>
             {% for s in d.sessions %}
             <tr class="ft {{ s.get_classes|join:' ' }}">
-                <td>
+                <td class="tiny hidden-desktop">
+                    {{ s.room }}호 / {{ s.begin_time }}
+                </td>
+                <td class="hidden-phone">
                     <table class="tagbar tagbar-mid"
                         rel="tooltip" data-html="true" data-original-title="{{ s.html_get_category_tags }}">
                         <tr>
@@ -30,9 +33,9 @@
                     </tr></table>
                 </td>
                 <td><a href="{% url 'session' s.id %}">{{ s.name }}</a></td>
-                <td><small>{{ s.room }}호</small></td>
-                <td><small>{{ s.get_times }}</small></td>
-                <td>
+                <td class="visible-desktop" nowrap><small>{{ s.room }}호</small></td>
+                <td class="visible-desktop"><small>{{ s.begin_time }}</small></td>
+                <td class="visible-desktop">
                     <small>
                     {% for speaker in s.speakers.all %}
                         <a href="{% url "speaker" speaker.id %}">{{ speaker }}</a>{% if not forloop.last %}, {% endif %}

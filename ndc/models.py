@@ -86,6 +86,9 @@ class Session(models.Model):
             return True
         return False
 
+    def begin_time(self):
+        return self.times.all()[0].begin.strftime("%H:%M")
+
     def get_times(self):
         times = self.times.all()
         return '%s - %s' % (times[0].begin.strftime("%H:%M"),
