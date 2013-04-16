@@ -1,23 +1,26 @@
 <html>
 <head>
     <title>{% block title %}NDC13{% endblock %}</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
 
     <!-- Loading Bootstrap -->
-    <link href="{{ STATIC_URL }}lib/flat-ui/css/bootstrap.css" rel="stylesheet">
-    <link href="{{ STATIC_URL }}lib/flat-ui/css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="{{ STATIC_URL }}lib/flat-ui/css/bootstrap.css" rel="stylesheet"/>
+    <link href="{{ STATIC_URL }}lib/flat-ui/css/bootstrap-responsive.css" rel="stylesheet"/>
 
     <!-- Loading Flat UI -->
-    <link href="{{ STATIC_URL }}lib/flat-ui/css/flat-ui.css" rel="stylesheet">
+    <link href="{{ STATIC_URL }}lib/flat-ui/css/flat-ui.css" rel="stylesheet"/>
+
+    <!-- Moot.it -->
+    <link href="http://cdn.moot.it/1.0/moot.css" rel="stylesheet"/>
 
     <!-- Flying-bootstrap css -->
-    <link href="{{ STATIC_URL }}lib/flying-bootstrap/fb.css" rel="stylesheet" />
+    <link href="{{ STATIC_URL }}lib/flying-bootstrap/fb.css" rel="stylesheet"/>
 
     <!-- Loading project css -->
-    <link href="{{ STATIC_URL }}css/ndc.css" rel="stylesheet" />
-    <link href="{{ STATIC_URL }}css/fix-bootstrap.css" rel="stylesheet" />
+    <link href="{{ STATIC_URL }}css/ndc.css" rel="stylesheet"/>
+    <link href="{{ STATIC_URL }}css/fix-bootstrap.css" rel="stylesheet"/>
 
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
     <!--[if lt IE 9]>
@@ -32,6 +35,7 @@
 <script src="{{ STATIC_URL }}lib/jquery/jquery.js"></script>
 <script src="{{ STATIC_URL }}lib/bootstrap/js/bootstrap.js"></script>
 <script src="{{ STATIC_URL }}lib/flying-bootstrap/fb.js"></script>
+<script src="http://cdn.moot.it/1.0/moot.min.js"></script>
 {% block script %}{% endblock %}
 </body>
 </html>

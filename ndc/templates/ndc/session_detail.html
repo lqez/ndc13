@@ -1,10 +1,16 @@
 {% extends "base.html" %}
-{% block title %}세션 상세 정보{% endblock %}
+{% block title %}{{ session.name }}{% endblock %}
 {% block content %}
 <div class="row">
     <div class="span8">
         <h1>{{ session.name }}</h1>
-        <h4>{{ session.desc }}</h4>
+        <h3>{{ session.desc }}</h3>
+        <h6>
+            {% if session.slide_url %}
+            <span class="fui-volume-24"></span>
+            <a href="{{ session.slide_url }}" target="_blank">{{ session.slide_url }}</a>
+            {% endif %}
+        </h6>
     </div>
     <div class="span4">
         <div class="infobox">
@@ -33,6 +39,13 @@
             </ul>
             </dl>
         </div>
+    </div>
+</div>
+<hr>
+<div class="row">
+    <div class="span12">
+        <h2>Comments</h2>
+        <a class="moot" href="http://api.moot.it/sndc13/{{ request.path }}"></a>
     </div>
 </div>
 {% endblock %}
