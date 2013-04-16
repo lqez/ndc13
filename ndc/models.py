@@ -26,8 +26,11 @@ class Room(models.Model):
 class SessionDate(models.Model):
     day = models.DateField()
 
+    def sessions(self):
+        return Session.objects.filter(date=self)
+
     def __unicode__(self):
-        return str(self.day)
+        return self.day.strftime("%m/%d (%a)")
 
 
 class SessionTime(models.Model):
@@ -100,7 +103,7 @@ class Session(models.Model):
         return self.tags.filter(is_category=True)
 
     def get_classes(self):
-        return ['session-' + _.uid for _ in self.get_category_tags()]
+        return ['ft-' + _.uid for _ in self.get_category_tags()]
 
     def html_get_category_tags(self):
         return mark_safe(''.join([_.html() for _ in self.get_category_tags()]))

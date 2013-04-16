@@ -32,7 +32,7 @@
                     <td class="booked {% if s.is_keynote %}keynote{% endif %}"
                         rowspan="{{ s.times.all|length }}"
                         onclick="document.location='{% url "session" s.id %}'">
-                        <div class="session {{ s.get_classes|join:' ' }}"
+                        <div class="session ft {{ s.get_classes|join:' ' }}"
                             rel="tooltip" data-html="true" data-original-title="{{ s.html_get_category_tags }}">
                             <table class="tagbar" cellspacing="1" cellpadding="0"><tr>
                                 {% for tag in s.tags.all %}

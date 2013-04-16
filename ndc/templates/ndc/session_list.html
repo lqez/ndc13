@@ -17,7 +17,7 @@
             </colgroup>
             <tbody>
             {% for s in d.sessions %}
-            <tr class="session {{ s.get_classes|join:' ' }}">
+            <tr class="ft {{ s.get_classes|join:' ' }}">
                 <td>
                     <table class="tagbar tagbar-mid"
                         rel="tooltip" data-html="true" data-original-title="{{ s.html_get_category_tags }}">

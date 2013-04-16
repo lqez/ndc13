@@ -4,14 +4,14 @@ $(function () {
     $(".taglist .tag").click(function() {
         if( $(this).hasClass("highlight") )
         {
-            $(".session").show();
+            $(".ft").show();
             $(".taglist .tag").removeClass("muted highlight");
         }
         else
         {
             location.hash = 'filter-'+this.id;
-            $(".session-"+this.id).show();
-            $(".session").not(".session-"+this.id).hide();
+            $(".ft-"+this.id).show();
+            $(".ft").not(".ft-"+this.id).hide();
 
             $(this).removeClass("muted").addClass("highlight");
             $(".taglist .tag").not("#"+this.id).addClass("muted").removeClass("highlight");

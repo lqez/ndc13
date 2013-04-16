@@ -1,10 +1,13 @@
 {% extends "base.html" %}
-
 {% block title %}발표자 목록{% endblock %}
 {% block content %}
-<ul>
-    {% for speaker in speaker_list %}
-    <li><a href="{% url 'speaker' speaker.id %}">{{ speaker.name }}</a></li>
-    {% endfor %}
-</ul>
+<div class="row">
+    <div class="span12">
+        <h1>Speakers</h1>
+        {% include "tag_list.html" %}
+    </div>
+</div>
+{% endblock %}
+{% block script %}
+{% include "tag_script.html" %}
 {% endblock %}
