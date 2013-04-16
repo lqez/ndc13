@@ -2,15 +2,33 @@
 {% block title %}세션 상세 정보{% endblock %}
 {% block content %}
 <div class="row">
-    <div class="span9">
+    <div class="span8">
         <h1>{{ session.name }}</h1>
         <h4>{{ session.desc }}</h4>
     </div>
-    <div class="span3">
-        <p>{{ session.date }}</p>
-        <p>{{ session.times.all }}</p>
-        <p>{{ session.room }}</p>
-        <p>{{ session.speakers.all }}</p>
+    <div class="span4">
+        <div class="infobox">
+            <dl>
+            <ul>
+                <li>
+                    <dt class="fui-calendar-24"></dt>
+                    <dd>{{ session.date }}</dd>
+                </li>
+                <li>
+                    <dt class="fui-time-24"></dt>
+                    <dd>{{ session.get_times }}, {{ session.duration_in_min }}분</dd>
+                </li>
+                <li>
+                    <dt class="fui-location-24"></dt>
+                    <dd>{{ session.room }}</dd>
+                </li>
+                <li>
+                    <dt class="fui-man-24"></dt>
+                    <dd>{{ session.speakers.all|join:', ' }}</dd>
+                </li>
+            </ul>
+            </dl>
+        </div>
     </div>
 </div>
 {% endblock %}

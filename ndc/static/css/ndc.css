@@ -171,3 +171,44 @@ a {
     background-position: 4px 3px;
     background-size: 24px 24px;
 }
+
+.infobox {
+    margin: 4px;
+    padding: 0;
+    background-color: #fff;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    -webkit-box-shadow: 0 1px 4px rgba(0,0,0,.065);
+    -moz-box-shadow: 0 1px 4px rgba(0,0,0,.065);
+    box-shadow: 0 1px 4px rgba(0,0,0,.065);
+}
+.infobox ul {
+    margin:0;
+    padding: 0;
+}
+.infobox li {
+    display: block;
+    margin: 0 0 -1px;
+    padding: 8px 14px;
+    border: 1px solid #e5e5e5;
+}
+.infobox li:first-child {
+    -webkit-border-radius: 6px 6px 0 0;
+    -moz-border-radius: 6px 6px 0 0;
+    border-radius: 6px 6px 0 0;
+}
+.infobox li:last-child {
+    -webkit-border-radius: 0 0 6px 6px;
+    -moz-border-radius: 0 0 6px 6px;
+    border-radius: 0 0 6px 6px;
+}
+.infobox li > dt {
+    display: inline;
+    padding: 8px 8px;
+}
+.infobox li > dd {
+    display: inline;
+    margin: 0;
+    padding: 8px 14px;
+}

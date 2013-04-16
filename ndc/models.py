@@ -75,12 +75,18 @@ class Session(models.Model):
     times = models.ManyToManyField(SessionTime)
 
     def duration_in_min(self):
-        return sum([_.duration_in_min() for _ in self.times.all()])
+        r_min = sum([_.duration_in_min() for _ in self.times.all()])
+        return 25 if r_min < 50 else 50
 
     def is_keynote(self):
         if self.tags.filter(uid="keynote"):
             return True
         return False
+
+    def get_times(self):
+        times = self.times.all()
+        return '%s - %s' % (times[0].begin.strftime("%H:%M"),
+                            times[len(times) - 1].end.strftime("%H:%M"))
 
     def get_companies(self):
         return set([_.company for _ in self.speakers.all()])
@@ -89,7 +95,7 @@ class Session(models.Model):
         return self.tags.filter(is_category=True)
 
     def get_classes(self):
-        return ['session-'+_.uid for _ in self.get_category_tags()]
+        return ['session-' + _.uid for _ in self.get_category_tags()]
 
     def html_get_category_tags(self):
         return mark_safe(''.join([_.html() for _ in self.get_category_tags()]))
