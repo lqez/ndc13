@@ -78,6 +78,31 @@ a {
     width: 20%;
 }
 
+.tagbar-mid {
+    width: 64px;
+    height: 8px;
+    padding: 0;
+    margin: 8px 0;
+}
+
+.tagbar-mid td:first-child {
+    -webkit-border-top-left-radius: 6px;
+    -webkit-border-bottom-left-radius: 6px;
+    -moz-border-top-left-radius: 6px;
+    -moz-border-bottom-left-radius: 6px;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+}
+
+.tagbar-mid td:last-child {
+    -webkit-border-top-right-radius: 6px;
+    -webkit-border-bottom-right-radius: 6px;
+    -moz-border-top-right-radius: 6px;
+    -moz-border-bottom-right-radius: 6px;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+
 .tag {
     cursor: pointer;
     font-size: 12px;

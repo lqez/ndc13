@@ -1,0 +1,7 @@
+<ul class="taglist">
+    {% for tag in tags %}
+    {% if tag.is_category %}
+    <li id="tag-{{ tag.uid }}">{{ tag.html }}</li>
+    {% endif %}
+    {% endfor %}
+</ul>

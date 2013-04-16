@@ -12,7 +12,6 @@ def home(request):
 
 
 def timetable(request):
-    tags = Tag.objects.all()
     dates = SessionDate.objects.all()
     times = SessionTime.objects.all()
     rooms = Room.objects.all()
@@ -33,7 +32,7 @@ def timetable(request):
     return render(request, 'timetable.html', {
         'table': table,
         'rooms': rooms,
-        'tags': tags,
+        'tags': Tag.objects.all(),
     })
 
 
@@ -63,6 +62,11 @@ class speaker_detail(DetailView):
 
 class session_list(ListView):
     model = Session
+
+    def get_context_data(self, **kwargs):
+        context = super(session_list, self).get_context_data(**kwargs)
+        context['tags'] = Tag.objects.all()
+        return context
 
 
 class session_detail(DetailView):

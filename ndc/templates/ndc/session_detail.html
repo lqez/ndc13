@@ -11,6 +11,13 @@
             <a href="{{ session.slide_url }}" target="_blank">{{ session.slide_url }}</a>
             {% endif %}
         </h6>
+        <ul class="taglist">
+            {% for tag in session.tags.all %}
+            {% if tag.is_category %}
+            <li><a href="{% url "sessions" %}#filter-{{ tag.uid }}">{{ tag.html }}</a></li>
+            {% endif %}
+            {% endfor %}
+        </ul>
     </div>
     <div class="span4">
         <div class="infobox">
