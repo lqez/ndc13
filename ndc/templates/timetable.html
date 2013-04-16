@@ -3,15 +3,13 @@
 <div class="row">
     <div class="span12">
         <h1>Timetable</h1>
-<!--
-        <ul class="taginfo">
+        <ul class="taglist">
             {% for tag in tags %}
             {% if tag.is_category %}
-            <li><img src="{{ tag.image.url }}"/>{{ tag.name }}</li>
+            <li>{{ tag.html }}</li>
             {% endif %}
             {% endfor %}
         </ul>
--->
     </div>
 </div>
 {% for d, d_ in table.items %}
@@ -40,7 +38,8 @@
                     <td class="booked {% if s.is_keynote %}keynote{% endif %}"
                         rowspan="{{ s.times.all|length }}"
                         onclick="document.location='{% url "session" s.id %}'">
-                        <div class="session" rel="tooltip" data-html="true" data-original-title="{{ s.html_get_category_tags }}">
+                        <div class="session {{ s.get_classes|join:' ' }}"
+                            rel="tooltip" data-html="true" data-original-title="{{ s.html_get_category_tags }}">
                             <table class="tagbar" cellspacing="1" cellpadding="0"><tr>
                                 {% for tag in s.tags.all %}
                                 {% if tag.is_category %}
@@ -83,6 +82,21 @@
 <script type="text/javascript">
 $(function () {
     $("[rel='tooltip']").tooltip();
+    $(".taglist .tag").click(function() {
+        if( $(this).hasClass("highlight") )
+        {
+            $(".session").show();
+            $(".taglist .tag").removeClass("muted highlight");
+        }
+        else
+        {
+            $(".session-"+this.id).show();
+            $(".session").not(".session-"+this.id).hide();
+
+            $(this).removeClass("muted").addClass("highlight");
+            $(".taglist .tag").not("#"+this.id).addClass("muted").removeClass("highlight");
+        }
+    });
 });
 </script>
 {% endblock %}

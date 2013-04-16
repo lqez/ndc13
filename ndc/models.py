@@ -10,7 +10,7 @@ class Tag(models.Model):
     is_category = models.BooleanField(default=False)
 
     def html(self):
-        return mark_safe('<div class=\'tag tag-%s\'>%s</div>' % (self.uid, self.name))
+        return mark_safe('<div id=\'%s\' class=\'tag tag-%s tag-icon-%s\'>%s</div>' % (self.uid, self.uid, self.uid, self.name))
 
     def __unicode__(self):
         return self.name
@@ -85,8 +85,14 @@ class Session(models.Model):
     def get_companies(self):
         return set([_.company for _ in self.speakers.all()])
 
+    def get_category_tags(self):
+        return self.tags.filter(is_category=True)
+
+    def get_classes(self):
+        return ['session-'+_.uid for _ in self.get_category_tags()]
+
     def html_get_category_tags(self):
-        return mark_safe(''.join(filter(None, [_.html() if _.is_category else None for _ in self.tags.all()])))
+        return mark_safe(''.join([_.html() for _ in self.get_category_tags()]))
 
     def html_get_speakers(self):
         return ', '.join([_.name for _ in self.speakers.all()])

@@ -33,6 +33,11 @@ body {
     opacity: 0.9;
 }
 
+.muted {
+    color: #DBDFE6;
+    opacity: 0.2;
+}
+
 @media (max-width: 979px) {
     body {
         padding-top: 0;

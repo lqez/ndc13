@@ -56,12 +56,14 @@ a {
     line-height: 140%;
 }
 
-.taginfo img {
-    width: 16px;
-    height: auto;
+.taglist {
+    margin: 10px 0;
 }
-.taginfo li {
+
+.taglist li {
+    display: inline;
     list-style: none;
+    margin: 0;
 }
 
 .tagbar {
@@ -77,38 +79,95 @@ a {
 }
 
 .tag {
+    cursor: pointer;
     font-size: 12px;
     border-radius: 4px;
     background: #1abc9c;
+    line-height: 20px;
     color: white;
     margin: 3px;
     overflow: hidden;
-    padding: 5px 13px;
+    padding: 5px 10px;
     position: relative;
     vertical-align: middle;
     display: inline-block;
+    -webkit-transition: 0.14s linear;
+    -moz-transition: 0.14s linear;
+    -o-transition: 0.14s linear;
+    transition: 0.14s linear;
+}
+.tag:hover {
+    background-color: #34495e;
 }
 .tag-design {
     background: #ff0000;
 }
+.tag-icon-design {
+    padding-left: 34px;
+    background: url('/media/tag/design.png') no-repeat #ff0000;
+    background-position: 4px 3px;
+    background-size: 24px 24px;
+}
 .tag-art {
     background: #fca834;
+}
+.tag-icon-art {
+    padding-left: 34px;
+    background: url('/media/tag/art.png') no-repeat #fca834;
+    background-position: 4px 3px;
+    background-size: 24px 24px;
 }
 .tag-managing {
     background: #00a0d1;
 }
+.tag-icon-managing {
+    padding-left: 34px;
+    background: url('/media/tag/managing.png') no-repeat #00a0d1;
+    background-position: 4px 3px;
+    background-size: 24px 24px;
+}
 .tag-indi {
     background: #2f2779;
+}
+.tag-icon-indi {
+    padding-left: 34px;
+    background: url('/media/tag/indi.png') no-repeat #2f2779;
+    background-position: 4px 3px;
+    background-size: 24px 24px;
 }
 .tag-mobile {
     background: #f2006c;
 }
+.tag-icon-mobile {
+    padding-left: 34px;
+    background: url('/media/tag/mobile.png') no-repeat #f2006c;
+    background-position: 4px 3px;
+    background-size: 24px 24px;
+}
 .tag-code {
     background: #e55a00;
+}
+.tag-icon-code {
+    padding-left: 34px;
+    background: url('/media/tag/code.png') no-repeat #e55a00;
+    background-position: 4px 3px;
+    background-size: 24px 24px;
 }
 .tag-product {
     background: #00b44a;
 }
+.tag-icon-product {
+    padding-left: 34px;
+    background: url('/media/tag/product.png') no-repeat #00b44a;
+    background-position: 4px 3px;
+    background-size: 24px 24px;
+}
 .tag-keynote {
     background: #62107a;
+}
+.tag-icon-keynote {
+    padding-left: 34px;
+    background: url('/media/tag/keynote.png') no-repeat #62107a;
+    background-position: 4px 3px;
+    background-size: 24px 24px;
 }
