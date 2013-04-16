@@ -7,6 +7,8 @@
         {% include "tag_list.html" %}
     </div>
 </div>
+{% for d in dates %}
+<h2>{{ d }}</h2>
 <div class="row">
     <div class="span12">
         <table class="table">
@@ -14,7 +16,7 @@
                 <col width="80px"/>
             </colgroup>
             <tbody>
-            {% for s in session_list %}
+            {% for s in d.sessions %}
             <tr class="session {{ s.get_classes|join:' ' }}">
                 <td>
                     <table class="tagbar tagbar-mid"
@@ -28,8 +30,8 @@
                     </tr></table>
                 </td>
                 <td><a href="{% url 'session' s.id %}">{{ s.name }}</a></td>
-                <td>{{ s.date.day|date:"m-d" }}</td>
-                <td>{{ s.room }}호</td>
+                <td><small>{{ s.room }}호</small></td>
+                <td><small>{{ s.get_times }}</small></td>
                 <td>
                     <small>
                     {% for speaker in s.speakers.all %}
@@ -43,6 +45,7 @@
         </table>
     </div>
 </div>
+{% endfor %}
 {% endblock %}
 {% block script %}
 {% include "tag_script.html" %}
