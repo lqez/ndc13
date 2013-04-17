@@ -2,17 +2,6 @@ a {
     color: #34495e;
     text-decoration: none;
 }
-
-.timetable thead th {
-    background: #34495e;
-    border-color: #34495e; 
-    color: white;
-    text-align: center;
-}
-.timetable tbody th {
-    background: #e9e9f0;
-    text-align: center;
-}
 .timetable td {
     position: relative;
     -webkit-transition: 0.25s;

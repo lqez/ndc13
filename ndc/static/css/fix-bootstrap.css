@@ -38,6 +38,17 @@ body {
     opacity: 0.2;
 }
 
+.table thead th {
+    background: #34495e;
+    border-color: #34495e; 
+    color: white;
+    text-align: center;
+}
+.table tbody th {
+    background: #e9e9f0;
+    text-align: center;
+}
+
 @media (max-width: 979px) {
     body {
         padding-top: 0;
