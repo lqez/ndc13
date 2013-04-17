@@ -22,7 +22,7 @@
                     </tr></table>
                     <div class="speakers">
                         {% for s in c.speaker_set.all %}
-                        <div class="speaker"><a href="{% url "speaker" s.id %}">{{ s.name }}</a></div>
+                        <div class="speaker ft {{ s.get_classes|join:' ' }}"><a href="{% url "speaker" s.id %}">{{ s.name }}</a></div>
                         {% endfor %}
                     </div>
                 </div>
