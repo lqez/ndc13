@@ -54,6 +54,9 @@ class Company(models.Model):
     class Meta:
         ordering = ['name']
 
+    def get_sessions(self):
+        return Session.objects.filter(speakers__in=self.speaker_set.all())
+
     def __unicode__(self):
         return self.name
 

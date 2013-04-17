@@ -11,41 +11,9 @@
 <h2>{{ d }}</h2>
 <div class="row">
     <div class="span12">
-        <table class="table">
-            <colgroup>
-                <col width="80px"/>
-            </colgroup>
-            <tbody>
-            {% for s in d.sessions %}
-            <tr class="ft {{ s.get_classes|join:' ' }}">
-                <td class="tiny hidden-desktop">
-                    {{ s.begin_time }}/ {{ s.room }}호
-                </td>
-                <td class="hidden-phone">
-                    <table class="tagbar tagbar-mid"
-                        rel="tooltip" data-html="true" data-original-title="{{ s.html_get_category_tags }}">
-                        <tr>
-                        {% for tag in s.tags.all %}
-                        {% if tag.is_category %}
-                        <td class="tag-{{ tag.uid }}"></td>
-                        {% endif %}
-                        {% endfor %}
-                    </tr></table>
-                </td>
-                <td><a href="{% url 'session' s.id %}">{{ s.name }}</a></td>
-                <td class="visible-desktop" nowrap><small>{{ s.room }}호</small></td>
-                <td class="visible-desktop"><small>{{ s.begin_time }}</small></td>
-                <td class="visible-desktop">
-                    <small>
-                    {% for speaker in s.speakers.all %}
-                        <a href="{% url "speaker" speaker.id %}">{{ speaker }}</a>{% if not forloop.last %}, {% endif %}
-                    {% endfor %}
-                    </small>
-                </td>
-            </tr>
-            {% endfor %}
-            </tbody>
-        </table>
+        {% with sessions=d.sessions omit_date=True %}
+        {% include "sessions.html" %}
+        {% endwith %}
     </div>
 </div>
 {% endfor %}

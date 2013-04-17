@@ -1,5 +1,23 @@
 {% extends "base.html" %}
 {% block title %}{{ company.name }}{% endblock %}
 {% block content %}
-<h1>{{ company.name }}</h1>
+<div class="row">
+    <div class="span12">
+        <h1 class="name">
+            {{ company.name }}
+        </h1>
+        <hr>
+        <h2>Sessions</h2>
+        {% with sessions=company.get_sessions %}
+        {% include "sessions.html" %}
+        {% endwith %}
+    </div>
+</div>
+<hr>
+<div class="row">
+    <div class="span12">
+        <h2>Comments</h2>
+        <a class="moot" href="http://api.moot.it/sndc13/{{ request.path }}"></a>
+    </div>
+</div>
 {% endblock %}
