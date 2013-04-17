@@ -58,3 +58,15 @@ body {
         border: none;
     }
 }
+
+@media (max-width: 979px) and (min-width: 768px) {
+    .container, .navbar-static-top .container, .navbar-fixed-top .container, .navbar-fixed-bottom .container {
+        width: 95%;
+    }
+    .span12 {
+        width: 95%;
+    }
+    .timetable .session {
+        margin-bottom: 0px;
+    }
+}

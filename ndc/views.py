@@ -16,21 +16,30 @@ def timetable(request):
     times = SessionTime.objects.all()
     rooms = Room.objects.all()
 
-    table = {}
+    wide = {}
+    narrow = {}
     for d in dates:
-        table[d] = {}
+        wide[d] = {}
+        narrow[d] = {}
         for t in times:
-            table[d][t] = {}
+            wide[d][t] = {}
+            narrow[d][t] = {}
             for r in rooms:
                 s = Session.objects.filter(date=d, times=t, room=r)
                 if s:
                     if s[0].times.all()[0] == t:
-                        table[d][t][r] = s[0]
+                        wide[d][t][r] = s[0]
+                        narrow[d][t][r] = s[0]
                 else:
-                    table[d][t][r] = None
+                    wide[d][t][r] = None
+
+            if len(narrow[d][t]) == 0:
+                del(narrow[d][t])
+
 
     return render(request, 'timetable.html', {
-        'table': table,
+        'wide': wide,
+        'narrow': narrow,
         'rooms': rooms,
         'tags': Tag.objects.all(),
     })

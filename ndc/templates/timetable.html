@@ -6,8 +6,34 @@
         {% include "tag_list.html" %}
     </div>
 </div>
-{% for d, d_ in table.items %}
-<div class="row timetable">
+{% for d, d_ in narrow.items %}
+<div class="row timetable visible-phone">
+    <div class="span12">
+        <h2>{{ d }}</h2>
+        <table class="table table-bordered">
+            <tbody>
+                {% for t, t_ in d_.items %}
+                <tr>
+                    <th rowspan="{{ t_.items|length }}">{{ t.begin|date:"H:i" }}</th>
+                    {% for r, s in t_.items|slice:"1" %}
+                    <td class="ft {{ s.get_classes|join:' ' }} tiny">{{ r }}</td>
+                    <td class="ft {{ s.get_classes|join:' ' }}">{{ s }}</td>
+                    {% endfor %}
+                </tr>
+                {% for r, s in t_.items|slice:"1:" %}
+                <tr>
+                    <td class="ft {{ s.get_classes|join:' ' }} tiny">{{ r }}</td>
+                    <td class="ft {{ s.get_classes|join:' ' }}">{{ s }}</td>
+                </tr>
+                {% endfor %}
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</div>
+{% endfor %}
+{% for d, d_ in wide.items %}
+<div class="row timetable hidden-phone">
     <div class="span12">
         <h2>{{ d }}</h2>
         <table class="table table-bordered">
@@ -34,7 +60,7 @@
                         onclick="document.location='{% url "session" s.id %}'">
                         <div class="session ft {{ s.get_classes|join:' ' }}"
                             rel="tooltip" data-html="true" data-original-title="{{ s.html_get_category_tags }}">
-                            <table class="tagbar" cellspacing="1" cellpadding="0"><tr>
+                            <table class="tagbar visible-desktop" cellspacing="1" cellpadding="0"><tr>
                                 {% for tag in s.tags.all %}
                                 {% if tag.is_category %}
                                 <td class="tag-{{ tag.uid }}"></td>
@@ -42,10 +68,10 @@
                                 {% endfor %}
                             </tr></table>
                             <a href="{% url "session" s.id %}">
-                                <p class="title">{{ s.name }}</p>
+                                <div class="title">{{ s.name }}</div>
                             </a>
                             {% if s.speakers %}
-                            <div class="speaker_and_company">
+                            <div class="speaker_and_company visible-desktop">
                                 <div class="speaker">
                                     {% for speaker in s.speakers.all %}
                                     <a href="{% url "speaker" speaker.id %}">{{ speaker.name }}</a>

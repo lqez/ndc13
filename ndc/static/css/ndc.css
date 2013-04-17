@@ -57,14 +57,14 @@ a {
     margin: 10px 0px;
 }
 
-.speaker {
+.speaker-box .speaker {
     border: 2px solid #95a5a6;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     border-radius: 10px;
 }
 
-.speaker .name {
+.speaker-box .speaker .name {
     display: block;
     color: white;
     background: #34495e;
