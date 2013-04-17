@@ -11,13 +11,31 @@
     <div class="span12">
         <div class="row">
             {% for s in speaker_list %}
-            <div class="span3">
-                <div class="speaker-box">
-                    <div class="speaker">
-                        <div class="name">{{ s.name }}</div>
-                        <div class="company">{{ s.company }}</div>
+            <div class="span3 speaker-box ft {{ s.get_classes|join:' ' }}">
+                    <div class="speaker" onclick="document.location='{% url "speaker" s.id %}'">
+                        {% if s.twitter %}
+                        <div class="photo">
+                            <img src="http://api.twitter.com/1/users/profile_image/{{ s.twitter }}"/>
+                        </div>
+                        {% endif %}
+                        <div class="name">
+                            <a href="{% url "speaker" s.id %}">{{ s.name }}</a>
+                            {% if s.twitter %}
+                            <span class="twitter"><a href="https://twitter.com/{{ s.twitter }}" target="_blank">@{{ s.twitter }}</a></span>
+                            {% endif %}
+                        </div>
+                        <table class="tagbar tagbar-thin">
+                            <tr>
+                            {% for tag in s.get_tags %}
+                            {% if tag.is_category %}
+                            <td class="tag-{{ tag.uid }}"></td>
+                            {% endif %}
+                            {% endfor %}
+                        </tr></table>
+                        <div class="company">
+                            <a href="{% url "company" s.company.id %}">{{ s.company }}</a>
+                        </div>
                     </div>
-                </div>
             </div>
             {% endfor %}
         </div>

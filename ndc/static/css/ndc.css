@@ -53,29 +53,56 @@ a {
     line-height: 140%;
 }
 
-.speaker-box {
-    margin: 10px 0px;
+.speaker-box .speaker {
+    border: 1px solid #bdc3c7;
+    overflow: hidden;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-transition: 0.25s;
+    -moz-transition: 0.25s;
+    -o-transition: 0.25s;
+    transition: 0.25s;
+    cursor: pointer;
+    margin: 10px 0;
 }
 
-.speaker-box .speaker {
-    border: 2px solid #95a5a6;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    border-radius: 10px;
+.speaker-box .speaker:hover {
+    border: 1px solid #34495e;
 }
 
 .speaker-box .speaker .name {
     display: block;
-    color: white;
-    background: #34495e;
-    padding: 10px 14px;
+    padding: 14px 14px;
+}
 
-    -webkit-border-top-left-radius: 8px;
-    -webkit-border-top-right-radius: 8px;
-    -moz-border-top-left-radius: 8px;
-    -moz-border-top-right-radius: 8px;
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
+.speaker-box .speaker .twitter a {
+    color: #7f8c8d;
+    font-size: 11px;
+}
+
+.speaker-box .speaker .photo {
+    margin: 5px;
+    border: 1px solid #bdc3c7;
+    display: inline;
+    float: right;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    border-radius: 100px;
+    overflow: hidden;
+}
+
+.speaker-box .speaker .photo img {
+    width: 32px;
+    height: auto;
+}
+
+.speaker-box .speaker .company {
+    display: block;
+    border-top: 1px solid #d9dfe0;
+    color: #7f8c8d;
+    background: #ecf0f1;
+    padding: 4px 14px 5px;
 }
 
 .taglist {
@@ -107,6 +134,13 @@ a {
     margin: 8px 0;
 }
 
+.tagbar-thin {
+    width: 100%;
+    height: 3px;
+    padding: 0;
+    margin: 0;
+}
+
 .tagbar-mid td:first-child {
     -webkit-border-top-left-radius: 6px;
     -webkit-border-bottom-left-radius: 6px;
@@ -128,6 +162,8 @@ a {
 .tag {
     cursor: pointer;
     font-size: 12px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
     border-radius: 4px;
     background: #1abc9c;
     line-height: 20px;
@@ -219,7 +255,7 @@ a {
     background-size: 24px 24px;
 }
 
-.infobox {
+.info-box {
     margin: 4px;
     padding: 0;
     background-color: #fff;
@@ -230,31 +266,31 @@ a {
     -moz-box-shadow: 0 1px 4px rgba(0,0,0,.065);
     box-shadow: 0 1px 4px rgba(0,0,0,.065);
 }
-.infobox ul {
+.info-box ul {
     margin:0;
     padding: 0;
 }
-.infobox li {
+.info-box li {
     display: block;
     margin: 0 0 -1px;
     padding: 8px 14px;
     border: 1px solid #e5e5e5;
 }
-.infobox li:first-child {
+.info-box li:first-child {
     -webkit-border-radius: 6px 6px 0 0;
     -moz-border-radius: 6px 6px 0 0;
     border-radius: 6px 6px 0 0;
 }
-.infobox li:last-child {
+.info-box li:last-child {
     -webkit-border-radius: 0 0 6px 6px;
     -moz-border-radius: 0 0 6px 6px;
     border-radius: 0 0 6px 6px;
 }
-.infobox li > dt {
+.info-box li > dt {
     display: inline;
     padding: 8px 8px;
 }
-.infobox li > dd {
+.info-box li > dd {
     display: inline;
     margin: 0;
     padding: 8px 14px;

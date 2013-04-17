@@ -62,6 +62,15 @@ class Speaker(models.Model):
     twitter = models.CharField(max_length=255, db_index=True, null=True, blank=True)
     company = models.ForeignKey(Company, null=True)
 
+    class Meta:
+        ordering = ['name']
+
+    def get_tags(self):
+        return Tag.objects.filter(id__in=Session.objects.filter(speakers=self).values_list('tags', flat=True))
+
+    def get_classes(self):
+        return set([_ for sublist in [_.get_classes() for _ in Session.objects.filter(speakers=self)] for _ in sublist])
+
     def __unicode__(self):
         return '%s(%s)' % (self.name, self.company)
 
