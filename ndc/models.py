@@ -56,6 +56,12 @@ class Company(models.Model):
     class Meta:
         ordering = ['name']
 
+    def get_tags(self):
+        return Tag.objects.filter(id__in=self.get_sessions().values_list('tags', flat=True))
+
+    def get_classes(self):
+        return set([_ for sublist in [_.get_classes() for _ in self.get_sessions()] for _ in sublist])
+
     def get_sessions(self):
         return Session.objects.filter(speakers__in=self.speaker_set.all())
 

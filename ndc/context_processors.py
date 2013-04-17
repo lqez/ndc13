@@ -1,5 +1,6 @@
 from django.core.urlresolvers import resolve
 from collections import OrderedDict
+from ndc.models import Tag
 
 
 def menus(request):
@@ -19,4 +20,9 @@ def menus(request):
 
     return {
         'menus': menus,
+    }
+
+def tags(request):
+    return {
+        'tags': Tag.objects.all(),
     }

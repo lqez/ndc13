@@ -64,11 +64,6 @@ class company_detail(DetailView):
 class speaker_list(ListView):
     model = Speaker
 
-    def get_context_data(self, **kwargs):
-        context = super(speaker_list, self).get_context_data(**kwargs)
-        context['tags'] = Tag.objects.all()
-        return context
-
 
 class speaker_detail(DetailView):
     model = Speaker
@@ -79,7 +74,6 @@ class session_list(ListView):
 
     def get_context_data(self, **kwargs):
         context = super(session_list, self).get_context_data(**kwargs)
-        context['tags'] = Tag.objects.all()
         context['dates'] = SessionDate.objects.all()
         return context
 

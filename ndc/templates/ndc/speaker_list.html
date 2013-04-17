@@ -5,10 +5,6 @@
     <div class="span12">
         <h1>Speakers</h1>
         {% include "tag_list.html" %}
-    </div>
-</div>
-<div class="row">
-    <div class="span12">
         <div class="row">
             {% for s in speaker_list %}
             <div class="span3 speaker-box ft {{ s.get_classes|join:' ' }}">
