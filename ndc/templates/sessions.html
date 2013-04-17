@@ -4,7 +4,7 @@
     </colgroup>
     <tbody>
     {% for s in sessions %}
-    <tr>
+    <tr class="ft {{ s.get_classes|join:' ' }}">
         <td class="tiny hidden-desktop" nowrap>
             {{ s.date.day|date:"m/d" }}, {{ s.begin_time }} / {{ s.room }}호
         </td>
