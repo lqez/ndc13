@@ -60,7 +60,7 @@
                         onclick="document.location='{% url "session" s.id %}'">
                         <div class="session ft {{ s.get_classes|join:' ' }}"
                             rel="tooltip" data-html="true" data-original-title="{{ s.html_get_category_tags }}">
-                            <table class="tagbar visible-desktop" cellspacing="1" cellpadding="0"><tr>
+                            <table class="tagbar" cellspacing="1" cellpadding="0"><tr>
                                 {% for tag in s.tags.all %}
                                 {% if tag.is_category %}
                                 <td class="tag-{{ tag.uid }}"></td>
@@ -70,23 +70,23 @@
                             <a href="{% url "session" s.id %}">
                                 <div class="title">{{ s.name }}</div>
                             </a>
-                            {% if s.speakers %}
-                            <div class="speaker_and_company visible-desktop">
-                                <div class="speaker">
-                                    {% for speaker in s.speakers.all %}
-                                    <a href="{% url "speaker" speaker.id %}">{{ speaker.name }}</a>
-                                    {% if not forloop.last %}, {% endif %}
-                                    {% endfor %}
-                                </div>
-                                <div class="company">
-                                    {% for company in s.get_companies %}
-                                    <a href="{% url "company" company.id %}">{{ company.name }}</a>
-                                    {% if not forloop.last %}, {% endif %}
-                                    {% endfor %}
-                                </div>
-                            </div>
-                            {% endif %}
                         </div>
+                        {% if s.speakers %}
+                        <div class="speaker_and_company">
+                            <div class="speaker">
+                                {% for speaker in s.speakers.all %}
+                                <a href="{% url "speaker" speaker.id %}">{{ speaker.name }}</a>
+                                {% if not forloop.last %}, {% endif %}
+                                {% endfor %}
+                            </div>
+                            <div class="company">
+                                {% for company in s.get_companies %}
+                                <a href="{% url "company" company.id %}">{{ company.name }}</a>
+                                {% if not forloop.last %}, {% endif %}
+                                {% endfor %}
+                            </div>
+                        </div>
+                        {% endif %}
                     </td>
                     {% else %}
                     <td></td>
@@ -102,4 +102,18 @@
 {% endblock %}
 {% block script %}
 {% include "tag_script.html" %}
+<script type="text/javascript">
+$(".booked").each(function() {
+    $el = $(this);
+    var newDiv = $("<div />", {
+        "class": "innerWrapper",
+        "css"  : {
+            "height"  : $el.height(),
+            "width"   : "100%",
+            "position": "relative"
+        }
+    });
+    $el.wrapInner(newDiv);    
+});
+</script>
 {% endblock %}

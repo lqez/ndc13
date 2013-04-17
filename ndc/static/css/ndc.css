@@ -2,8 +2,10 @@ a {
     color: #34495e;
     text-decoration: none;
 }
+.username {
+    margin:0 5px;
+}
 .timetable td {
-    position: relative;
     -webkit-transition: 0.25s;
     -moz-transition: 0.25s;
     -o-transition: 0.25s;
@@ -26,15 +28,15 @@ a {
     color: #1abc9c;
 }
 .timetable .session {
-    margin-bottom: 40px;
+    padding-bottom: 40px;
 }
 .timetable .title {
     font-size: 13px;
 }
 .timetable .speaker_and_company {
     position: absolute;
-    right: 8px;
-    bottom: 5px;
+    right: 0px;
+    bottom: 0px;
     text-align: right;
 }
 .timetable .speaker, .timetable .company {

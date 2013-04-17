@@ -3,20 +3,29 @@ body {
     padding-top: 64px;
 }
 
+h3, h4, h5, h6 {
+    font-weight: normal;
+}
+
 .btn-collapse {
     display: none;
 }
 
-.username {
-    margin:0 5px;
+.visible-desktop-td {
+    display: table-cell !important;
+}
+
+@media (max-width: 979px) {
+  .visible-desktop-td {
+    display: none !important ;
+  }
 }
 
 .navbar-search {
     margin: 12px;
 }
-
 .navbar-search .search-query {
-    padding: 12px 15px;
+    width: 160px;
 }
 
 .well-white {
@@ -47,6 +56,26 @@ body {
 .table tbody th {
     background: #e9e9f0;
     text-align: center;
+}
+
+.btn.btn-twitter {
+    background-color: #3498db; 
+}
+.btn.btn-twitter:hover, .btn.btn-twitter:focus {
+    background-color: #5dade2; 
+}
+.btn.btn-twitter:active, .btn.btn-twitter.active {
+    background-color: #2383c4; 
+}
+
+.btn.btn-facebook {
+    background-color: #3498db; 
+}
+.btn.btn-facebook:hover, .btn.btn-facebook:focus {
+    background-color: #5dade2; 
+}
+.btn.btn-facebook:active, .btn.btn-facebook.active {
+    background-color: #2383c4; 
 }
 
 @media (max-width: 979px) {

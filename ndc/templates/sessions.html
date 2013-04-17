@@ -6,7 +6,7 @@
     {% for s in sessions %}
     <tr class="ft {{ s.get_classes|join:' ' }}">
         <td class="tiny hidden-desktop" nowrap>
-            {{ s.date.day|date:"m/d" }}, {{ s.begin_time }} / {{ s.room }}호
+            {{ s.date.day|date:"m/d" }} {{ s.begin_time }}<br>{{ s.room }}호
         </td>
         <td class="hidden-phone">
             <table class="tagbar tagbar-mid"
@@ -21,11 +21,11 @@
         </td>
         <td><a href="{% url 'session' s.id %}">{{ s.name }}</a></td>
         {% if not omit_date %}
-        <td class="visible-desktop" nowrap><small>{{ s.date }}</small></td>
+        <td class="visible-desktop-td" nowrap><small>{{ s.date }}</small></td>
         {% endif %}
-        <td class="visible-desktop" nowrap><small>{{ s.begin_time }}</small></td>
-        <td class="visible-desktop" nowrap><small>{{ s.room }}호</small></td>
-        <td class="visible-desktop">
+        <td class="visible-desktop-td" nowrap><small>{{ s.begin_time }}</small></td>
+        <td class="visible-desktop-td" nowrap><small>{{ s.room }}호</small></td>
+        <td class="visible-desktop-td">
             <small>
             {% for speaker in s.speakers.all %}
                 <a href="{% url "speaker" speaker.id %}">{{ speaker }}</a>{% if not forloop.last %}, {% endif %}
