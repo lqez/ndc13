@@ -1,4 +1,7 @@
 Django==1.5.1
 PIL==1.1.7
 South==0.7.6
+argparse==1.2.1
+django-haystack==1.2.7
+python-ptrace==0.6.4
 wsgiref==0.1.2
