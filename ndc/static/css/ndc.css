@@ -362,9 +362,10 @@ a {
     min-width: 300px;
     max-width: 640px;
 }
-.nexon {
+.sponsor {
     margin: 32px 0;
-    width: 220px;
+    text-align: center;
+    color: #bdc3c7;
 }
 .box {
     width: 22%;
@@ -411,9 +412,9 @@ a {
 }
 
 .tech li > dt {
-    padding: 12px 14px;
+    padding: 8px 20px;
     display: inline-block;
-    width: 64px;
+    width: 80px;
     background: #ecf0f1;
 }
 
