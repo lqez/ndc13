@@ -19,7 +19,7 @@
             {% for s in d.sessions %}
             <tr class="ft {{ s.get_classes|join:' ' }}">
                 <td class="tiny hidden-desktop">
-                    {{ s.room }}호 / {{ s.begin_time }}
+                    {{ s.begin_time }}/ {{ s.room }}호
                 </td>
                 <td class="hidden-phone">
                     <table class="tagbar tagbar-mid"

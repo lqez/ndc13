@@ -4,6 +4,7 @@ $(function () {
     $(".taglist .tag").click(function() {
         if( $(this).hasClass("highlight") )
         {
+            location.hash = '';
             $(".ft").show();
             $(".taglist .tag").removeClass("muted highlight");
         }

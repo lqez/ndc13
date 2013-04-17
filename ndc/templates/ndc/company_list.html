@@ -1,9 +1,25 @@
 {% extends "base.html" %}
 {% block title %}회사 목록{% endblock %}
 {% block content %}
-<ul>
-    {% for company in company_list %}
-    <li><a href="{% url 'company' company.id %}">{{ company.name }}</a></li>
-    {% endfor %}
-</ul>
+<div class="row">
+    <div class="span12">
+        <h1>Companies</h1>
+        <div class="row">
+            {% for c in company_list %}
+            <div class="span3 company-box">
+                <div class="company" onclick="document.location='{% url "company" c.id %}'">
+                    <div class="name">
+                        <a href="{% url "company" c.id %}">{{ c.name }}</a>
+                    </div>
+                    <div class="speakers">
+                        {% for s in c.speaker_set.all %}
+                        <div class="speaker"><a href="{% url "speaker" s.id %}">{{ s.name }}</a></div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
 {% endblock %}

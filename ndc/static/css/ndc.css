@@ -48,9 +48,48 @@ a {
     bottom: 5px;
     text-align: right;
 }
-.timetable .speaker, .company {
+.timetable .speaker, .timetable .company {
     font-size: 11px;
     line-height: 140%;
+}
+
+.company-box .company {
+    border: 1px solid #bdc3c7;
+    overflow: hidden;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-transition: 0.25s;
+    -moz-transition: 0.25s;
+    -o-transition: 0.25s;
+    transition: 0.25s;
+    cursor: pointer;
+    margin: 10px 0;
+}
+
+.company-box .company:hover {
+    border: 1px solid #34495e;
+    -webkit-box-shadow: 0 0 1px #56efb4, 0 0 8px rgba(82, 236, 168, .6);
+    -moz-box-shadow: 0 0 1px #56efb4, 0 0 8px rgba(82, 236, 168,.6);
+    box-shadow: 0 0 1px #56efb4, 0 0 8px rgba(82, 236, 168, .6);
+}
+
+.company-box .company .name {
+    display: block;
+    padding: 14px 14px;
+    background: #ecf0f1;
+}
+
+.company-box .company .speakers {
+    display: block;
+    border-top: 1px solid #d9dfe0;
+    color: #7f8c8d;
+}
+
+.company-box .company .speakers .speaker {
+    display: inline-block;
+    padding: 5px 14px;
+    min-width: 50px;
 }
 
 .speaker-box .speaker {
@@ -69,6 +108,9 @@ a {
 
 .speaker-box .speaker:hover {
     border: 1px solid #34495e;
+    -webkit-box-shadow: 0 0 1px #56efb4, 0 0 8px rgba(82, 236, 168, .6);
+    -moz-box-shadow: 0 0 1px #56efb4, 0 0 8px rgba(82, 236, 168,.6);
+    box-shadow: 0 0 1px #56efb4, 0 0 8px rgba(82, 236, 168, .6);
 }
 
 .speaker-box .speaker .name {
@@ -98,11 +140,37 @@ a {
 }
 
 .speaker-box .speaker .company {
+    font-size: 11px;
     display: block;
     border-top: 1px solid #d9dfe0;
     color: #7f8c8d;
     background: #ecf0f1;
     padding: 4px 14px 5px;
+}
+
+.speaker-info .name {
+    padding: 4px 0;
+    line-height: 60px;
+}
+
+.speaker-info .photo {
+    margin: 5px 8px 5px 0px;
+    border: 1px solid #bdc3c7;
+    display: inline;
+    float: left;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    border-radius: 100px;
+    overflow: hidden;
+}
+
+.speaker-info .photo img {
+    width: 48px;
+    height: auto;
+}
+
+.company tbody th {
+    background: #e9e9f0;
 }
 
 .taglist {

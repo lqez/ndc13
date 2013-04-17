@@ -2,10 +2,81 @@
 {% block title %}발표자 상세 정보{% endblock %}
 {% block content %}
 <div class="row">
-    <div class="span9">
-        <h1>{{ speaker.name }}</h1>
+    <div class="span8 speaker-info">
+        <h1 class="name">
+            {% if speaker.twitter %}
+            <div class="photo">
+                <img src="http://api.twitter.com/1/users/profile_image/{{ speaker.twitter }}"/>
+            </div>
+            {% endif %}
+            {{ speaker.name }}
+            <small>
+                {% if speaker.twitter %}
+                <a href="https://twitter.com/{{ speaker.twitter }}" target="_blank">@{{ speaker.twitter }}</a> / 
+                {% endif %}
+                <a href="{% url "company" speaker.company.id %}">{{ speaker.company.name }}</a>
+            </small>
+        </h1>
+        {% if speaker.twitter %}
+        <a href="https://twitter.com/{{ speaker.twitter }}" class="twitter-follow-button" data-show-count="true" data-size="large">Follow @{{ speaker.twitter }}</a>
+        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+        {% endif %}
+        <ul class="taglist">
+            {% for tag in speaker.get_tags %}
+            {% if tag.is_category %}
+            <li><a href="{% url "sessions" %}#filter-{{ tag.uid }}">{{ tag.html }}</a></li>
+            {% endif %}
+            {% endfor %}
+        </ul>
     </div>
-    <div class="span3">
+</div>
+<hr>
+<div class="row">
+    <div class="span12">
+        <h2>Sessions</h2>
+        <table class="table">
+            <colgroup>
+                <col width="80px"/>
+            </colgroup>
+            <tbody>
+            {% for s in speaker.session_set.all %}
+            <tr>
+                <td class="tiny hidden-desktop" nowrap>
+                    {{ s.date.day|date:"m/d" }}, {{ s.begin_time }} / {{ s.room }}호
+                </td>
+                <td class="hidden-phone">
+                    <table class="tagbar tagbar-mid"
+                        rel="tooltip" data-html="true" data-original-title="{{ s.html_get_category_tags }}">
+                        <tr>
+                        {% for tag in s.tags.all %}
+                        {% if tag.is_category %}
+                        <td class="tag-{{ tag.uid }}"></td>
+                        {% endif %}
+                        {% endfor %}
+                    </tr></table>
+                </td>
+                <td><a href="{% url 'session' s.id %}">{{ s.name }}</a></td>
+                <td class="visible-desktop" nowrap><small>{{ s.date }}</small></td>
+                <td class="visible-desktop" nowrap><small>{{ s.begin_time }}</small></td>
+                <td class="visible-desktop" nowrap><small>{{ s.room }}호</small></td>
+                <td class="visible-desktop">
+                    <small>
+                    {% for speaker in s.speakers.all %}
+                        <a href="{% url "speaker" speaker.id %}">{{ speaker }}</a>{% if not forloop.last %}, {% endif %}
+                    {% endfor %}
+                    </small>
+                </td>
+            </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</div>
+<hr>
+<div class="row">
+    <div class="span12">
+        <h2>Comments</h2>
+        <a class="moot" href="http://api.moot.it/sndc13/{{ request.path }}"></a>
     </div>
 </div>
 {% endblock %}
