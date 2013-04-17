@@ -2,11 +2,39 @@
 {% block title %}{{ company.name }}{% endblock %}
 {% block content %}
 <div class="row">
-    <div class="span12">
+    <div class="span8">
         <h1 class="name">
             {{ company.name }}
         </h1>
-        <hr>
+        {% if company.desc %}
+        <p>{{ company.desc }}</p>
+        {% endif %}
+    </div>
+    <div class="span4">
+        <div class="info-box">
+            <dl>
+            <ul>
+                {% if company.url %}
+                <li>
+                    <dt class="fui-eye-24"></dt>
+                    <dd><a href="{{ company.url }}">{{ company.url }}</a></dd>
+                </li>
+                {% endif %}
+                <li>
+                    <dt class="fui-man-24"></dt>
+                    <dd>{{ company.speaker_set.all|length }} speaker{{ company.speaker_set.all|length|pluralize:",s" }}</dd>
+                </li>
+                <li>
+                    <dt class="fui-calendar-24"></dt>
+                    <dd>{{ company.get_sessions|length }} session{{ company.get_sessions|length|pluralize:",s" }}</dd>
+                </li>
+            </ul>
+            </dl>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="span12">
         <h2>Sessions</h2>
         {% with sessions=company.get_sessions %}
         {% include "sessions.html" %}

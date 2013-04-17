@@ -50,6 +50,8 @@ class SessionTime(models.Model):
 
 class Company(models.Model):
     name = models.CharField(max_length=100, db_index=True)
+    desc = models.CharField(max_length=2000, null=True, blank=True)
+    url = models.CharField(max_length=255, null=True, blank=True)
 
     class Meta:
         ordering = ['name']
