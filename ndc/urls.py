@@ -17,7 +17,7 @@ urlpatterns = patterns(
     url(r'^sessions/$', session_list.as_view(), name='sessions'),
     url(r'^session/(?P<pk>\d+)/$', session_detail.as_view(), name='session'),
 
-    url(r'^search/$', search, name='search'),
+    url(r'^search/', include('haystack.urls')),
     url(r'^about/$', about, name='about'),
 
     # Uncomment the next line to enable the admin:

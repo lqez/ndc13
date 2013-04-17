@@ -308,322 +308,405 @@
     }, 
     {
         "fields": {
-            "name": "\ub125\uc2a8"
+            "desc": "\ub125\uc2a8\uc785\ub2c8\ub2e4.", 
+            "name": "\ub125\uc2a8", 
+            "url": "http://nexon.com"
         }, 
         "model": "ndc.company", 
         "pk": 1
     }, 
     {
         "fields": {
-            "name": "Havok Korea"
+            "desc": null, 
+            "name": "Havok Korea", 
+            "url": null
         }, 
         "model": "ndc.company", 
         "pk": 2
     }, 
     {
         "fields": {
-            "name": "\uc5d4\ub3c4\uc5b4\uc988"
+            "desc": null, 
+            "name": "\uc5d4\ub3c4\uc5b4\uc988", 
+            "url": null
         }, 
         "model": "ndc.company", 
         "pk": 3
     }, 
     {
         "fields": {
-            "name": "\ud55c\uad6d\uc778\ud130\ub137\uc9c4\ud765\uc6d0"
+            "desc": null, 
+            "name": "\ud55c\uad6d\uc778\ud130\ub137\uc9c4\ud765\uc6d0", 
+            "url": null
         }, 
         "model": "ndc.company", 
         "pk": 4
     }, 
     {
         "fields": {
-            "name": "\ubc14\ub2d0\ub77c\ube0c\ub9ac\uc988"
+            "desc": null, 
+            "name": "\ubc14\ub2d0\ub77c\ube0c\ub9ac\uc988", 
+            "url": null
         }, 
         "model": "ndc.company", 
         "pk": 5
     }, 
     {
         "fields": {
-            "name": "\uc5d0\uc774\ud329\ud1a0\ub9ac"
+            "desc": null, 
+            "name": "\uc5d0\uc774\ud329\ud1a0\ub9ac", 
+            "url": null
         }, 
         "model": "ndc.company", 
         "pk": 6
     }, 
     {
         "fields": {
-            "name": "Tapjoy Korea"
+            "desc": null, 
+            "name": "Tapjoy Korea", 
+            "url": null
         }, 
         "model": "ndc.company", 
         "pk": 7
     }, 
     {
         "fields": {
-            "name": "\ub124\uc624\ud50c"
+            "desc": null, 
+            "name": "\ub124\uc624\ud50c", 
+            "url": null
         }, 
         "model": "ndc.company", 
         "pk": 8
     }, 
     {
         "fields": {
-            "name": "Blizzard Entertainment"
+            "desc": null, 
+            "name": "Blizzard Entertainment", 
+            "url": null
         }, 
         "model": "ndc.company", 
         "pk": 9
     }, 
     {
         "fields": {
-            "name": "\ud55c\uad6d\uc608\uc220\uc885\ud569\ud559\uad50"
+            "desc": null, 
+            "name": "\ud55c\uad6d\uc608\uc220\uc885\ud569\ud559\uad50", 
+            "url": null
         }, 
         "model": "ndc.company", 
         "pk": 10
     }, 
     {
         "fields": {
-            "name": "\uc704\ud50c\uac8c\uc784\uc988"
+            "desc": null, 
+            "name": "\uc704\ud50c\uac8c\uc784\uc988", 
+            "url": null
         }, 
         "model": "ndc.company", 
         "pk": 11
     }, 
     {
         "fields": {
-            "name": "\uc11c\uc6b8\uc608\uc220\ub300\ud559\uad50"
+            "desc": null, 
+            "name": "\uc11c\uc6b8\uc608\uc220\ub300\ud559\uad50", 
+            "url": null
         }, 
         "model": "ndc.company", 
         "pk": 12
     }, 
     {
         "fields": {
-            "name": "\ubc84\ud2f0\uace0\uc6b0 \uac8c\uc784\uc988"
+            "desc": null, 
+            "name": "\ubc84\ud2f0\uace0\uc6b0 \uac8c\uc784\uc988", 
+            "url": null
         }, 
         "model": "ndc.company", 
         "pk": 13
     }, 
     {
         "fields": {
-            "name": "\uc5d4\ub3c4\uc5b4\uc988"
+            "desc": null, 
+            "name": "\uc5d4\ub3c4\uc5b4\uc988", 
+            "url": null
         }, 
         "model": "ndc.company", 
         "pk": 14
     }, 
     {
         "fields": {
-            "name": "\ub125\uc2a8"
-        }, 
-        "model": "ndc.company", 
-        "pk": 15
-    }, 
-    {
-        "fields": {
-            "name": "\ud30c\ud2f0\uac8c\uc784\uc988"
+            "desc": null, 
+            "name": "\ud30c\ud2f0\uac8c\uc784\uc988", 
+            "url": null
         }, 
         "model": "ndc.company", 
         "pk": 16
     }, 
     {
         "fields": {
-            "name": "\ub125\uc2a8 \uc544\uba54\ub9ac\uce74"
+            "desc": null, 
+            "name": "\ub125\uc2a8 \uc544\uba54\ub9ac\uce74", 
+            "url": null
         }, 
         "model": "ndc.company", 
         "pk": 17
     }, 
     {
         "fields": {
-            "name": "\ub125\uc2a4\ud1a0\ub9ad"
+            "desc": null, 
+            "name": "\ub125\uc2a4\ud1a0\ub9ad", 
+            "url": null
         }, 
         "model": "ndc.company", 
         "pk": 18
     }, 
     {
         "fields": {
-            "name": "\uc6b0\uc11d\ub300\ud559\uad50"
+            "desc": null, 
+            "name": "\uc6b0\uc11d\ub300\ud559\uad50", 
+            "url": null
         }, 
         "model": "ndc.company", 
         "pk": 19
     }, 
     {
         "fields": {
-            "name": "\ub4dc\ub798\uace4 \ud50c\ub77c\uc774"
+            "desc": null, 
+            "name": "\ub4dc\ub798\uace4 \ud50c\ub77c\uc774", 
+            "url": null
         }, 
         "model": "ndc.company", 
         "pk": 20
     }, 
     {
         "fields": {
-            "name": "\uc5d4\uc528\uc18c\ud504\ud2b8"
+            "desc": null, 
+            "name": "\uc5d4\uc528\uc18c\ud504\ud2b8", 
+            "url": null
         }, 
         "model": "ndc.company", 
         "pk": 21
     }, 
     {
         "fields": {
-            "name": "Umbra Software"
+            "desc": null, 
+            "name": "Umbra Software", 
+            "url": null
         }, 
         "model": "ndc.company", 
         "pk": 22
     }, 
     {
         "fields": {
-            "name": "\uc911\uc559\ub300\ud559\uad50 \ubcd1\uc6d0"
+            "desc": null, 
+            "name": "\uc911\uc559\ub300\ud559\uad50 \ubcd1\uc6d0", 
+            "url": null
         }, 
         "model": "ndc.company", 
         "pk": 23
     }, 
     {
         "fields": {
-            "name": "Natural Motion"
+            "desc": null, 
+            "name": "Natural Motion", 
+            "url": null
         }, 
         "model": "ndc.company", 
         "pk": 24
     }, 
     {
         "fields": {
-            "name": "\ud398\uc774\uc988\ucea3"
+            "desc": null, 
+            "name": "\ud398\uc774\uc988\ucea3", 
+            "url": null
         }, 
         "model": "ndc.company", 
         "pk": 25
     }, 
     {
         "fields": {
-            "name": "\ud504\ub9ac\ub79c\uc11c"
+            "desc": null, 
+            "name": "\ud504\ub9ac\ub79c\uc11c", 
+            "url": null
         }, 
         "model": "ndc.company", 
         "pk": 26
     }, 
     {
         "fields": {
-            "name": "\uc804 KTH"
+            "desc": null, 
+            "name": "\uc804 KTH", 
+            "url": null
         }, 
         "model": "ndc.company", 
         "pk": 27
     }, 
     {
         "fields": {
-            "name": "\uce74\uce74\uc624\ub7a9"
+            "desc": null, 
+            "name": "\uce74\uce74\uc624\ub7a9", 
+            "url": null
         }, 
         "model": "ndc.company", 
         "pk": 28
     }, 
     {
         "fields": {
-            "name": "\ubaa8\ube44\ud074"
+            "desc": null, 
+            "name": "\ubaa8\ube44\ud074", 
+            "url": null
         }, 
         "model": "ndc.company", 
         "pk": 29
     }, 
     {
         "fields": {
-            "name": "Geomerics"
+            "desc": null, 
+            "name": "Geomerics", 
+            "url": null
         }, 
         "model": "ndc.company", 
         "pk": 30
     }, 
     {
         "fields": {
-            "name": "\uc778\ub514\uac8c\uc784\ud300 \ud0dc\ub098"
+            "desc": null, 
+            "name": "\uc778\ub514\uac8c\uc784\ud300 \ud0dc\ub098", 
+            "url": null
         }, 
         "model": "ndc.company", 
         "pk": 31
     }, 
     {
         "fields": {
-            "name": "\ub9c8\uc774\uc5d0\ud2b8 \uc5d4\ud130\ud14c\uc778\uba3c\ud2b8"
+            "desc": null, 
+            "name": "\ub9c8\uc774\uc5d0\ud2b8 \uc5d4\ud130\ud14c\uc778\uba3c\ud2b8", 
+            "url": null
         }, 
         "model": "ndc.company", 
         "pk": 32
     }, 
     {
         "fields": {
-            "name": "\ub124\uc628\uc2a4\ud29c\ub514\uc624"
+            "desc": null, 
+            "name": "\ub124\uc628\uc2a4\ud29c\ub514\uc624", 
+            "url": null
         }, 
         "model": "ndc.company", 
         "pk": 33
     }, 
     {
         "fields": {
-            "name": "gloops"
+            "desc": null, 
+            "name": "gloops", 
+            "url": null
         }, 
         "model": "ndc.company", 
         "pk": 34
     }, 
     {
         "fields": {
-            "name": "Dev Arc"
+            "desc": null, 
+            "name": "Dev Arc", 
+            "url": null
         }, 
         "model": "ndc.company", 
         "pk": 35
     }, 
     {
         "fields": {
-            "name": "JCE"
+            "desc": null, 
+            "name": "JCE", 
+            "url": null
         }, 
         "model": "ndc.company", 
         "pk": 36
     }, 
     {
         "fields": {
-            "name": "\ud130\ud2c0 \ud06c\ub9bc"
+            "desc": null, 
+            "name": "\ud130\ud2c0 \ud06c\ub9bc", 
+            "url": null
         }, 
         "model": "ndc.company", 
         "pk": 37
     }, 
     {
         "fields": {
-            "name": "\uc544\uc774\ub374\ud2f0\ud2f0 \uac8c\uc784\uc988"
+            "desc": null, 
+            "name": "\uc544\uc774\ub374\ud2f0\ud2f0 \uac8c\uc784\uc988", 
+            "url": null
         }, 
         "model": "ndc.company", 
         "pk": 38
     }, 
     {
         "fields": {
-            "name": "Gree Korea"
+            "desc": null, 
+            "name": "Gree Korea", 
+            "url": null
         }, 
         "model": "ndc.company", 
         "pk": 39
     }, 
     {
         "fields": {
-            "name": "Lexian"
+            "desc": null, 
+            "name": "Lexian", 
+            "url": null
         }, 
         "model": "ndc.company", 
         "pk": 40
     }, 
     {
         "fields": {
-            "name": "(\uc8fc)\uc544\uc774\ucf54\ub2c9\uc2a4 \uc5d4\ud130\ud14c\uc778\uba3c\ud2b8"
+            "desc": null, 
+            "name": "(\uc8fc)\uc544\uc774\ucf54\ub2c9\uc2a4 \uc5d4\ud130\ud14c\uc778\uba3c\ud2b8", 
+            "url": null
         }, 
         "model": "ndc.company", 
         "pk": 41
     }, 
     {
         "fields": {
-            "name": "\uc778\ub514 \uac1c\ubc1c\uc790"
+            "desc": null, 
+            "name": "\uc778\ub514 \uac1c\ubc1c\uc790", 
+            "url": null
         }, 
         "model": "ndc.company", 
         "pk": 42
     }, 
     {
         "fields": {
-            "name": "\uc804 NHN"
+            "desc": null, 
+            "name": "\uc804 NHN", 
+            "url": null
         }, 
         "model": "ndc.company", 
         "pk": 43
     }, 
     {
         "fields": {
-            "name": "CHUKONG CO, INC."
+            "desc": null, 
+            "name": "CHUKONG CO, INC.", 
+            "url": null
         }, 
         "model": "ndc.company", 
         "pk": 44
     }, 
     {
         "fields": {
-            "name": "\ud30c\uc774\ub4dc \ud30c\uc774\ud37c\uc2a4 \uc5d4\ud130\ud14c\uc778\uba3c\ud2b8"
+            "desc": null, 
+            "name": "\ud30c\uc774\ub4dc \ud30c\uc774\ud37c\uc2a4 \uc5d4\ud130\ud14c\uc778\uba3c\ud2b8", 
+            "url": null
         }, 
         "model": "ndc.company", 
         "pk": 45
     }, 
     {
         "fields": {
-            "name": "\uc640\uc77c\ub4dc \uce74\ub4dc"
+            "desc": null, 
+            "name": "\uc640\uc77c\ub4dc \uce74\ub4dc", 
+            "url": null
         }, 
         "model": "ndc.company", 
         "pk": 46
@@ -860,7 +943,7 @@
     }, 
     {
         "fields": {
-            "company": 15, 
+            "company": 1, 
             "email": "", 
             "name": "\uae30\ud604\uc6b0", 
             "twitter": ""
@@ -883,7 +966,7 @@
             "company": 16, 
             "email": "", 
             "name": "\uc784\ud0dc\ud615", 
-            "twitter": ""
+            "twitter": "ehooi"
         }, 
         "model": "ndc.speaker", 
         "pk": 26
@@ -1103,7 +1186,7 @@
             "company": 26, 
             "email": "", 
             "name": "\uc720\uc601\ucc9c", 
-            "twitter": ""
+            "twitter": "dgtman"
         }, 
         "model": "ndc.speaker", 
         "pk": 48
@@ -1193,7 +1276,7 @@
             "company": 27, 
             "email": "", 
             "name": "\uac15\uc18c\ub9ac", 
-            "twitter": ""
+            "twitter": "curioe"
         }, 
         "model": "ndc.speaker", 
         "pk": 57
@@ -1383,7 +1466,7 @@
             "company": 37, 
             "email": "", 
             "name": "\ubc15\uc120\uc6a9", 
-            "twitter": ""
+            "twitter": "luvtext"
         }, 
         "model": "ndc.speaker", 
         "pk": 76
@@ -1503,7 +1586,7 @@
             "company": 43, 
             "email": "", 
             "name": "\uac15\ub300\uba85", 
-            "twitter": ""
+            "twitter": "charsyam"
         }, 
         "model": "ndc.speaker", 
         "pk": 88
@@ -1533,7 +1616,7 @@
             "company": 45, 
             "email": "", 
             "name": "\uc784\ud604\ud638", 
-            "twitter": ""
+            "twitter": "go_anoa"
         }, 
         "model": "ndc.speaker", 
         "pk": 91
@@ -1613,7 +1696,7 @@
             "company": 46, 
             "email": "", 
             "name": "\uae40\uc724\uc0c1", 
-            "twitter": ""
+            "twitter": "lifedefrager"
         }, 
         "model": "ndc.speaker", 
         "pk": 99
@@ -2564,8 +2647,8 @@
             "room": 4, 
             "slide_url": "", 
             "speakers": [
-                41, 
-                42
+                42, 
+                41
             ], 
             "tags": [
                 1, 
@@ -3785,8 +3868,8 @@
             "room": 5, 
             "slide_url": "", 
             "speakers": [
-                95, 
-                96
+                96, 
+                95
             ], 
             "tags": [
                 3, 

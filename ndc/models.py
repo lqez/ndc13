@@ -1,5 +1,6 @@
 from django.db import models
 from django.utils.safestring import mark_safe
+from django.core.urlresolvers import reverse
 from datetime import datetime
 
 
@@ -56,6 +57,9 @@ class Company(models.Model):
     class Meta:
         ordering = ['name']
 
+    def get_absolute_url(self):
+        return reverse('company', args=[self.id])
+
     def get_tags(self):
         return Tag.objects.filter(id__in=self.get_sessions().values_list('tags', flat=True))
 
@@ -79,6 +83,9 @@ class Speaker(models.Model):
     class Meta:
         ordering = ['name']
 
+    def get_absolute_url(self):
+        return reverse('speaker', args=[self.id])
+
     def get_tags(self):
         return Tag.objects.filter(id__in=Session.objects.filter(speakers=self).values_list('tags', flat=True))
 
@@ -99,6 +106,9 @@ class Session(models.Model):
     room = models.ForeignKey(Room)
     date = models.ForeignKey(SessionDate)
     times = models.ManyToManyField(SessionTime)
+
+    def get_absolute_url(self):
+        return reverse('session', args=[self.id])
 
     def duration_in_min(self):
         r_min = sum([_.duration_in_min() for _ in self.times.all()])

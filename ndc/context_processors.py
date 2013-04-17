@@ -22,7 +22,14 @@ def menus(request):
         'menus': menus,
     }
 
+
 def tags(request):
     return {
         'tags': Tag.objects.all(),
+    }
+
+
+def search(request):
+    return {
+        'q': request.GET.get('q', ''),
     }

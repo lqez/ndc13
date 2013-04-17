@@ -125,6 +125,7 @@ TEMPLATE_CONTEXT_PROCESSORS = (
     'django.core.context_processors.request',
     'ndc.context_processors.menus',
     'ndc.context_processors.tags',
+    'ndc.context_processors.search',
 )
 
 INSTALLED_APPS = (
@@ -139,6 +140,7 @@ INSTALLED_APPS = (
     # Uncomment the next line to enable admin documentation:
     # 'django.contrib.admindocs',
     'south',
+    'haystack',
 ) + (
     'ndc',
 )
@@ -171,3 +173,6 @@ LOGGING = {
         },
     }
 }
+
+HAYSTACK_SITECONF = 'ndc.search_sites'
+HAYSTACK_SEARCH_ENGINE = 'simple'
