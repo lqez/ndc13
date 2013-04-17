@@ -5,6 +5,9 @@
 {% if query %}
     {% if page.object_list|length %}
     <table class="table table-bordered">
+        <colgroup>
+            <col width="110px">
+        </colgroup>
         {% for result in page.object_list %}
         <tr>
             <th>{{ result.verbose_name }}</th>

@@ -16,7 +16,7 @@
             <ul>
                 {% if company.url %}
                 <li>
-                    <dt class="fui-eye-24"></dt>
+                    <dt class="fui-cmd-24"></dt>
                     <dd><a href="{{ company.url }}">{{ company.url }}</a></dd>
                 </li>
                 {% endif %}
@@ -25,7 +25,7 @@
                     <dd>{{ company.speaker_set.all|length }} speaker{{ company.speaker_set.all|length|pluralize:",s" }}</dd>
                 </li>
                 <li>
-                    <dt class="fui-calendar-24"></dt>
+                    <dt class="fui-video-24"></dt>
                     <dd>{{ company.get_sessions|length }} session{{ company.get_sessions|length|pluralize:",s" }}</dd>
                 </li>
             </ul>

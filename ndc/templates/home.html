@@ -1,10 +1,19 @@
 {% extends "base.html" %}
 {% block content %}
+<div class="row hidden-desktop">
+    <div class="span12">
+        <a class="btn btn-small box-blue">Timetable</a>
+        <a class="btn btn-small box-green">Session</a>
+        <a class="btn btn-small box-yellow">Speaker</a>
+        <a class="btn btn-small box-pink">Company</a>
+    </div>
+</div>
+<hr class="hidden-desktop">
 <div class="row">
     <div class="span6">
         <img class="logo" src="{{ STATIC_URL }}img/ndc_logo.png" alt="NDC 13"/>
     </div>
-    <div class="span6">
+    <div class="span6 hidden-phone">
         <div class="box box-blue">W</div>
         <div class="box box-pink">H</div>
         <div class="box box-green">A</div>
@@ -25,6 +34,7 @@
 <hr>
 <div class="row">
     <div class="span6">
+        <h2>Disclaimer</h2>
         <ul class="disclaimer">
             <li>여기는 NDC 13의 공식 홈페이지가 아닙니다. 공식 홈페이지는 <a href="http://ndc.nexon.com">http://ndc.nexon.com</a> 입니다.</li>
             <li>NDC 13 <a href="{% url "sessions" %}">세션 정보</a>와 <a href="{% url "speakers" %}">발표자의 정보</a>를 모아 한 눈에 확인하고, 모바일 기기에서도 쉽게 열람할 수 있도록 만든 팬 페이지입니다.</li>
@@ -34,6 +44,7 @@
         </ul>
     </div>
     <div class="span6">
+        <h2>Built on</h2>
         <div class="info-box">
             <dl>
                 <ul class="tech">
