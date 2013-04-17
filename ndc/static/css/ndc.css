@@ -356,3 +356,64 @@ a {
 .tiny {
     font-size: 11px;
 }
+
+.logo {
+    width: 100%;
+    min-width: 300px;
+    max-width: 640px;
+}
+.nexon {
+    margin: 32px 0;
+    width: 220px;
+}
+.box {
+    width: 22%;
+    height: 8%;
+    display: inline-block;
+    font-size: 32px;
+    margin: 1%;
+    color: white;
+    text-align: center;
+}
+.box-blue {
+    background: #00b0de;
+}
+.box-pink {
+    background: #dc3a74;
+}
+.box-green {
+    background: #b9d136;
+}
+.box-yellow {
+    background: #efa92b;
+}
+
+.center {
+    text-align: center;
+}
+
+.disclaimer li {
+    line-height: 180%;
+    margin: 8px 0;
+}
+.disclaimer a {
+    border: 1px solid #bdc3c7;
+    background: #ecf0f1;
+    padding: 2px 4px;
+    margin: 0px 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+
+.tech li {
+    padding: 0;
+}
+
+.tech li > dt {
+    padding: 12px 14px;
+    display: inline-block;
+    width: 64px;
+    background: #ecf0f1;
+}
+

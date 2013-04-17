@@ -1,8 +1,88 @@
 {% extends "base.html" %}
 {% block content %}
 <div class="row">
-    <div class="span12">
-        <h1>NDC 13</h1>
+    <div class="span6">
+        <img class="logo" src="{{ STATIC_URL }}img/ndc_logo.png" alt="NDC 13"/>
+    </div>
+    <div class="span6">
+        <div class="box box-blue">W</div>
+        <div class="box box-pink">H</div>
+        <div class="box box-green">A</div>
+        <div class="box box-yellow">T</div>
+        <div class="box box-white">-</div>
+        <div class="box box-green">C</div>
+        <div class="box box-yellow">O</div>
+        <div class="box box-pink">M</div>
+        <div class="box box-blue">E</div>
+        <div class="box box-green">S</div>
+        <div class="box box-white">-</div>
+        <div class="box box-blue">N</div>
+        <div class="box box-green">E</div>
+        <div class="box box-yellow">X</div>
+        <div class="box box-pink">T</div>
     </div>
 </div>
+<hr>
+<div class="row">
+    <div class="span6">
+        <ul class="disclaimer">
+            <li>여기는 NDC 13의 공식 홈페이지가 아닙니다. 공식 홈페이지는 <a href="http://ndc.nexon.com">http://ndc.nexon.com</a> 입니다.</li>
+            <li>NDC 13 <a href="{% url "sessions" %}">세션 정보</a>와 <a href="{% url "speakers" %}">발표자의 정보</a>를 모아 한 눈에 확인하고, 모바일 기기에서도 쉽게 열람할 수 있도록 만든 팬 페이지입니다.</li>
+            <li>발표자 트위터 아이디, 이메일과 발표자료 링크 등의 정보를 <a href="https://docs.google.com/spreadsheet/ccc?key=0Anva4clMXVtVdDQxc1cwMnRVSDRpUFZlLVhGR2ZzOHc&usp=sharing">구글 드라이브 문서</a>를 통해 제보받고 있습니다.</li>
+            <li>이 페이지의 소스코드는 <a href="https://github.com/smartstudy/ndc13">https://github.com/smartstudy/ndc13</a> 에 공개되고 있습니다.</li>
+            <li>NDC 13 및 NEXON COMPANY 등은 <a href="http://nexon.com">(주)넥슨코리아</a>의 상표입니다.</li>
+        </ul>
+    </div>
+    <div class="span6">
+        <div class="info-box">
+            <dl>
+                <ul class="tech">
+                    <li>
+                    <dt><a href="https://www.djangoproject.com/">Django</a></dt>
+                        <dd>a full-stack web framework</dd>
+                    </li>
+                    <li>
+                        <dt><a href="http://jquery.com/">jQuery</a></dt>
+                        <dd>I'm a javascript moron.</dd>
+                    </li>
+                    <li>
+                        <dt><a href="http://twitter.github.io/bootstrap">Bootstrap</a></dt>
+                        <dd>My responsible-boilerplate!</dd>
+                    </li>
+                    <li>
+                        <dt><a href="http://designmodo.github.io/Flat-UI/">Flat UI</a></dt>
+                        <dd>Flatten the world!</dd>
+                    </li>
+                    <li>
+                        <dt><a href="http://moot.it/">moot.it</a></dt>
+                        <dd>Who still uses disqus?</dd>
+                    </li>
+                </ul>
+            </dl>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="span12">
+        <div class="center">
+            <img class="nexon" src="{{ STATIC_URL }}img/nexon.png" alt="NEXON COMPANY"/>
+        </div>
+    </div>
+</div>
+{% endblock %}
+{% block script %}
+<script type="text/javascript">
+$(function () { 
+    var width = parseInt($('.box').width());
+    $('.box').css({
+        'height': width,
+        'line-height': width+"px",
+        'margin-top': parseInt(width*0.05)+"px",
+        'margin-right': parseInt(width*0.03)+"px",
+        'margin-bottom': parseInt(width*0.05)+"px",
+        'margin-left': parseInt(width*0.04)+"px",
+        'font-size': parseInt(width*0.6)+"px"
+    });
+});
+</script>
 {% endblock %}
