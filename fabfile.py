@@ -8,7 +8,7 @@ import os, socket
 env['prod']     = False
 env['master']   = False
 service         = 'ndc13'
-service_id      = 9
+service_id      = 12
 fabhome         = '/home/svc/%s' % service
 hostname        = socket.gethostname()
 settings        = 'ndc.settings_prod'

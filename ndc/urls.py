@@ -1,4 +1,5 @@
 from django.conf.urls import patterns, include, url
+from django.views.decorators.cache import cache_page
 from ndc.views import *
 import settings
 
@@ -8,13 +9,13 @@ admin.autodiscover()
 
 urlpatterns = patterns(
     '',
-    url(r'^$', home, name='home'),
-    url(r'^timetable/$', timetable, name='timetable'),
-    url(r'^speakers/$', speaker_list.as_view(), name='speakers'),
+    url(r'^$', cache_page(home, 60*60*6), name='home'),
+    url(r'^timetable/$', cache_page(timetable, 60*60), name='timetable'),
+    url(r'^speakers/$', cache_page(speaker_list.as_view(), 60*15), name='speakers'),
     url(r'^speaker/(?P<pk>\d+)/$', speaker_detail.as_view(), name='speaker'),
-    url(r'^companies/$', company_list.as_view(), name='companies'),
+    url(r'^companies/$', cache_page(company_list.as_view(), 60*15), name='companies'),
     url(r'^company/(?P<pk>\d+)/$', company_detail.as_view(), name='company'),
-    url(r'^sessions/$', session_list.as_view(), name='sessions'),
+    url(r'^sessions/$', cache_page(session_list.as_view(), 60*15), name='sessions'),
     url(r'^session/(?P<pk>\d+)/$', session_detail.as_view(), name='session'),
 
     url(r'^search/', include('haystack.urls')),
