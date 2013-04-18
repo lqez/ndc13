@@ -185,6 +185,3 @@ AUTHENTICATION_BACKENDS = (
 TEMPLATE_CONTEXT_PROCESSORS += (
     'social_auth.context_processors.social_auth_backends',
 )
-
-TWITTER_CONSUMER_KEY = 'KkY6c6nEDLnZJDQet2reLw'
-TWITTER_CONSUMER_SECRET = 'TciRgXChidAQ1AldD2snaFGhZFKv8kQGlrxdYvo8V0s'
