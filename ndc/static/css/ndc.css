@@ -443,3 +443,18 @@ a {
     font-size: 14px;
     color: #dc3a74;
 }
+
+.btn .gravatar {
+    display: inline;
+    float: left;
+    border: 1px solid #bdc3c7;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    border-radius: 100px;
+    overflow: hidden;
+    margin: -3px;
+}
+.btn .gravatar img {
+    width: 24px;
+    height: auto;
+}

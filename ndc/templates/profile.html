@@ -8,6 +8,8 @@
         {% endif %}
         <form method="POST">
             <div class="well well-white well-form">
+                <label for="email">Email:</label>
+                <input type="text" readonly value="{{ request.user.email }}"/>
                 {% csrf_token %}
                 {{ form }}
             </div>

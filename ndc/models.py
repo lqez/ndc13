@@ -182,9 +182,13 @@ class Profile(models.Model):
     nick = models.CharField(max_length=255, null=True, blank=True)
     use_gravatar = models.BooleanField(default=True)
 
-    def get_profile_image(self):
+    def html_profile_image(self):
         if self.use_gravatar:
-            pass
+            import hashlib
+            hashed = hashlib.md5(self.user.email.lower()).hexdigest()
+            return mark_safe('<div class="gravatar"><img src="http://www.gravatar.com/avatar/%s/?s=48"/></div>' % hashed)
+        else:
+            return mark_safe('<span class="fui-man-24"></span>')
 
 
 def create_user_profile(sender, instance, created, **kwargs):
