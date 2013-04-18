@@ -39,3 +39,6 @@ nosetests.xml
 
 # collected statics
 /static
+
+# for deploy
+settings_prod.py
