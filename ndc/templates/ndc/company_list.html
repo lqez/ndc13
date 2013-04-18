@@ -1,4 +1,6 @@
 {% extends "base.html" %}
+{% load cache %}
+{% cache 3600 company_list %}
 {% block title %}회사 목록{% endblock %}
 {% block content %}
 <div class="row">
@@ -35,3 +37,4 @@
 {% block script %}
 {% include "tag_script.html" %}
 {% endblock %}
+{% endcache %}

@@ -50,7 +50,7 @@ class Migration(SchemaMigration):
             (u'id', self.gf('django.db.models.fields.AutoField')(primary_key=True)),
             ('name', self.gf('django.db.models.fields.CharField')(max_length=100, db_index=True)),
             ('email', self.gf('django.db.models.fields.CharField')(max_length=255, null=True, blank=True)),
-            ('twitter', self.gf('django.db.models.fields.CharField')(db_index=True, max_length=255, null=True, blank=True)),
+            ('twitter', self.gf('django.db.models.fields.CharField')(max_length=255, null=True, blank=True)),
             ('company', self.gf('django.db.models.fields.related.ForeignKey')(to=orm['ndc.Company'], null=True)),
         ))
         db.send_create_signal(u'ndc', ['Speaker'])
@@ -151,7 +151,7 @@ class Migration(SchemaMigration):
             'email': ('django.db.models.fields.CharField', [], {'max_length': '255', 'null': 'True', 'blank': 'True'}),
             u'id': ('django.db.models.fields.AutoField', [], {'primary_key': 'True'}),
             'name': ('django.db.models.fields.CharField', [], {'max_length': '100', 'db_index': 'True'}),
-            'twitter': ('django.db.models.fields.CharField', [], {'db_index': 'True', 'max_length': '255', 'null': 'True', 'blank': 'True'})
+            'twitter': ('django.db.models.fields.CharField', [], {'max_length': '255', 'null': 'True', 'blank': 'True'})
         },
         u'ndc.tag': {
             'Meta': {'object_name': 'Tag'},

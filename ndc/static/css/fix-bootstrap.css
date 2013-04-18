@@ -32,6 +32,22 @@ h3, h4, h5, h6 {
     background: white;
 }
 
+.well-form {
+    margin-bottom: 0;
+    border-bottom: 0;
+
+    -webkit-border-bottom-left-radius: 0px;
+    -webkit-border-bottom-right-radius: 0px;
+    -moz-border-bottom-left-radius: 0px;
+    -moz-border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+.form-actions {
+    margin-top:0;
+}
+
 .tooltip-inner {
     background-color: black;
     opacity: 0.9;

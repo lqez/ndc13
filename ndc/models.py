@@ -1,7 +1,11 @@
 from django.db import models
 from django.utils.safestring import mark_safe
 from django.core.urlresolvers import reverse
+from django.contrib.auth.models import User
+from django.db.models.signals import post_save
 from datetime import datetime
+import string
+import random
 
 
 class Tag(models.Model):
@@ -77,7 +81,7 @@ class Speaker(models.Model):
     name = models.CharField(max_length=100, db_index=True)
 
     email = models.CharField(max_length=255, null=True, blank=True)
-    twitter = models.CharField(max_length=255, db_index=True, null=True, blank=True)
+    twitter = models.CharField(max_length=255, null=True, blank=True)
     company = models.ForeignKey(Company, null=True)
 
     class Meta:
@@ -158,3 +162,33 @@ class Session(models.Model):
 
     def __unicode__(self):
         return self.name
+
+
+class EmailToken(models.Model):
+    email = models.EmailField(max_length=255)
+    token = models.CharField(max_length=64, db_index=True)
+    created = models.DateTimeField(auto_now_add=True)
+
+    def id_generator(self, size=64, chars=string.ascii_uppercase + string.digits):
+        return ''.join(random.choice(chars) for x in range(size))
+
+    def save(self, *args, **kwargs):
+        self.token = self.id_generator()
+        super(EmailToken, self).save(*args, **kwargs)
+
+
+class Profile(models.Model):
+    user = models.ForeignKey(User, unique=True)
+    nick = models.CharField(max_length=255, null=True, blank=True)
+    use_gravatar = models.BooleanField(default=True)
+
+    def get_profile_image(self):
+        if self.use_gravatar:
+            pass
+
+
+def create_user_profile(sender, instance, created, **kwargs):
+    if created:
+        Profile.objects.create(user=instance)
+
+post_save.connect(create_user_profile, sender=User)

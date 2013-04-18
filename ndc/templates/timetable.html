@@ -1,5 +1,7 @@
 {% extends "base.html" %}
+{% load cache %}
 {% block content %}
+{% cache 3600 timetable %}
 <div class="row">
     <div class="span12">
         <h1>Timetable</h1>
@@ -72,7 +74,7 @@
                             </a>
                         </div>
                         {% if s.speakers %}
-                        <div class="speaker_and_company">
+                        <div class="speaker_and_company ft {{ s.get_classes|join:' ' }}">
                             <div class="speaker">
                                 {% for speaker in s.speakers.all %}
                                 <a href="{% url "speaker" speaker.id %}">{{ speaker.name }}</a>
@@ -99,6 +101,7 @@
     </div>
 </div>
 {% endfor %}
+{% endcache %}
 {% endblock %}
 {% block script %}
 {% include "tag_script.html" %}

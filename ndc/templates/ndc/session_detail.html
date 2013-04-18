@@ -1,4 +1,6 @@
 {% extends "base.html" %}
+{% load cache %}
+{% cache 3600 session_detail session.id %}
 {% block title %}{{ session.name }}{% endblock %}
 {% block content %}
 <div class="row">
@@ -56,3 +58,4 @@
     </div>
 </div>
 {% endblock %}
+{% endcache %}

@@ -166,6 +166,9 @@ LOGGING = {
     }
 }
 
+AUTH_PROFILE_MODULE = 'ndc.Profile'
+LOGIN_URL = '/login/'
+
 # for haystack search
 INSTALLED_APPS += ('haystack',)
 

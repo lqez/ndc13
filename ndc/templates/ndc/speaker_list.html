@@ -1,4 +1,6 @@
 {% extends "base.html" %}
+{% load cache %}
+{% cache 3600 speaker_list %}
 {% block title %}발표자 목록{% endblock %}
 {% block content %}
 <div class="row">
@@ -41,3 +43,4 @@
 {% block script %}
 {% include "tag_script.html" %}
 {% endblock %}
+{% endcache %}

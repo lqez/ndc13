@@ -41,4 +41,5 @@ nosetests.xml
 /static
 
 # for deploy
+settings_local.py
 settings_prod.py

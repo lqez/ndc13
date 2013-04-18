@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="row">
+    <div class="span12">
+        <h1>Profile</h1>
+        {% if form.is_valid %}
+        <div class="alert alert-success">Updated!</div>
+        {% endif %}
+        <form method="POST">
+            <div class="well well-white well-form">
+                {% csrf_token %}
+                {{ form }}
+            </div>
+            <div class="form-actions">
+                <button type="submit" class="btn btn-large btn-primary">Update profile</button>
+            </div>
+        </form>
+    </div>
+</div>
+{% endblock %}

@@ -1,5 +1,5 @@
 from django.contrib import admin
-from ndc.models import Tag, Room, SessionDate, SessionTime, Company, Speaker, Session
+from ndc.models import Tag, Room, SessionDate, SessionTime, Company, Speaker, Session, EmailToken, Profile
 
 
 class TagAdmin(admin.ModelAdmin):
@@ -45,3 +45,15 @@ class SessionAdmin(admin.ModelAdmin):
     filter_horizontal = ('tags', 'times', )
     search_fields = ('name', 'speakers__name', 'speakers__company__name', 'desc',)
 admin.site.register(Session, SessionAdmin)
+
+
+class EmailTokenAdmin(admin.ModelAdmin):
+    list_display = ('email', 'token', 'created')
+    search_fields = ('email',)
+admin.site.register(EmailToken, EmailTokenAdmin)
+
+
+class ProfileAdmin(admin.ModelAdmin):
+    list_display = ('user', 'nick', 'use_gravatar')
+    search_fields = ('user__email', 'nick',)
+admin.site.register(Profile, ProfileAdmin)

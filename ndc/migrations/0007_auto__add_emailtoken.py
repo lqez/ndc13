@@ -8,22 +8,35 @@ from django.db import models
 class Migration(SchemaMigration):
 
     def forwards(self, orm):
-        # Adding field 'Tag.color'
-        db.add_column(u'ndc_tag', 'color',
-                      self.gf('django.db.models.fields.CharField')(max_length=24, null=True, blank=True),
-                      keep_default=False)
+        # Adding model 'EmailToken'
+        db.create_table(u'ndc_emailtoken', (
+            (u'id', self.gf('django.db.models.fields.AutoField')(primary_key=True)),
+            ('email', self.gf('django.db.models.fields.EmailField')(max_length=255)),
+            ('token', self.gf('django.db.models.fields.CharField')(max_length=64)),
+            ('created', self.gf('django.db.models.fields.DateTimeField')(auto_now_add=True, blank=True)),
+        ))
+        db.send_create_signal(u'ndc', ['EmailToken'])
 
 
     def backwards(self, orm):
-        # Deleting field 'Tag.color'
-        db.delete_column(u'ndc_tag', 'color')
+        # Deleting model 'EmailToken'
+        db.delete_table(u'ndc_emailtoken')
 
 
     models = {
         u'ndc.company': {
-            'Meta': {'object_name': 'Company'},
+            'Meta': {'ordering': "['name']", 'object_name': 'Company'},
+            'desc': ('django.db.models.fields.CharField', [], {'max_length': '2000', 'null': 'True', 'blank': 'True'}),
             u'id': ('django.db.models.fields.AutoField', [], {'primary_key': 'True'}),
-            'name': ('django.db.models.fields.CharField', [], {'max_length': '100', 'db_index': 'True'})
+            'name': ('django.db.models.fields.CharField', [], {'max_length': '100', 'db_index': 'True'}),
+            'url': ('django.db.models.fields.CharField', [], {'max_length': '255', 'null': 'True', 'blank': 'True'})
+        },
+        u'ndc.emailtoken': {
+            'Meta': {'object_name': 'EmailToken'},
+            'created': ('django.db.models.fields.DateTimeField', [], {'auto_now_add': 'True', 'blank': 'True'}),
+            'email': ('django.db.models.fields.EmailField', [], {'max_length': '255'}),
+            u'id': ('django.db.models.fields.AutoField', [], {'primary_key': 'True'}),
+            'token': ('django.db.models.fields.CharField', [], {'max_length': '64'})
         },
         u'ndc.room': {
             'Meta': {'object_name': 'Room'},
@@ -54,7 +67,7 @@ class Migration(SchemaMigration):
             u'id': ('django.db.models.fields.AutoField', [], {'primary_key': 'True'})
         },
         u'ndc.speaker': {
-            'Meta': {'object_name': 'Speaker'},
+            'Meta': {'ordering': "['name']", 'object_name': 'Speaker'},
             'company': ('django.db.models.fields.related.ForeignKey', [], {'to': u"orm['ndc.Company']", 'null': 'True'}),
             'email': ('django.db.models.fields.CharField', [], {'max_length': '255', 'null': 'True', 'blank': 'True'}),
             u'id': ('django.db.models.fields.AutoField', [], {'primary_key': 'True'}),
@@ -63,10 +76,11 @@ class Migration(SchemaMigration):
         },
         u'ndc.tag': {
             'Meta': {'object_name': 'Tag'},
-            'color': ('django.db.models.fields.CharField', [], {'max_length': '24', 'null': 'True', 'blank': 'True'}),
             u'id': ('django.db.models.fields.AutoField', [], {'primary_key': 'True'}),
             'image': ('django.db.models.fields.files.ImageField', [], {'max_length': '100', 'null': 'True', 'blank': 'True'}),
-            'name': ('django.db.models.fields.CharField', [], {'max_length': '100'})
+            'is_category': ('django.db.models.fields.BooleanField', [], {'default': 'False'}),
+            'name': ('django.db.models.fields.CharField', [], {'max_length': '100'}),
+            'uid': ('django.db.models.fields.CharField', [], {'max_length': '100', 'null': 'True', 'blank': 'True'})
         }
     }
 

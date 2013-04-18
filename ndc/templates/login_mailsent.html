@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="row">
+    <div class="span12">
+        <h1>Mail sent!</h1>
+        <p>메일로 발송된 링크를 클릭해 로그인하세요. :)</p>
+        <a href="{% url "home" %}" class="btn btn-large btn-primary">첫 화면으로 돌아가기</a>
+    </div>
+</div>
+{% endblock %}

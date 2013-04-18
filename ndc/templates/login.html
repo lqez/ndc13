@@ -10,8 +10,11 @@
         <div class="well well-white">
             <h3>비밀번호 없이 이메일로 로그인</h3>
             <div class="input-append">
-                <input class="span4" type="text" value="" placeholder="Email">
-                <button class="btn btn-large btn-primary" type="button">Login</button>
+                <form method="post">
+                    {% csrf_token %}
+                    {{ form }}
+                    <button class="btn btn-large btn-primary" type="submit">Login</button>
+                </form>
             </div>
         </div>
     </div>

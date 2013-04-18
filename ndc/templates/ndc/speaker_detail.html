@@ -1,4 +1,6 @@
 {% extends "base.html" %}
+{% load cache %}
+{% cache 3600 speaker_detail speaker.id %}
 {% block title %}{{ speaker.name }}{% endblock %}
 {% block content %}
 <div class="row">
@@ -47,3 +49,4 @@
     </div>
 </div>
 {% endblock %}
+{% endcache %}

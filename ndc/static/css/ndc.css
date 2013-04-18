@@ -227,7 +227,7 @@ a {
     background: #1abc9c;
     line-height: 20px;
     color: white;
-    margin: 3px;
+    margin: 3px 3px 3px 0px;
     overflow: hidden;
     padding: 5px 10px;
     position: relative;
@@ -437,4 +437,9 @@ a {
     .btn-square .title {
         font-size: 11px;
     }
+}
+
+.errorlist {
+    font-size: 14px;
+    color: #dc3a74;
 }

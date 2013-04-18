@@ -1,52 +1,119 @@
-from django.db.models import F
-from django.http import HttpResponseNotAllowed
+from django.contrib.auth import login as user_login, logout as user_logout
+from django.contrib.auth.decorators import login_required
+from django.contrib.auth.models import User
 from django.core.urlresolvers import reverse_lazy
-from django.shortcuts import get_object_or_404, redirect, render
+from django.core.cache import cache
+from django.shortcuts import render, redirect, get_object_or_404
 from django.views.generic import ListView, DetailView
-from django.utils import simplejson
-from ndc.models import *
+from models import SessionDate, SessionTime, Room, Session, Speaker, Company, Tag, EmailToken
+from forms import EmailLoginForm, ProfileForm
 
 
 def home(request):
-    return render(request, 'home.html', {})
+    return render(request, 'home.html')
 
 
 def login(request):
-    return render(request, 'login.html', {})
+    form = EmailLoginForm()
+
+    if request.method == 'POST':
+        form = EmailLoginForm(request.POST)
+        if form.is_valid():
+            token = EmailToken(email=form.cleaned_data['email'])
+            token.save()
+            return redirect(reverse_lazy('login_mailsent'))
+    else:
+        if 'token' in request.GET:
+            token = get_object_or_404(EmailToken, token=request.GET.get('token'))
+            email = token.email
+
+            try:
+                user = User.objects.get(email=email)
+            except:
+                user = User.objects.create_user(email, email, token)
+                user.save()
+
+                profile = user.get_profile()
+                profile.nick = email.split('@')[0]
+                profile.save()
+
+            token.delete()
+
+            # Set backend manually
+            user.backend = 'django.contrib.auth.backends.ModelBackend'
+            user_login(request, user)
+            return redirect(reverse_lazy('home'))
+
+    return render(request, 'login.html', {
+        'form': form,
+    })
+
+
+def login_mailsent(request):
+    return render(request, 'login_mailsent.html')
+
+
+def logout(request):
+    user_logout(request)
+    return redirect(reverse_lazy('home'))
+
+
+@login_required
+def profile(request):
+    form = ProfileForm(instance=request.user.get_profile())
+
+    if request.method == 'POST':
+        form = ProfileForm(request.POST)
+        if form.is_valid():
+            profile = request.user.get_profile()
+            profile.nick = form.cleaned_data['nick']
+            profile.use_gravatar = form.cleaned_data['use_gravatar']
+            profile.save()
+
+    return render(request, 'profile.html', {
+        'form': form,
+    })
 
 
 def timetable(request):
-    dates = SessionDate.objects.all()
-    times = SessionTime.objects.all()
-    rooms = Room.objects.all()
+    cache_key = 'timetable_context'
+    context_cache = cache.get(cache_key)
 
-    wide = {}
-    narrow = {}
-    for d in dates:
-        wide[d] = {}
-        narrow[d] = {}
-        for t in times:
-            wide[d][t] = {}
-            narrow[d][t] = {}
-            for r in rooms:
-                s = Session.objects.filter(date=d, times=t, room=r)
-                if s:
-                    if s[0].times.all()[0] == t:
-                        wide[d][t][r] = s[0]
-                        narrow[d][t][r] = s[0]
-                else:
-                    wide[d][t][r] = None
+    if not context_cache:
+        dates = SessionDate.objects.all()
+        times = SessionTime.objects.all()
+        rooms = Room.objects.all()
 
-            if len(narrow[d][t]) == 0:
-                del(narrow[d][t])
+        wide = {}
+        narrow = {}
+        for d in dates:
+            wide[d] = {}
+            narrow[d] = {}
+            for t in times:
+                wide[d][t] = {}
+                narrow[d][t] = {}
+                for r in rooms:
+                    s = Session.objects.filter(date=d, times=t, room=r)
+                    if s:
+                        if s[0].times.all()[0] == t:
+                            wide[d][t][r] = s[0]
+                            narrow[d][t][r] = s[0]
+                    else:
+                        wide[d][t][r] = None
 
+                if len(narrow[d][t]) == 0:
+                    del(narrow[d][t])
 
-    return render(request, 'timetable.html', {
-        'wide': wide,
-        'narrow': narrow,
-        'rooms': rooms,
-        'tags': Tag.objects.all(),
-    })
+        context_cache = {
+            'wide': wide,
+            'narrow': narrow,
+            'rooms': rooms,
+            'tags': Tag.objects.all(),
+        }
+
+        cache.set(cache_key, context_cache, 60 * 60)
+
+    return render(request, 'timetable.html', context_cache)
 
 
 def search(request):

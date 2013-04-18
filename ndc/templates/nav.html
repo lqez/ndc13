@@ -9,12 +9,12 @@
             <div class="btn-group pull-right">
                 <a class="btn btn-large btn-info dropdown-toggle" data-toggle="dropdown" href="#">
                     <span class="fui-man-24"></span>
-                    <span class="username">{{ user.username }}</span>
+                    <span class="username">{{ user.get_profile.nick }}</span>
                     <span class="caret"></span>
                 </a>
                 <ul class="dropdown-menu">
-                    <li><a href="#">Profile</a></li>
-                    <li><a href="/accounts/logout/">Sign Out</a></li>
+                    <li><a href="{% url "profile" %}">Profile</a></li>
+                    <li><a href="{% url "logout" %}">Logout</a></li>
                 </ul>
             </div>
             {% else %}
