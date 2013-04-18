@@ -435,6 +435,6 @@ a {
 }
 @media (max-width: 767px) {
     .btn-square .title {
-        font-size: 13px;
+        font-size: 11px;
     }
 }
