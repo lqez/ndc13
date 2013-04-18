@@ -1,0 +1,33 @@
+@media (max-width: 979px) {
+    .nav-collapse {
+        z-index: -1;
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        width: 0px;
+        height: 100%;
+        background: #888;
+        overflow: hidden;
+    }
+    .nav-collapse .nav {
+        width: 160px;
+        background: #BBB;
+    }
+
+    .nav-collapse .nav > li {
+        border-top: 1px solid #DDD;
+        border-bottom: 1px solid #999;
+    }
+
+    .nav-collapse .nav > li > a {
+        color: #222;
+    }
+
+    .nav-collapse, .nav-collapse.collapse {
+        height: 100%;
+    }
+
+    .nav-collapse {
+        -webkit-transform: none;
+    }
+}
