@@ -17,13 +17,13 @@
                     <th rowspan="{{ t_.items|length }}">{{ t.begin|date:"H:i" }}</th>
                     {% for r, s in t_.items|slice:"1" %}
                     <td class="ft {{ s.get_classes|join:' ' }} tiny">{{ r }}</td>
-                    <td class="ft {{ s.get_classes|join:' ' }}">{{ s }}</td>
+                    <td class="ft {{ s.get_classes|join:' ' }}"><a href="{% url "session" s.id %}">{{ s }}</a></td>
                     {% endfor %}
                 </tr>
                 {% for r, s in t_.items|slice:"1:" %}
                 <tr>
                     <td class="ft {{ s.get_classes|join:' ' }} tiny">{{ r }}</td>
-                    <td class="ft {{ s.get_classes|join:' ' }}">{{ s }}</td>
+                    <td class="ft {{ s.get_classes|join:' ' }}"><a href="{% url "session" s.id %}">{{ s }}</a></td>
                 </tr>
                 {% endfor %}
                 {% endfor %}

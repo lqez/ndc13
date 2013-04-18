@@ -420,3 +420,21 @@ a {
     background: #ecf0f1;
 }
 
+.btn-square {
+    width: 16%;
+    height: 40px;
+    position: relative;
+    padding: 4%;
+}
+.btn-square .icon {
+    height: 30px;
+}
+.btn-square .title {
+    width: 100%;
+    text-align: center;
+}
+@media (max-width: 767px) {
+    .btn-square .title {
+        font-size: 13px;
+    }
+}

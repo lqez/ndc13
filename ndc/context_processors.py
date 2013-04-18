@@ -5,10 +5,10 @@ from ndc.models import Tag
 
 def menus(request):
     menus = OrderedDict([
-        ('timetable', {'title': 'Timetable', 'icon': 'calendar'}),
-        ('sessions', {'title': 'Session', 'icon': 'video'}),
-        ('speakers', {'title': 'Speaker', 'icon': 'man'}),
-        ('companies', {'title': 'Company', 'icon': 'cmd'}),
+        ('timetable', {'title': 'Timetable', 'icon': 'calendar', 'color': 'blue'}),
+        ('sessions', {'title': 'Session', 'icon': 'video', 'color': 'green'}),
+        ('speakers', {'title': 'Speaker', 'icon': 'man', 'color': 'yellow'}),
+        ('companies', {'title': 'Company', 'icon': 'cmd', 'color': 'pink'}),
     ])
 
     try:

@@ -2,10 +2,9 @@
 {% block content %}
 <div class="row hidden-desktop">
     <div class="span12">
-        <a class="btn btn-small box-blue">Timetable</a>
-        <a class="btn btn-small box-green">Session</a>
-        <a class="btn btn-small box-yellow">Speaker</a>
-        <a class="btn btn-small box-pink">Company</a>
+        {% for k, v in menus.items %}
+        <a href="{% url k %}" class="btn btn-square box-{{ v.color }}"><div class="fui-{{ v.icon }}-24 icon"></div><div class="title">{{ v.title }}</div></a>
+        {% endfor %}
     </div>
 </div>
 <hr class="hidden-desktop">
