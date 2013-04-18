@@ -18,11 +18,12 @@ urlpatterns = patterns(
     url(r'^session/(?P<pk>\d+)/$', session_detail.as_view(), name='session'),
 
     url(r'^search/', include('haystack.urls')),
-    url(r'^about/$', about, name='about'),
+    url(r'', include('social_auth.urls')),
+
+    url(r'^login/', login, name='login'),
 
     # Uncomment the next line to enable the admin:
     url(r'^admin/', include(admin.site.urls)),
-
 )
 
 # for development

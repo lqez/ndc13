@@ -11,13 +11,8 @@ MANAGERS = ADMINS
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3', # Add 'postgresql_psycopg2', 'mysql', 'sqlite3' or 'oracle'.
-        'NAME': 'ndc2013.db',                      # Or path to database file if using sqlite3.
-        # The following settings are not used with sqlite3:
-        'USER': '',
-        'PASSWORD': '',
-        'HOST': '',                      # Empty for localhost through domain sockets or '127.0.0.1' for localhost through TCP.
-        'PORT': '',                      # Set to empty string for default.
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': 'ndc2013.db',
     }
 }
 
@@ -80,7 +75,6 @@ STATICFILES_DIRS = (
 STATICFILES_FINDERS = (
     'django.contrib.staticfiles.finders.FileSystemFinder',
     'django.contrib.staticfiles.finders.AppDirectoriesFinder',
-#    'django.contrib.staticfiles.finders.DefaultStorageFinder',
 )
 
 # Make this unique, and don't share it with anybody.
@@ -90,7 +84,6 @@ SECRET_KEY = 'pdx!n+_1p6w_qs8fz&(@0rokx8!4ti8gt3m6y2r(z-rn5a*szt'
 TEMPLATE_LOADERS = (
     'django.template.loaders.filesystem.Loader',
     'django.template.loaders.app_directories.Loader',
-#     'django.template.loaders.eggs.Loader',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -140,7 +133,6 @@ INSTALLED_APPS = (
     # Uncomment the next line to enable admin documentation:
     # 'django.contrib.admindocs',
     'south',
-    'haystack',
 ) + (
     'ndc',
 )
@@ -174,5 +166,25 @@ LOGGING = {
     }
 }
 
+# for haystack search
+INSTALLED_APPS += ('haystack',)
+
 HAYSTACK_SITECONF = 'ndc.search_sites'
 HAYSTACK_SEARCH_ENGINE = 'simple'
+
+
+# for django-social-auth
+INSTALLED_APPS += ('social_auth',)
+
+AUTHENTICATION_BACKENDS = (
+    'social_auth.backends.twitter.TwitterBackend',
+    'social_auth.backends.facebook.FacebookBackend',
+    'django.contrib.auth.backends.ModelBackend',
+)
+
+TEMPLATE_CONTEXT_PROCESSORS += (
+    'social_auth.context_processors.social_auth_backends',
+)
+
+TWITTER_CONSUMER_KEY = 'KkY6c6nEDLnZJDQet2reLw'
+TWITTER_CONSUMER_SECRET = 'TciRgXChidAQ1AldD2snaFGhZFKv8kQGlrxdYvo8V0s'

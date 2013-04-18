@@ -58,6 +58,13 @@ h3, h4, h5, h6 {
     text-align: center;
 }
 
+.input-append input, .input-append select, .input-append .uneditable-input {
+    -webkit-border-radius: 6px 0 0 6px;
+    -moz-border-radius: 6px 0 0 6px;
+    border-radius: 6px 0 0 6px;
+    padding: 11px 0 10px 10px;
+}
+
 .btn.btn-twitter {
     background-color: #3498db; 
 }
@@ -69,13 +76,22 @@ h3, h4, h5, h6 {
 }
 
 .btn.btn-facebook {
-    background-color: #3498db; 
+    background-color: #1c60da
 }
 .btn.btn-facebook:hover, .btn.btn-facebook:focus {
-    background-color: #5dade2; 
+    background-color: #2d72f0; 
 }
 .btn.btn-facebook:active, .btn.btn-facebook.active {
-    background-color: #2383c4; 
+    background-color: #0952c0; 
+}
+
+@media (max-width: 767px) {
+    .input-append input, .input-append select, .input-append .uneditable-input {
+        padding: 21px 0 20px 10px;
+    }
+    [class*="span"], .uneditable-input[class*="span"], .row-fluid [class*="span"] {
+        margin-bottom: 4px;
+    }
 }
 
 @media (max-width: 979px) {
@@ -87,7 +103,7 @@ h3, h4, h5, h6 {
         float: left;
     }
     .navbar-search .search-query {
-        width: 100%;
+        width: 96px;
     }
     .nav-collapse, .nav-collapse.collapse {
         background: #2c3e50;

@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="row">
+    <div class="span12">
+        <h1>Login</h1>
+    </div>
+</div>
+<div class="row">
+    <div class="span6">
+        <div class="well well-white">
+            <h3>비밀번호 없이 이메일로 로그인</h3>
+            <div class="input-append">
+                <input class="span4" type="text" value="" placeholder="Email">
+                <button class="btn btn-large btn-primary" type="button">Login</button>
+            </div>
+        </div>
+    </div>
+    <div class="span6">
+        <div class="well well-white">
+            <h3>또는,</h3>
+            <div class="row">
+                <a class="span2 btn btn-large btn-facebook">Connect via Facebook</a>
+
+                {% if 'twitter' in social_auth.backends %}
+                <a href="{% url "socialauth_begin" 'twitter' %}" class="span2 btn btn-large btn-twitter">Connect via Twitter</a>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

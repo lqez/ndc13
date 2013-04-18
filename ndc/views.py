@@ -11,6 +11,10 @@ def home(request):
     return render(request, 'home.html', {})
 
 
+def login(request):
+    return render(request, 'login.html', {})
+
+
 def timetable(request):
     dates = SessionDate.objects.all()
     times = SessionTime.objects.all()
