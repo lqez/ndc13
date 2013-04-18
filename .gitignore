@@ -36,3 +36,6 @@ nosetests.xml
 
 # local database
 *.db
+
+# collected statics
+/static
