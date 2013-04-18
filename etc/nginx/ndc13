@@ -23,6 +23,14 @@ server {
         include uwsgi_params;
     }
 
+    location /admin {
+        uwsgi_pass unix:///var/run/ndc13-uwsgi.sock;
+        include uwsgi_params;
+
+        allow   112.169.126.204/32;
+        deny    all;
+    }
+
     location /static {
         alias /home/svc/ndc13/static;
         autoindex off;
