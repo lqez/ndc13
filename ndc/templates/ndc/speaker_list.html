@@ -11,7 +11,7 @@
                 <div class="speaker" onclick="document.location='{% url "speaker" s.id %}'">
                     {% if s.twitter %}
                     <div class="photo">
-                        <img src="http://api.twitter.com/1/users/profile_image/{{ s.twitter }}"/>
+                        <img src="{{ s.get_twitter_profile_image }}" />
                     </div>
                     {% endif %}
                     <div class="name">

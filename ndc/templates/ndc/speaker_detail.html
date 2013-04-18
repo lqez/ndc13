@@ -3,16 +3,16 @@
 {% block content %}
 <div class="row">
     <div class="span12 speaker-info">
-        <h1 class="name">
             {% if speaker.twitter %}
             <div class="photo">
-                <img src="http://api.twitter.com/1/users/profile_image/{{ speaker.twitter }}"/>
+                <img src="{{ speaker.get_twitter_profile_image }}" />
             </div>
             {% endif %}
+        <h1 class="name">
             {{ speaker.name }}
             <small>
                 {% if speaker.twitter %}
-                <a href="https://twitter.com/{{ speaker.twitter }}" target="_blank">@{{ speaker.twitter }}</a> / 
+                {{ speaker.get_twitter_link }} /
                 {% endif %}
                 <a href="{% url "company" speaker.company.id %}">{{ speaker.company.name }}</a>
             </small>

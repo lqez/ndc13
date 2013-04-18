@@ -83,6 +83,12 @@ class Speaker(models.Model):
     class Meta:
         ordering = ['name']
 
+    def get_twitter_link(self):
+        return mark_safe('<a href="https://twitter.com/%s" target="_blank">@%s</a>' % (self.twitter, self.twitter))
+
+    def get_twitter_profile_image(self):
+        return mark_safe('http://api.twitter.com/1/users/profile_image/?screen_name=%s&size=bigger' % self.twitter)
+
     def get_absolute_url(self):
         return reverse('speaker', args=[self.id])
 
