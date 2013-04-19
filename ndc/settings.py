@@ -133,7 +133,6 @@ INSTALLED_APPS = (
     'django.contrib.admin',
     # Uncomment the next line to enable admin documentation:
     # 'django.contrib.admindocs',
-    'south',
 ) + (
     'ndc',
 )
@@ -176,18 +175,21 @@ INSTALLED_APPS += ('haystack',)
 HAYSTACK_SITECONF = 'ndc.search_sites'
 HAYSTACK_SEARCH_ENGINE = 'simple'
 
+CLOSED_BY_NEXON = False
 
-# for django-social-auth
-INSTALLED_APPS += ('social_auth',)
+EMAIL_USE_TLS = True
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_HOST_USER = ''
+EMAIL_HOST_PASSWORD = ''
 
-AUTHENTICATION_BACKENDS = (
-    'social_auth.backends.twitter.TwitterBackend',
-    'social_auth.backends.facebook.FacebookBackend',
-    'django.contrib.auth.backends.ModelBackend',
-)
-
-TEMPLATE_CONTEXT_PROCESSORS += (
-    'social_auth.context_processors.social_auth_backends',
-)
-
-CLOSED_BY_NEXON = True
+# for django-debug-toolbar
+#if DEBUG:
+#    MIDDLEWARE_CLASSES += (
+#        'debug_toolbar.middleware.DebugToolbarMiddleware',
+#    )
+#    INTERNAL_IPS = ('127.0.0.1',)
+#    INSTALLED_APPS += ('debug_toolbar',)
+#    DEBUG_TOOLBAR_CONFIG = {
+#        'INTERCEPT_REDIRECTS': False,
+#    }

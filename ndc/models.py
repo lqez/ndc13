@@ -117,7 +117,7 @@ class Session(models.Model):
     date = models.ForeignKey(SessionDate)
     times = models.ManyToManyField(SessionTime)
 
-    attendee = models.ManyToManyField(User)
+    attendee = models.ManyToManyField(User, blank=True)
 
     def get_absolute_url(self):
         return reverse('session', args=[self.id])
