@@ -4168,14 +4168,5 @@
         }, 
         "model": "ndc.session", 
         "pk": 100
-    }, 
-    {
-        "fields": {
-            "nick": null, 
-            "use_gravatar": true, 
-            "user": 1
-        }, 
-        "model": "ndc.profile", 
-        "pk": 1
     }
 ]
