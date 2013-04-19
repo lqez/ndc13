@@ -3,6 +3,7 @@ from django.contrib.auth.decorators import login_required
 from django.contrib.auth.models import User
 from django.core.urlresolvers import reverse_lazy
 from django.core.cache import cache
+from django.views.decorators.cache import never_cache
 from django.shortcuts import render, redirect, get_object_or_404
 from django.views.generic import ListView, DetailView
 from models import SessionDate, SessionTime, Room, Session, Speaker, Company, Tag, EmailToken, Comment
@@ -36,6 +37,7 @@ def login(request):
     })
 
 
+@never_cache
 def login_req(request, token):
     token = get_object_or_404(EmailToken, token=token)
     email = token.email
@@ -59,6 +61,7 @@ def login_req(request, token):
     return redirect(reverse_lazy('profile'))
 
 
+@never_cache
 def login_mailsent(request):
     return render(request, 'login_mailsent.html')
 
