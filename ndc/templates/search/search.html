@@ -19,11 +19,15 @@
     <div class="pagination">
         <ul>
             {% if page.has_previous %}
-            <li class="previous"><a href="?q={{ query }}&amp;page={{ page.previous_page_number }}"><img src="{{ STATIC_URL }}lib/flat-ui/images/pager/previous.png"> Previous</a></li>
+            <li class="previous"><a href="?q={{ query }}&amp;page={{ page.previous_page_number }}"><img src="{{ STATIC_URL }}lib/flat-ui/images/pager/previous.png"></a></li>
+            {% else %}
+            <li class="previous"><a>First</a></li>
             {% endif %}
             <li class="active"><a>Page {{ page.number }} of {{ page.paginator.num_pages }}</a></li>
             {% if page.has_next %}
-            <li class="next"><a href="?q={{ query }}&amp;page={{ page.next_page_number }}">Next <img src="{{ STATIC_URL }}lib/flat-ui/images/pager/next.png"></a></li>
+            <li class="next"><a href="?q={{ query }}&amp;page={{ page.next_page_number }}"><img src="{{ STATIC_URL }}lib/flat-ui/images/pager/next.png"></a></li>
+            {% else %}
+            <li class="next"><a>Last</a></li>
             {% endif %}
         </ul>
     </div>

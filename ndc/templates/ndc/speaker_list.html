@@ -1,8 +1,8 @@
 {% extends "base.html" %}
 {% load cache %}
-{% cache 3600 speaker_list %}
 {% block title %}발표자 목록{% endblock %}
 {% block content %}
+{% cache 3600 speaker_list %}
 <div class="row">
     <div class="span12">
         <h1>Speakers</h1>
@@ -39,8 +39,8 @@
         </div>
     </div>
 </div>
+{% endcache %}
 {% endblock %}
 {% block script %}
 {% include "tag_script.html" %}
 {% endblock %}
-{% endcache %}

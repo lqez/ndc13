@@ -1,8 +1,8 @@
 {% extends "base.html" %}
 {% load cache %}
-{% cache 3600 company_list %}
 {% block title %}회사 목록{% endblock %}
 {% block content %}
+{% cache 3600 company_list %}
 <div class="row">
     <div class="span12">
         <h1>Companies</h1>
@@ -33,8 +33,8 @@
         </div>
     </div>
 </div>
+{% endcache %}
 {% endblock %}
 {% block script %}
 {% include "tag_script.html" %}
 {% endblock %}
-{% endcache %}
