@@ -1,0 +1,7 @@
+<h1>NDC 13 팬페이지</h1>
+<p>아래 링크를 통해 NDC13 팬페이지에 로그인하실 수 있습니다.</p>
+<p>링크:
+    <a href="http://{{ request.get_host }}{% url "login_req" token.token %}">
+        http://{{ request.get_host }}{% url "login_req" token.token %}
+    </a>
+</p>

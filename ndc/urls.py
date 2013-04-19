@@ -18,6 +18,7 @@ urlpatterns = patterns(
     url(r'^session/(?P<pk>\d+)/$', session_detail.as_view(), name='session'),
 
     url(r'^login/$', login, name='login'),
+    url(r'^login/req/(?P<token>\w+)$', login_req, name='login_req'),
     url(r'^login/mailsent/$', login_mailsent, name='login_mailsent'),
     url(r'^logout/$', logout, name='logout'),
     url(r'^profile/$', profile, name='profile'),

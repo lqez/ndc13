@@ -7,6 +7,7 @@ from django.shortcuts import render, redirect, get_object_or_404
 from django.views.generic import ListView, DetailView
 from models import SessionDate, SessionTime, Room, Session, Speaker, Company, Tag, EmailToken
 from forms import EmailLoginForm, ProfileForm
+from helper import sendEmailToken
 
 
 def home(request):
@@ -19,34 +20,43 @@ def login(request):
     if request.method == 'POST':
         form = EmailLoginForm(request.POST)
         if form.is_valid():
-            token = EmailToken(email=form.cleaned_data['email'])
+            # Remove previous tokens
+            email = form.cleaned_data['email']
+            EmailToken.objects.filter(email=email).delete()
+
+            # Create new
+            token = EmailToken(email=email)
             token.save()
+
+            sendEmailToken(request, token)
             return redirect(reverse_lazy('login_mailsent'))
-    else:
-        if 'token' in request.GET:
-            token = get_object_or_404(EmailToken, token=request.GET.get('token'))
-            email = token.email
-
-            try:
-                user = User.objects.get(email=email)
-            except:
-                user = User.objects.create_user(email, email, token)
-                user.save()
-
-                profile = user.get_profile()
-                profile.nick = email.split('@')[0]
-                profile.save()
-
-            token.delete()
-
-            # Set backend manually
-            user.backend = 'django.contrib.auth.backends.ModelBackend'
-            user_login(request, user)
-            return redirect(reverse_lazy('home'))
 
     return render(request, 'login.html', {
         'form': form,
     })
+
+
+def login_req(request, token):
+    token = get_object_or_404(EmailToken, token=token)
+    email = token.email
+
+    try:
+        user = User.objects.get(email=email)
+    except:
+        user = User.objects.create_user(email, email, token)
+        user.save()
+
+        profile = user.get_profile()
+        profile.nick = email.split('@')[0]
+        profile.save()
+
+    token.delete()
+
+    # Set backend manually
+    user.backend = 'django.contrib.auth.backends.ModelBackend'
+    user_login(request, user)
+
+    return redirect(reverse_lazy('home'))
 
 
 def login_mailsent(request):
