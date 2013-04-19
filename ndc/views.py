@@ -11,6 +11,10 @@ from forms import EmailLoginForm, ProfileForm
 from helper import sendEmailToken, render_json, render_template_json
 
 
+def notice(request):
+    return render(request, 'notice.html')
+
+
 def home(request):
     return render(request, 'home.html')
 

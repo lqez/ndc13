@@ -189,3 +189,5 @@ AUTHENTICATION_BACKENDS = (
 TEMPLATE_CONTEXT_PROCESSORS += (
     'social_auth.context_processors.social_auth_backends',
 )
+
+CLOSED_BY_NEXON = True
