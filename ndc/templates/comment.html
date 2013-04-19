@@ -44,8 +44,10 @@ function comment(form)
         </div>
     </form>
 </div>
-<hr>
+{% else %}
+<div class="alert">로그인하셔야 글을 남길 수 있습니다.</div>
 {% endif %}
+<hr>
 <div class="row">
     <div class="span12">
         <div class="comments row" id="comments">
