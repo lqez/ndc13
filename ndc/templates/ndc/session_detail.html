@@ -54,7 +54,9 @@
 <div class="row">
     <div class="span12">
         <h2>Comments</h2>
-        <a class="moot" href="http://api.moot.it/sndc13/{{ request.path }}"></a>
+        {% with type="session" id=session.id %}
+        {% include "comment.html" %}
+        {% endwith %}
     </div>
 </div>
 {% endblock %}

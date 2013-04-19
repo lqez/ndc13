@@ -2,6 +2,9 @@ a {
     color: #34495e;
     text-decoration: none;
 }
+.skel {
+    display: none;
+}
 .username {
     margin:0 5px;
 }
@@ -458,3 +461,36 @@ a {
     width: 24px;
     height: auto;
 }
+
+.comments {
+}
+
+.comments .comment {
+    margin-bottom: 10px;
+}
+
+.comments .comment .name {
+    background-color: #ececec;
+    border: 1px solid #e5e5e5;
+    border-bottom: 0;
+    padding: 10px;
+    width: 30%;
+    max-width: 160px;
+    -webkit-border-radius: 6px 6px 0 0;
+    -moz-border-radius: 6px 6px 0 0;
+    border-radius: 6px 6px 0 0;
+}
+
+.comments .comment .msg {
+    border: 1px solid #e5e5e5;
+    padding: 10px;
+    margin-bottom: 5px;
+    overflow: hidden;
+    -webkit-border-radius: 0 6px 6px 6px;
+    -moz-border-radius: 0 6px 6px 6px;
+    border-radius: 0 6px 6px 6px;
+}
+
+.comments .comment .at {
+}
+

@@ -1,0 +1,83 @@
+{% if user.is_authenticated %}
+<script type="text/javascript">
+function enable_form(form)
+{
+    $(form).find("input").attr('disabled', false);
+}
+
+function disable_form(form)
+{
+    $(form).find("input").attr('disabled', true);
+}
+
+function comment(form)
+{
+    var msg = $(form).find("#msg").val();
+    if( msg.length == 0 )
+        return;
+
+    disable_form(form);
+    $.ajax({
+        type: "POST",
+        url: "{% url "comment" %}",
+        data: {
+            msg: msg,
+            ctype: "{{ type }}",
+            cid: {{ id }},
+            csrfmiddlewaretoken: "{{ csrf_token }}",
+        },
+        success: function(data) {
+        add_comment( "{{ user.get_profile.nick }}", msg, "just now", true );
+            $(form).find("#msg").val("");
+            enable_form(form);
+        },
+        dataType: "json"
+    });
+}
+</script>
+<div class="row">
+    <form onsubmit="comment(this); return false;">
+        <div class="span12">
+            <input type="text" class="span12" id="msg" />
+            <p class="pull-left">욕설이나 비방, 허위사실에 대한 글은 삼가해주세요.</p>
+            <input type="submit" class="btn btn-large btn-primary pull-right" value="Write" />
+        </div>
+    </form>
+</div>
+<hr>
+{% endif %}
+<div class="row">
+    <div class="span12">
+        <div class="comments row" id="comments">
+            <div class="comment skel span12" id="comment">
+                <div class="name"></div>
+                <div class="msg"></div>
+                <div class="at pull-right"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+var comments = $('#comments');
+var comment_skel = $('#comment');
+
+function add_comment(name, msg, at, prepend) {
+    c = comment_skel.clone().removeClass("skel");
+    c.find(".name").html(name);
+    c.find(".msg").html(msg);
+    c.find(".at").html(at);
+
+    if( prepend )
+        comments.prepend(c);
+    else
+        comments.append(c);
+}
+
+$(function () { 
+    $.getJSON("{% url "comments" type id 1 %}", function(data) {
+        $.each(data, function(key, val) {
+            add_comment(val['user_nick'], val['msg'], val['at'], false);
+        });
+    });
+});
+</script>

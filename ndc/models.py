@@ -117,6 +117,8 @@ class Session(models.Model):
     date = models.ForeignKey(SessionDate)
     times = models.ManyToManyField(SessionTime)
 
+    attendee = models.ManyToManyField(User)
+
     def get_absolute_url(self):
         return reverse('session', args=[self.id])
 
@@ -175,6 +177,19 @@ class EmailToken(models.Model):
     def save(self, *args, **kwargs):
         self.token = self.id_generator()
         super(EmailToken, self).save(*args, **kwargs)
+
+
+class Comment(models.Model):
+    user = models.ForeignKey(User)
+    msg = models.CharField(max_length=255)
+    removed = models.BooleanField(default=False)
+    created = models.DateTimeField(auto_now_add=True)
+
+    session = models.ForeignKey(Session, null=True, blank=True)
+    speaker = models.ForeignKey(Speaker, null=True, blank=True)
+
+    class Meta:
+        ordering = ['-id']
 
 
 class Profile(models.Model):

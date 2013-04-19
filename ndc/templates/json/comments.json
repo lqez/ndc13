@@ -1,0 +1,8 @@
+{% load humanize %}[{% for c in comments %}
+    {
+        "user_nick": "{{ c.user.get_profile.nick|escape }}",
+        "user_email_part": "{{ c.user.email|escape|truncatechars:8 }}",
+        "msg": "{{ c.msg }}",
+        "at": "{{ c.created|naturaltime }}"
+    }{% if not forloop.last %},{% endif %}
+{% endfor %}]

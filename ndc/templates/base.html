@@ -17,9 +17,6 @@
     <!-- Loading Flat UI -->
     <link href="{{ STATIC_URL }}lib/flat-ui/css/flat-ui.css" rel="stylesheet"/>
 
-    <!-- Moot.it -->
-    <link href="http://cdn.moot.it/1.0/moot.css" rel="stylesheet"/>
-
     <!-- Flying-bootstrap css -->
     <link href="{{ STATIC_URL }}lib/flying-bootstrap/fb.css" rel="stylesheet"/>
 
@@ -31,16 +28,16 @@
     <!--[if lt IE 9]>
         <script src="{{ STATIC_URL }}lib/flat-ui/js/html5shiv.js"></script>
     <![endif]-->
+
+    <script src="{{ STATIC_URL }}lib/jquery/jquery.js"></script>
+    <script src="{{ STATIC_URL }}lib/bootstrap/js/bootstrap.js"></script>
+    <script src="{{ STATIC_URL }}lib/flying-bootstrap/fb.js"></script>
 </head>
 <body>
 {% include "nav.html" %}
 <div class="container">
 {% block content %}{% endblock %}
 </div>
-<script src="{{ STATIC_URL }}lib/jquery/jquery.js"></script>
-<script src="{{ STATIC_URL }}lib/bootstrap/js/bootstrap.js"></script>
-<script src="{{ STATIC_URL }}lib/flying-bootstrap/fb.js"></script>
-<script src="http://cdn.moot.it/1.0/moot.min.js"></script>
 {% block script %}{% endblock %}
 </body>
 </html>

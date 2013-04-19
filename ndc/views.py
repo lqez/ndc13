@@ -5,9 +5,9 @@ from django.core.urlresolvers import reverse_lazy
 from django.core.cache import cache
 from django.shortcuts import render, redirect, get_object_or_404
 from django.views.generic import ListView, DetailView
-from models import SessionDate, SessionTime, Room, Session, Speaker, Company, Tag, EmailToken
+from models import SessionDate, SessionTime, Room, Session, Speaker, Company, Tag, EmailToken, Comment
 from forms import EmailLoginForm, ProfileForm
-from helper import sendEmailToken
+from helper import sendEmailToken, render_json, render_template_json
 
 
 def home(request):
@@ -56,7 +56,7 @@ def login_req(request, token):
     user.backend = 'django.contrib.auth.backends.ModelBackend'
     user_login(request, user)
 
-    return redirect(reverse_lazy('home'))
+    return redirect(reverse_lazy('profile'))
 
 
 def login_mailsent(request):
@@ -82,6 +82,48 @@ def profile(request):
 
     return render(request, 'profile.html', {
         'form': form,
+    })
+
+
+@login_required
+def comment(request):
+    if request.is_ajax():
+        try:
+            msg = request.POST.get('msg', '')[:255]
+            if len(msg) == 0:
+                raise
+
+            cid = request.POST.get('cid')
+            ctype = request.POST.get('ctype')
+
+            if ctype == 'session':
+                Comment(user=request.user, msg=msg, session=Session.objects.get(id=cid)).save()
+            elif ctype == 'speaker':
+                Comment(user=request.user, msg=msg, speaker=Speaker.objects.get(id=cid)).save()
+
+            return render_json({
+                'success': True,
+            })
+        except:
+            pass
+
+    return render_json({
+        'success': False,
+    })
+
+
+def comments(request, ctype, cid, page):
+    comments = []
+    print ctype, cid
+
+    if ctype == 'session':
+        comments = Comment.objects.filter(session=cid, removed=False).select_related()[:20]
+    elif ctype == 'speaker':
+        comments = Comment.objects.filter(speaker=cid, removed=False).select_related()[:20]
+
+    return render_template_json('json/comments.json', {
+        'user': request.user,
+        'comments': comments,
     })
 
 

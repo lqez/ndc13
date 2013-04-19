@@ -35,19 +35,13 @@
         </div>
     </div>
 </div>
+<hr>
 <div class="row">
     <div class="span12">
         <h2>Sessions</h2>
         {% with sessions=company.get_sessions %}
         {% include "sessions.html" %}
         {% endwith %}
-    </div>
-</div>
-<hr>
-<div class="row">
-    <div class="span12">
-        <h2>Comments</h2>
-        <a class="moot" href="http://api.moot.it/sndc13/{{ request.path }}"></a>
     </div>
 </div>
 {% endblock %}

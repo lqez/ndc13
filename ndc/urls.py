@@ -16,6 +16,8 @@ urlpatterns = patterns(
     url(r'^company/(?P<pk>\d+)/$', company_detail.as_view(), name='company'),
     url(r'^sessions/$', session_list.as_view(), name='sessions'),
     url(r'^session/(?P<pk>\d+)/$', session_detail.as_view(), name='session'),
+    url(r'^comment/$', comment, name='comment'),
+    url(r'^comments/(?P<ctype>\w+)/(?P<cid>\d+)/(?P<page>\d+)/$', comments, name='comments'),
 
     url(r'^login/$', login, name='login'),
     url(r'^login/req/(?P<token>\w+)$', login_req, name='login_req'),
