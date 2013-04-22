@@ -13,6 +13,15 @@ Behind Story of this project
 http://lqez.github.io/blog/making-a-fan-page-for-a-developer-conference.html
 
 
+Built on 
+--------
+
+ - [Django](https://www.djangoproject.com/)
+ - [Haystack](http://haystacksearch.org/)
+ - [jQuery](http://jquery.com/)
+ - [Bootstrap](http://twitter.github.io/bootstrap/)
+ - [Flat UI](http://designmodo.github.io/Flat-UI/)
+    
 
 INSTALL
 -------
