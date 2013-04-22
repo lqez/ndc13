@@ -7,6 +7,13 @@ ndc13
 A fan page for 'Nexon Developer Conference of 2013'. 
 
 
+Behind Story of this project
+----------------------------
+
+http://lqez.github.io/blog/making-a-fan-page-for-a-developer-conference.html
+
+
+
 INSTALL
 -------
 
