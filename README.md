@@ -21,6 +21,7 @@ Built on
  - [jQuery](http://jquery.com/)
  - [Bootstrap](http://twitter.github.io/bootstrap/)
  - [Flat UI](http://designmodo.github.io/Flat-UI/)
+ - [Flying Bootstrap](https://github.com/lqez/flying-bootstrap/)
     
 
 INSTALL
