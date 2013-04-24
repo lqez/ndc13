@@ -39,6 +39,14 @@ INSTALL
 All done.
 
 
+TODO
+----
+
+ - Reservation.
+ - Room capacity limit.
+ - Pagination of comments.
+ - About / Contact page.
+
 
 DEMO
 ----
